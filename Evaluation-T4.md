@@ -51,10 +51,14 @@
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est exhaustif et détaillé.
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est donné.
   - [x] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
-- Actions du joueur
-  - [ ] La description des actions du joueurs permet de connaitre parfaitement les interactions avec l'application.
-  - [ ] La description des actions du joueurs permet de se faire une première idées des interactions avec l'utilisateur.
-  - [x] La description des actions du joueurs ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
+- Entrées / Actions du joueur
+  - [ ] La description des entrées permet de connaitre parfaitement les interactions avec l'application.
+  - [ ] La description des entrées permet de se faire une première idées des interactions avec l'utilisateur.
+  - [x] La description des entrées ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
+- Sorties / Infomations au joueur
+  - [ ] La description des sorties permet de connaitre parfaitement les interactions avec l'application.
+  - [ ] La description des sorties permet de se faire une première idées des interactions avec l'utilisateur.
+  - [x] La description des sorties ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
 - Description du moteur interne
   - [ ] La description du moteur interne permet de comprendre parfaitement le fonctionnement de l'application.
   - [ ] La description du moteur interne permet de comprendre le fonctionnement de l'application.
@@ -80,6 +84,6 @@
   - [ ] Les fonctionnalités sont classées par priorités.
   - [x] Les fonctionnalités ne sont pas classées par priorités.
 - Difficulté des fonctionnalités
-  - Les fonctionnalités sont annotées par une difficulté pertinente.
-  - Les fonctionnalités sont annotées par une difficulté.
-  - Les fonctionnalités ne sont pas annotées par une difficulté.
+  - [ ] Les fonctionnalités sont annotées par une difficulté pertinente.
+  - [ ] Les fonctionnalités sont annotées par une difficulté.
+  - [x] Les fonctionnalités ne sont pas annotées par une difficulté.
