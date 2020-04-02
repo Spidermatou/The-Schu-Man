@@ -17,6 +17,7 @@
   - [ ] Le fichier présente le projet et a été régulièrement mis à jour pour tenir compte de son évolution.
   - [ ] Le fichier présente le projet.
   - [x] Le fichier ne présente pas le projet.
+
 ## Prototype
 - Installation
   - [ ] Le prototype s'installe sans effort.
@@ -38,6 +39,7 @@
   - [ ] Le prototype permet de parfaitement transmettre le concept-cible au joueur.
   - [ ] Le prototype permet de transmettre le concept-cible au joueur.
   - [x] Le prototype ne permet pas de transmettre le concept-cible au joueur.
+ 
 ## Cahier des charges
 - Modèle de document
   - [ ] Le CdC respecte parfaitement le modèle de document.
@@ -51,6 +53,8 @@
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est exhaustif et détaillé.
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est donné.
   - [x] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
+
+### Fonctionnalités
 - Entrées / Actions du joueur
   - [ ] La description des entrées permet de connaitre parfaitement les interactions avec l'application.
   - [ ] La description des entrées permet de se faire une première idées des interactions avec l'utilisateur.
@@ -87,3 +91,20 @@
   - [ ] Les fonctionnalités sont annotées par une difficulté pertinente.
   - [ ] Les fonctionnalités sont annotées par une difficulté.
   - [x] Les fonctionnalités ne sont pas annotées par une difficulté.
+
+### Scénarios
+
+- Nombre
+  - [ ] Au moins un scénario est pleinement développé et propose au moins deux alternatives.
+  - [ ] Un scénario est pleinement développé.
+  - [x] Un scénario n'est pas pleinement développé.
+- Exhaustivité
+  - [ ] Le scénario développé s'appuie sur toutes les fonctionnalités.
+  - [ ] Le scénario développé s'appuie sur toutes les fonctionnalités principales
+  - [x] Le scénario développé ne s'appuie pas sur toutes les fonctionnalités principales.
+- Scénarios additionnels 
+  - [ ] Des scénarios additionnels sont proposés, en expliquant leur intérêret. 
+  - [ ] Des scénarios additionnels sont proposés. 
+  - [x] Des scénarios additionnels ne sont pas proposés.
+
+  
