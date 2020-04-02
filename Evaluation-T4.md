@@ -8,8 +8,9 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 5. Jouer à leur jeu, et proposer des améliorations dans la section ci-dessous.
 6. Lire le cahier des charges et faire des observations en utilisant la fonction commentaires.
 7. Remplir la grille d'évaluation T4 ci-dessous.
+8. Faire remplir la grille d'évaluation T2 ci-dessous par les membres du T4.
 
-## Grille d'évaluation T2
+## Grille d'évaluation T2 (à remplir par les membres du groupe T4)
 
 - Propositions d'amélioration du jeu
   - [ ] Au moins trois propositions d'améliorations pertinente sont faites.
