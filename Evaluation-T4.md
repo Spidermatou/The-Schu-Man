@@ -1,3 +1,38 @@
+# Projet tuteuré T2
+
+Les étapes du projet tuteuré T2 sont les suivantes :
+1. Consulter le groupe qui vous est attribué dans le document des groupes et le rejoindre.
+2. Ecouter la présentation du jeu par les membres du groupe.
+3. Dupliquer ce fichier d’évaluation dans leur GIT, en suivant la règle de nommage `Evaluation-T4-Prénom_Nom.md`.
+4. Ajouter un lien vers ce fichier dans le document des groupes.
+5. Jouer à leur jeu, et proposer des améliorations dans la section ci-dessous.
+6. Lire le cahier des charges et faire des observations en utilisant la fonction commentaires.
+7. Remplir la grille d'évaluation T4 ci-dessous.
+
+## Grille d'évaluation T2
+
+- Propositions d'amélioration du jeu
+  - [ ] Au moins trois propositions d'améliorations pertinente sont faites.
+  - [ ] Au moins trois propositions d'améliorations sont faites.
+  - [x] Moins de trois propositions d'améliorations sont faites.
+- Propositions d'amélioration du Cahier des charges
+  - [ ] Au moins cinq propositions d'améliorations pertinente sont faites.
+  - [ ] Au moins cinq propositions d'améliorations sont faites.
+  - [x] Moins de cinq propositions d'améliorations sont faites.
+- Grille d'évaluation T4 / critères
+  - [ ] Tous les critères sont remplis avec pertinence et font l'objet d'une justifications concrète.
+  - [ ] Certain critères ont été remplis un peu à l'arrache.
+  - [x] Des critères n'ont pas été remplis
+- Implication
+  - [ ] L'implication T2 été vraiment été cruciale dans le processus du T4.
+  - [ ] L'implication T2 a permis d'améliorer le T4.
+  - [x] Il y a eu un défaut d'implication T2.
+
+# Propositions d'amélioration du jeu
+
+- Proposition 1
+- Proposition 2
+
 # Grille d'évaluation T4
 
 ## GIT 
@@ -17,6 +52,8 @@
   - [ ] Le fichier présente le projet et a été régulièrement mis à jour pour tenir compte de son évolution.
   - [ ] Le fichier présente le projet.
   - [x] Le fichier ne présente pas le projet.
+
+Justifications :
 
 ## Prototype
 - Installation
@@ -39,6 +76,8 @@
   - [ ] Le prototype permet de parfaitement transmettre le concept-cible au joueur.
   - [ ] Le prototype permet de transmettre le concept-cible au joueur.
   - [x] Le prototype ne permet pas de transmettre le concept-cible au joueur.
+
+Justifications :
  
 ## Cahier des charges
 - Modèle de document
@@ -53,6 +92,8 @@
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est exhaustif et détaillé.
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est donné.
   - [x] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
+
+Justifications : 
 
 ### Fonctionnalités
 - Entrées / Actions du joueur
@@ -92,8 +133,9 @@
   - [ ] Les fonctionnalités sont annotées par une difficulté.
   - [x] Les fonctionnalités ne sont pas annotées par une difficulté.
 
-### Scénarios
+Justifications : 
 
+### Scénarios
 - Nombre
   - [ ] Au moins un scénario est pleinement développé et propose au moins deux alternatives.
   - [ ] Un scénario est pleinement développé.
@@ -107,4 +149,20 @@
   - [ ] Des scénarios additionnels sont proposés. 
   - [x] Des scénarios additionnels ne sont pas proposés.
 
-  
+Justifications :
+
+# Scénarios
+- Nombre
+  - [ ] Au moins un scénario est pleinement développé et propose au moins deux alternatives.
+  - [ ] Un scénario est pleinement développé.
+  - [x] Un scénario n'est pas pleinement développé.
+- Exhaustivité
+  - [ ] Le scénario développé s'appuie sur toutes les fonctionnalités.
+  - [ ] Le scénario développé s'appuie sur toutes les fonctionnalités principales
+  - [x] Le scénario développé ne s'appuie pas sur toutes les fonctionnalités principales.
+- Scénarios additionnels 
+  - [ ] Des scénarios additionnels sont proposés, en expliquant leur intérêret. 
+  - [ ] Des scénarios additionnels sont proposés. 
+  - [x] Des scénarios additionnels ne sont pas proposés.
+
+Justifications : 
