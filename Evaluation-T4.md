@@ -45,9 +45,9 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [ ] La granularité des commits n'est pas pertinente ou les commits ne sont pas clairement et systématiquement renseignés.
   - [x] La granularité des commits n'est pas pertinente et les commits ne sont pas clairement et systématiquement renseignés.
 - Droits d'accès
-  - [ ] Le dépôt GIT est accessible à tous, et Julien Gossa est master.
-  - [ ] Julien Gossa est master sur le dépôt GIT.
-  - [x] Julien Gossa n'est pas master sur le dépôt GIT.
+  - [ ] Julien Gossa a le rôle avec le plus de droits sur le dépôt GIT et ce dépôt est accessible à tous.
+  - [ ] Julien Gossa a le rôle avec le plus de droits sur le dépôt GIT.
+  - [x] Julien Gossa n'a pas le rôle avec le plus de droits sur le dépôt GIT.
 - README
   - [ ] Le fichier présente le projet et a été régulièrement mis à jour pour tenir compte de son évolution.
   - [ ] Le fichier présente le projet.
