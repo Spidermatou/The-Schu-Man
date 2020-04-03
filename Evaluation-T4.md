@@ -59,10 +59,15 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [ ] Julien Gossa a le rôle avec le plus de droits sur le dépôt GIT et ce dépôt est accessible à tous.
   - [ ] Julien Gossa a le rôle avec le plus de droits sur le dépôt GIT.
   - [x] Julien Gossa n'a pas le rôle avec le plus de droits sur le dépôt GIT.
-- README
-  - [ ] Le fichier présente le projet et a été régulièrement mis à jour pour tenir compte de son évolution.
-  - [ ] Le fichier présente le projet.
-  - [x] Le fichier ne présente pas le projet.
+- README.md
+  - [ ] Le README est complet, avec : une présentation du projet, la procédure d'installation et d'exécution, et des captures d'écran du jeu.
+  - [ ] Le README n'est pas complet.
+  - [x] Il n'y a pas de README.
+- CDC.md
+  - [ ] Le CDC est conforme au document partagé de travail, et les deux sont liés depuis le README.
+  - [ ] Le CDC est conforme au document partagé de travail, ou les deux sont liés depuis le README.
+  - [x] Le CDC n'est oas conforme au document partagé de travail, et les deux ne sont pas liés depuis le README.
+
 
 Justifications :
 
