@@ -7,8 +7,8 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 4. Ajouter un lien vers ce fichier dans le document des groupes.
 5. Jouer à leur jeu, et proposer des améliorations dans la section ci-dessous.
 6. Lire le cahier des charges et faire des observations en utilisant la fonction commentaires.
-7. Remplir la grille d'évaluation T4 ci-dessous.
-8. Faire remplir la grille d'évaluation T2 ci-dessous par les membres du T4.
+7. Remplir la grille d'évaluation T4 ci-dessous, et remplir le résultat T4.
+8. Faire remplir la grille d'évaluation T2 et le résultat T2 ci-dessous par les membres du T4.
 
 ## Grille d'évaluation T2 (à remplir par les membres du groupe T4)
 
@@ -32,6 +32,12 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [ ] L'implication T2 été vraiment été cruciale dans le processus du T4.
   - [ ] L'implication T2 a permis d'améliorer le T4.
   - [x] Il y a eu un défaut d'implication T2.
+
+### Résultat T2
+- Total d'item « Excellent » (2 point) : 
+- Total d'item « Satisfaisant » (1 point: 
+- Total d'item « Insatisfaisant » (0 point) :
+- Note sur 10 : 
 
 # Propositions d'amélioration du jeu
 
@@ -156,18 +162,8 @@ Justifications :
 
 Justifications :
 
-# Scénarios
-- Nombre
-  - [ ] Au moins un scénario est pleinement développé et propose au moins deux alternatives.
-  - [ ] Un scénario est pleinement développé.
-  - [x] Un scénario n'est pas pleinement développé.
-- Exhaustivité
-  - [ ] Le scénario développé s'appuie sur toutes les fonctionnalités.
-  - [ ] Le scénario développé s'appuie sur toutes les fonctionnalités principales
-  - [x] Le scénario développé ne s'appuie pas sur toutes les fonctionnalités principales.
-- Scénarios additionnels 
-  - [ ] Des scénarios additionnels sont proposés, en expliquant leur intérêret. 
-  - [ ] Des scénarios additionnels sont proposés. 
-  - [x] Des scénarios additionnels ne sont pas proposés.
-
-Justifications : 
+## Résultat T4
+- Total d'item « Excellent » (2 point) : 
+- Total d'item « Satisfaisant » (1 point: 
+- Total d'item « Insatisfaisant » (0 point) :
+- Note sur 10 : 
