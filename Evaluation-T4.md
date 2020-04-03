@@ -171,4 +171,4 @@ Justifications :
 - Total d'item « Excellent » (2 point) : 
 - Total d'item « Satisfaisant » (1 point: 
 - Total d'item « Insatisfaisant » (0 point) :
-- Note sur 10 : 
+- Note totale  : 
