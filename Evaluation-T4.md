@@ -85,8 +85,8 @@ Justifications :
   - [ ] Le prototype est rarement instable
   - [x] Le prototype est instable
 - Affordabilité
-  - [ ] Toutes les instructions de jeu sont inclues dans le prototype sous forme d'un tutoriel.
-  - [ ] Les instructions de jeu sont sous forme d'un manuel.
+  - [ ] Toutes les instructions de jeu sont inclues dans le prototype au cours d'une partie normale.
+  - [ ] Les instructions de jeu sont sous forme d'un manuel ou d'un tutoriel à part.
   - [x] Les instructions de jeu ne sont pas données.
 - Transmission du concept
   - [ ] Le prototype permet de parfaitement transmettre le concept-cible au joueur.
