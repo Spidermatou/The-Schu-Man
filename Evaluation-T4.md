@@ -162,7 +162,7 @@ Justifications :
   - [ ] Le scénario développé s'appuie sur toutes les fonctionnalités principales
   - [x] Le scénario développé ne s'appuie pas sur toutes les fonctionnalités principales.
 - Scénarios additionnels 
-  - [ ] Des scénarios additionnels sont proposés, en expliquant leur intérêret. 
+  - [ ] Des scénarios additionnels sont proposés, en expliquant leur intérêt. 
   - [ ] Des scénarios additionnels sont proposés. 
   - [x] Des scénarios additionnels ne sont pas proposés.
 
