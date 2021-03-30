@@ -171,4 +171,4 @@ Justifications :
 - Total d'item « Excellent » (2 point) : 
 - Total d'item « Satisfaisant » (1 point) : 
 - Total d'item « Insatisfaisant » (0 point) :
-- total des points (sur 52) :
+- total des points (sur 50) :
