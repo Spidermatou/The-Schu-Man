@@ -35,9 +35,9 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 ### Résultat T2
 - Total d'item « Excellent » (2 point) : 
-- Total d'item « Satisfaisant » (1 point: 
+- Total d'item « Satisfaisant » (1 point) : 
 - Total d'item « Insatisfaisant » (0 point) :
-- Note sur 10 : 
+- Total des points (sur 10) : 
 
 # Propositions d'amélioration du jeu
 
@@ -169,6 +169,6 @@ Justifications :
 
 ## Résultat T4
 - Total d'item « Excellent » (2 point) : 
-- Total d'item « Satisfaisant » (1 point: 
+- Total d'item « Satisfaisant » (1 point) : 
 - Total d'item « Insatisfaisant » (0 point) :
-- Note totale  : 
+- total des points (sur 52) :
