@@ -7,8 +7,9 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 4. Ajouter un lien vers ce fichier dans le document des groupes.
 5. Jouer à leur jeu, et proposer des améliorations dans la section ci-dessous.
 6. Lire le cahier des charges et faire des observations (en utilisant la fonction commentaires si elle est disponible).
-7. Remplir la grille d'évaluation T4 ci-dessous, et remplir le résultat T4.
-8. Faire remplir la grille d'évaluation T2 et le résultat T2 ci-dessous par les membres du T4.
+7. Assister à la présentation plénière à 14h.
+8. Remplir la grille d'évaluation T4 ci-dessous, et remplir le résultat T4.
+9. Faire remplir la grille d'évaluation T2 et le résultat T2 ci-dessous par les membres du T4.
 
 ## Grille d'évaluation T2 (à remplir par les membres du groupe T4)
 
