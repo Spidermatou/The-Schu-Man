@@ -19,7 +19,7 @@ Les étapes du projet tuteuré T2 sont les suivantes :
     - Un soin particulier doit être apporté aux justifications.
     - Ne pas juste réécrire ou paraphraser un critère (Exemple : "_les commits sont pertients_").
     - Apporter des informations concrètes (Exemple : "_il y a eu x commits par y personnes, et la moitié sont commentés clairement_").
-1. Rendu à 17h.
+1. Rendu avant 17h.
 
 # Propositions d'amélioration du jeu
 
