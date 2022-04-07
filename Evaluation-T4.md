@@ -1,15 +1,30 @@
 # Projet tuteuré T2
 
 Les étapes du projet tuteuré T2 sont les suivantes :
-1. Consulter le groupe qui vous est attribué dans le document des groupes et le rejoindre.
-2. Ecouter la présentation du jeu par les membres du groupe.
-3. Dupliquer ce fichier d’évaluation dans leur GIT, en suivant la règle de nommage `Evaluation-T4-Prénom_Nom.md`.
-4. Ajouter un lien vers ce fichier dans le document des groupes.
-5. Jouer à leur jeu, et proposer des améliorations dans la section ci-dessous.
-6. Lire le cahier des charges et faire des observations (en utilisant la fonction commentaires si elle est disponible).
-7. Assister à la présentation plénière à 14h.
-8. Remplir la grille d'évaluation T4 ci-dessous, et remplir le résultat T4.
-9. Faire remplir la grille d'évaluation T2 et le résultat T2 ci-dessous par les membres du T4.
+
+1. 10h00
+    1. Consulter le groupe qui vous est attribué dans le document des groupes.
+    1. Lire le cahier des charges, sans communiquer avec le groupe T4.
+    1. Faire des observations en utilisant la fonction commentaires pour aider à améliorer ce document.
+        - l'objectif principal ici est d'identifier tout ce qui n'est pas parfaitement clair.
+1. 11h00
+    1. Rejoindre votre groupe T4
+    1. Dupliquer ce fichier d’évaluation dans leur GIT, en suivant la règle de nommage `Evaluation-T4-Prénom_Nom.md` 
+        - Demander au T4 de le faire si besoin, et vérifier que vous pouvez le modifier.
+        - Ajouter un lien vers votre duplicata dans le document des groupes.
+    1. Jouer au jeu, et proposer des améliorations dans la section ci-dessous.
+    1. Faire remplir la grille d'évaluation T2 et le résultat T2 ci-dessous par les membres du T4.
+1. Assister à la présentation plénière à 14h dans les amphis 1 ou 2.
+1. Remplir la grille d'évaluation T4 ci-dessous, et remplir le résultat T4.
+    - Un soin particulier doit être apporté aux justifications.
+    - Ne pas juste réécrire ou paraphraser un critère (Exemple : "_les commits sont pertients_").
+    - Apporter des informations concrètes (Exemple : "_il y a eu x commits par y personnes, et la moitié sont commentés clairement_").
+1. Rendu à 17h.
+
+# Propositions d'amélioration du jeu
+
+- Proposition 1
+- Proposition 2
 
 ## Grille d'évaluation T2 (à remplir par les membres du groupe T4)
 
@@ -25,10 +40,6 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [ ] Au moins cinq propositions d'améliorations pertinente sont faites.
   - [ ] Au moins cinq propositions d'améliorations sont faites.
   - [x] Moins de cinq propositions d'améliorations sont faites.
-- Grille d'évaluation T4 / critères
-  - [ ] Tous les critères sont remplis avec pertinence et font l'objet d'une justifications concrète.
-  - [ ] Certain critères ont été remplis un peu à l'arrache.
-  - [x] Des critères n'ont pas été remplis
 - Implication
   - [ ] L'implication T2 été vraiment été cruciale dans le processus du T4.
   - [ ] L'implication T2 a permis d'améliorer le T4.
@@ -38,12 +49,9 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 - Total d'item « Excellent » (2 point) : 
 - Total d'item « Satisfaisant » (1 point) : 
 - Total d'item « Insatisfaisant » (0 point) :
-- Total des points (sur 10) : 
+- Total des points (sur 8) : 
 
-# Propositions d'amélioration du jeu
 
-- Proposition 1
-- Proposition 2
 
 # Grille d'évaluation T4
 
@@ -113,14 +121,14 @@ Justifications :
 Justifications : 
 
 ### Fonctionnalités
-- Entrées / Actions du joueur
-  - [ ] La description des entrées permet de connaitre parfaitement les interactions avec l'application.
-  - [ ] La description des entrées permet de se faire une première idées des interactions avec l'utilisateur.
-  - [x] La description des entrées ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
-- Sorties / Infomations au joueur
-  - [ ] La description des sorties permet de connaitre parfaitement les interactions avec l'application.
-  - [ ] La description des sorties permet de se faire une première idées des interactions avec l'utilisateur.
-  - [x] La description des sorties ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
+- Actions du joueur
+  - [ ] La description des actions du joueur permet de connaitre parfaitement les interactions avec l'application.
+  - [ ] La description des actions du joueur permet de se faire une première idées des interactions avec l'utilisateur.
+  - [x] La description des actions du joueur ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
+- Infomations au joueur
+  - [ ] La description des informations au joueur permet de connaitre parfaitement les interactions avec l'application.
+  - [ ] La description des informations au joueur permet de se faire une première idées des interactions avec l'utilisateur.
+  - [x] La description des informations au joueur ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
 - Description du moteur interne
   - [ ] La description du moteur interne permet de comprendre parfaitement le fonctionnement de l'application.
   - [ ] La description du moteur interne permet de comprendre le fonctionnement de l'application.
