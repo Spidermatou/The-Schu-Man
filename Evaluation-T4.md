@@ -48,17 +48,17 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 ## Grille d'évaluation T2 (à remplir par l'enseignant)
 
 - Objectivation des justifications
-  - [ ] Les justifications sont toutes objectivées.
-  - [ ] Les justifications sont globalement objectivées.
-  - [x] Les justifications ne sont pas objectivées.
--  Mesures
-  - [ ] Les justifications s'appuient sur des mesures concrètes et contextulisées.
-  - [ ] Les justifications s'appuient sur des mesures concrètes.
-  - [x] Les justifications ne s'appuient pas sur des mesures.
-- Concision
-  - [ ] Les justifications sont concis, sans phrase vide, ni paraphrase, ni répétition.
-  - [ ] Les justifications sont sans phrase vide, ni paraphrase, ni répétition.
-  - [x] Les justifications contiennent au moins une phrase vide, une paraphrase ou une répétition. 
+    - [ ] Les justifications sont toutes objectivées.
+    - [ ] Les justifications sont globalement objectivées.
+    - [x] Les justifications ne sont pas objectivées. 
+-  Mesures des justifications
+    - [ ] Les justifications s'appuient sur des mesures concrètes et contextulisées.
+    - [ ] Les justifications s'appuient sur des mesures concrètes.
+    - [x] Les justifications ne s'appuient pas sur des mesures.
+- Concision des justifications
+    - [ ] Les justifications sont concis, sans phrase vide, ni paraphrase, ni répétition.
+    - [ ] Les justifications sont sans phrase vide, ni paraphrase, ni répétition.
+    - [x] Les justifications contiennent au moins une phrase vide, une paraphrase ou une répétition. 
 
 
 ### Résultat T2
