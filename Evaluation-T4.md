@@ -69,7 +69,7 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 - Total d'item « Excellent » (2 point) : 
 - Total d'item « Satisfaisant » (1 point) : 
 - Total d'item « Insatisfaisant » (0 point) :
-- Total des points (sur 14) : 
+- Total des points (sur 16) : 
 
 
 
