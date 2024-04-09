@@ -2,24 +2,29 @@
 
 Les étapes du projet tuteuré T2 sont les suivantes :
 
-1. 10h00
+1. 13h30
     1. Consulter le groupe qui vous est attribué dans le document des groupes.
-    1. Lire le cahier des charges, sans communiquer avec le groupe T4.
-    1. Faire des observations en utilisant la fonction commentaires pour aider à améliorer ce document.
-        - l'objectif principal ici est d'identifier tout ce qui n'est pas parfaitement clair.
-1. 11h00
-    1. Rejoindre votre groupe T4
     1. Dupliquer ce fichier d’évaluation dans leur GIT, en suivant la règle de nommage `Evaluation-T4-Prénom_Nom.md` 
-        - Demander au T4 de le faire si besoin, et vérifier que vous pouvez le modifier.
-        - Ajouter un lien vers votre duplicata dans le document des groupes.
+      - Demander aux S4 de le faire si besoin, et vérifier que vous pouvez le modifier.
+    1. Lire le cahier des charges, sans communiquer avec le groupe T4.
+    1. Formuler des propositions d'amélioration du cahier des charges dans la section ci-dessous
+        - l'objectif principal ici est d'identifier tout ce qui n'est pas parfaitement clair.
+1. 14h30
+    1. Rejoindre votre groupe T4
     1. Jouer au jeu, et proposer des améliorations dans la section ci-dessous.
-    1. Faire remplir la grille d'évaluation T2 et le résultat T2 ci-dessous par les membres du T4.
-1. Assister à la présentation plénière à 14h dans les amphis 1 ou 2.
-1. Remplir la grille d'évaluation T4 ci-dessous, et remplir le résultat T4.
-    - Un soin particulier doit être apporté aux justifications.
-    - Ne pas juste réécrire ou paraphraser un critère (Exemple : "_les commits sont pertients_").
-    - Apporter des informations concrètes (Exemple : "_il y a eu x commits par y personnes, et la moitié sont commentés clairement_").
-1. Rendu avant 17h.
+    1. Remplir la grille d'évaluation T4 ci-dessous, et remplir le résultat T4.
+        - Un soin particulier doit être apporté aux justifications.
+        - Ne pas juste réécrire ou paraphraser un critère (Exemple : "_les commits sont pertients_").
+        - Apporter des informations concrètes (Exemple : "_il y a eu x commits par y personnes, et la moitié sont commentés clairement_").
+    1. Faire le décompte "Résultat T4"
+1. 15h30
+    1. Assister à la présentation plénière dans les amphis 1 ou 2.
+1. Rendu avant 17h30.
+
+# Propositions d'amélioration du cahier des charges
+
+- Proposition 1
+- Proposition 2
 
 # Propositions d'amélioration du jeu
 
@@ -32,14 +37,14 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [ ] La procédure a été suivie à la lettre sans le moindre écart.
   - [ ] La procédure a été globalement suivie.
   - [x] La procédure n'a pas été bien suivie.
+- Propositions d'amélioration du Cahier des charges
+  - [ ] Au moins cinq propositions d'améliorations pertinente sont faites.
+  - [ ] Au moins cinq propositions d'améliorations sont faites.
+  - [x] Moins de cinq propositions d'améliorations sont faites.  
 - Propositions d'amélioration du jeu
   - [ ] Au moins trois propositions d'améliorations pertinente sont faites.
   - [ ] Au moins trois propositions d'améliorations sont faites.
   - [x] Moins de trois propositions d'améliorations sont faites.
-- Propositions d'amélioration du Cahier des charges
-  - [ ] Au moins cinq propositions d'améliorations pertinente sont faites.
-  - [ ] Au moins cinq propositions d'améliorations sont faites.
-  - [x] Moins de cinq propositions d'améliorations sont faites.
 - Implication
   - [ ] L'implication T2 été vraiment été cruciale dans le processus du T4.
   - [ ] L'implication T2 a permis d'améliorer le T4.
