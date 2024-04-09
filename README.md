@@ -10,8 +10,9 @@
 
 ## Instructions de fork : 
 
-- forker ce dépôt dans le groupe https://gitlab.unistra.fr/T234/2024/t4
+- forker ce dépôt
 - le nommer du code complet du groupe t4
+- ajouter le lien dans le doc des groupes
 - supprimer les instructions de fork du README.md
 
 
