@@ -100,7 +100,7 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 - CDC.md
   - [ ] Le CDC est conforme au document partagé de travail, et les deux sont liés depuis le README.
   - [ ] Le CDC est conforme au document partagé de travail, ou les deux sont liés depuis le README.
-  - [x] Le CDC n'est oas conforme au document partagé de travail, et les deux ne sont pas liés depuis le README.
+  - [x] Le CDC n'est pas conforme au document partagé de travail, et les deux ne sont pas liés depuis le README.
 
 
 Justifications :

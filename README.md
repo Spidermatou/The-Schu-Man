@@ -1,40 +1,50 @@
 # T4
 
-- Nom du groupe : 
-- Membres du groupe : 
+- Nom du groupe : Atomic Core
+- Membres du groupe : Samuel FERNANDES | Mattéo GILLIG | Guillaume BEHR
 - Liens vers les évaluations T4 :
-  - lien 1
-  - lien 2
-  - ...
-
-
-## Instructions de fork : 
-
-- forker ce dépôt
-- le nommer du code complet du groupe t4
-- ajouter le lien dans le doc des groupes
-- supprimer les instructions de fork du README.md
-
+  - **TO-DO**
 
 ## Présentation du projet
 
-Présentation globale en une phrase.
+L'objectif du projet MOR24-T4-A est de concevoir un jeu sérieux visant à familiariser les utilisateurs avec un métier essentiel au personnel de l'IUT Robert Schuman.
+À travers ce jeu, les joueurs doivent appréhender un concept spécifique à ce métier, une réalité quotidienne pour ceux qui l'exercent.
+
+Dans notre jeu, nous allons présenter l'une des missions du directeur de l'IUT Robert Schuman : gérer la rénovation du campus ainsi que son budget. Cette expérience sera intégrée à travers un gameplay interactif, où les joueurs devront prendre des décisions pour maintenir à flot leur IUT et leur poste, leur permettant ainsi de se mettre à la place du directeur et de comprendre les défis auxquels il est confronté au quotidien.
 
 ### Captures d'écran
 
+**TO-DO**
+
 ### Procédures d'installation et d'exécution
+
+**TO-DO**
 
 ## Cahier des charges
 
-Pour un exmeple de ce qui est attenu, voir https://gitlab.unistra.fr/T234/t4-exemple
+[CDC.md](./CDC.md)
 
 ### Objectifs pédagogiques
 
-Identifier 1 à 3 objectifs, avec un titre et une explication d'une phrase.
+- Reconnaître l'importance pour le directeur de l'IUT de s'aligner sur la politique de la centrale de l'Université de Strasbourg.
+
+- Comprendre que le directeur de l'IUT est investi du devoir de veiller au bien-être des étudiants, leur réussite académique et de son personnel.
 
 #### Objectifs pédagogiques avancés 
 
-Pareil, mais qui nécessite plus de developpement.
+- Appréhender les multiples défis auxquels le directeur de l'IUT est confronté en matière de gestion budgétaire.
+
+**Gestion du personnel :**
+
+**TO-DO**
+
+**Coûts d'entretien des bâtiments :**
+
+**TO-DO**
+
+**Coûts de la rénovation des bâtiments :**
+
+**TO-DO**
 
 #### Références
 
@@ -59,4 +69,3 @@ Tout ce qui doit encadrer le développement.
 ### Fonctionnalités et scénarios avancés
 
 Pareil, mais qui nécessite plus de developpement.
-
