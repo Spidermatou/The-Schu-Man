@@ -1,0 +1,71 @@
+@startuml T4
+
+!theme reddress-darkgreen
+
+enum Department {
+    IT,
+    Civil_Engineering,
+    Communication,
+    Marketing_engineering
+    Chemistry
+}
+
+class DecisionCard {
+    + peakToLeft : Signal
+    + peakToRight : Signal
+    + cardChosen : Signal
+    + setImage(image : Texture2D)
+    + setDialog(dialog : string)
+}
+
+class Campus {
+    + states : <Department, int>[*] /' dictionnary '/
+    + ruinedBuilding : Signal
+    + increaseHealth(department : Department, value : int)
+    + decreaseHealth(department : Department, value : int)
+    + increaseAllHealth(value : int)
+    + decreaseAllHealth(value : int)
+}
+Campus o--> Department
+
+class Manager {
+    - {readonly} PATH_TO_JSON : string
+    - actualCard : DecisionCard
+    - lastCards : DecisionCard[5] /' prevent the same card (situation) from being seen too many times in a row '/
+    - refuseCard()
+    - acceptCard()
+    - nextCard()
+    - handleEndGame()
+    - handlePeakToLeft()
+    - handleLeft()
+}
+Manager *--> "1" DecisionCard : > modify and set up
+Manager *--> "3"Gauge
+Manager *--> GaugeName
+Manager *--> Campus
+
+note right
+    - nextCard choose a new random card
+    - handleEndGame receive signal "endgame" and react with End enum
+
+    For each card, we lost 5% of all buildings's health
+
+    Manager = UI (card zone, gauges, ...)
+
+    Gauges can send it, Campus
+end note
+
+enum GaugeName {
+    Finance,
+    RelationCentral,
+    RelationIntern
+}
+
+class Gauge {
+    + setValue(value : int)
+    + setVariation(value : int)
+}
+
+
+@enduml
+
