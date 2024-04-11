@@ -63,9 +63,9 @@ stretch_mode = 5
 
 [node name="DialogBox" type="RichTextLabel" parent="Card"]
 offset_left = -127.0
-offset_top = 25.0
+offset_top = 18.0
 offset_right = 4953.0
-offset_bottom = 3465.0
+offset_bottom = 3698.0
 scale = Vector2(0.05, 0.05)
 theme_override_fonts/normal_font = ExtResource("4_a62l2")
 theme_override_font_sizes/normal_font_size = 400

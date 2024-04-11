@@ -19,6 +19,12 @@ var actualCardIndex : int = 0
 func _ready():
 	# initialisation
 	loadData()
+	initGame()
+	
+	_endGameScreen.restart.connect(_on_restart)
+	
+func initGame():
+	resetUI()
 	nextCard()
 	
 	# default values
@@ -88,22 +94,6 @@ func resetUI():
 	# tuto
 	_tuto.toAffichage()
 
-func _on_gauge_finance_is_empty():
-	_endGameScreen.show()
-	# _endGameScreen.texture = load("res://path/to/your/texture.png")
-	_endGameScreen.setExplication("Oh non ! Le campus est en faillite, les profs sont partis après que leur salaire n'a pas été payé à temps, et les élèves ont finis par suivre... Vous dirigez un campus fantôme.")
-
-func _on_gauge_central_is_empty():
-	_endGameScreen.show()
-	# _endGameScreen.texture = load("res://path/to/your/texture.png")
-	_endGameScreen.setExplication("Oh non ! Le central de l'universite vous déteste. Dès la fin de votre quinquennat, plus personne n'a voté pour vous. Vous êtes au chômage...")
-
-
-func _on_gauge_intern_is_empty():
-	_endGameScreen.show()
-	# _endGameScreen.texture = load("res://path/to/your/texture.png")
-	_endGameScreen.setExplication("Oh non ! Les équipes vous déteste, plus personne ne suit vos demandes ni ne veut travailler avec vous. Vous n'avez plus de directeur que le nom...")
-
 func peakInfos(isRightSide : bool):
 	var sideName : String
 	if (isRightSide): 
@@ -161,7 +151,6 @@ func _on_card_card_chosen(value : bool):
 	
 	# bulding
 	var buildingName : String = card[side]["building"]
-	var enumValue : int = -1
 	if (buildingName != ""):
 		var healthVariation : int = card[side]["healthVariation"]
 		# see which building will be affected
@@ -177,7 +166,6 @@ func _on_card_card_chosen(value : bool):
 	resetUI()
 	nextCard()
 
-
 func _on_campus_ruined_building(building : int):
 	var buildingName : String = ""
 	match(building):
@@ -187,5 +175,24 @@ func _on_campus_ruined_building(building : int):
 		_campus.buildings.CHEMISTRY : buildingName = "le batiment chimie"
 		_campus.buildings.CIVILENGINEERING : buildingName = "le batiment genie civil"
 		_ : buildingName = "l'amphi Leo"
-	_endGameScreen.show()
+		
+	_endGameScreen.endGame()
 	_endGameScreen.setExplication("Oh non ! Apparement, " + buildingName + " vient de s'effondrer. L'universite a decide de vous virer pour negligence...")
+
+func _on_gauge_finance_is_empty():
+	_endGameScreen.endGame()
+	# _endGameScreen.texture = load("res://path/to/your/texture.png")
+	_endGameScreen.setExplication("Oh non ! Le campus est en faillite, les profs sont partis après que leur salaire n'a pas été payé à temps, et les élèves ont finis par suivre... Vous dirigez un campus fantôme.")
+
+func _on_gauge_central_is_empty():
+	_endGameScreen.endGame()
+	# _endGameScreen.texture = load("res://path/to/your/texture.png")
+	_endGameScreen.setExplication("Oh non ! Le central de l'universite vous déteste. Dès la fin de votre quinquennat, plus personne n'a voté pour vous. Vous êtes au chômage...")
+
+func _on_gauge_intern_is_empty():
+	_endGameScreen.endGame()
+	# _endGameScreen.texture = load("res://path/to/your/texture.png")
+	_endGameScreen.setExplication("Oh non ! Les équipes vous déteste, plus personne ne suit vos demandes ni ne veut travailler avec vous. Vous n'avez plus de directeur que le nom...")
+
+func _on_restart():
+	initGame()

@@ -11,11 +11,11 @@ signal isEmpty
 
 var signalEmitted : bool = false;
 
-func setVariation(value : int):
-	if value < 0:
-		_variation.text = str(value)
+func setVariation(variation : int):
+	if variation < 0:
+		_variation.text = str(variation)
 	else:
-		_variation.text = "+" + str(value)
+		_variation.text = "+" + str(variation)
 
 func showVariation():
 	_variation.show()
@@ -40,7 +40,5 @@ func _process(delta):
 	_gaugeNameLabel.text = gaugeName
 	
 	if (self.value <= 5 && !signalEmitted):
-		emit_signal("isEmpty")
+		isEmpty.emit()
 		signalEmitted = true
-		print("emit empty")
-		

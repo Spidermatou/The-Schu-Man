@@ -49,7 +49,7 @@ func setHealth(building: buildings ,value: int):
 func setAllHealth(value: int):
 	for building in buildings.values():
 		buildingsHealth[building] = value
-		checkBuildingsHealth()
+	checkBuildingsHealth()
 
 #-------------------------------------------------------------------------------
 
