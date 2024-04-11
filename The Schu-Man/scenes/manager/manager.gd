@@ -84,7 +84,9 @@ func _ready():
 	_campus.setHealth(_campus.buildings.CIVILENGINEERING, 100)
 	_campus.setHealth(_campus.buildings.LEO, 80)
 	
-	# test
+	# reset renovation effect
+	_renovationEffectLeft.text = ""
+	_renovationEffectRight.text = ""
 
 func _on_gauge_finance_is_empty():
 	_endGameScreen.show()
