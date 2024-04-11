@@ -14,30 +14,56 @@ Dans notre jeu, nous allons présenter l'une des missions du directeur de l'IUT 
 
 ### Captures d'écran
 
-**TO-DO**
+![example 1](./images_readme/exemples1.png)
+![example 2](./images_readme/exemples2.png)
+![example 3](./images_readme/exemples3.png)
 
 ### Procédures d'installation et d'exécution
 
-**TO-DO**
+Sur le git, <https://git.unistra.fr/atomic-core/mor-24-t-4-a>, dans le dossier Executables, télécharger le fichier adapté à votre OS (Linux, Window). Trouvez où a été téléchargé le fichier et éxecutez le.
 
 ## Cahier des charges
 
 ### Objectifs pédagogiques
+
 Les objectifs pédagogiques sont de permettre au joueur de comprendre :
 
 - Reconnaître l'importance pour le directeur de l'IUT de s'aligner sur la politique de la centrale de l'Université de Strasbourg.
-- Comprendre que le directeur de l'IUT est investi du devoir de veiller au bien-être des étudiants, leur réussite académique et de son personnel.
+- Comprendre que le directeur de l'IUT est investi du devoir de veiller au bien-être et à la sécurité de son personnel autant que des étudiants ainsi qu'à leur réussite académique.
+- Sensibiliser le joueur à la plannification sur le court et le long terme, afin de faire face aux imprévus.
 
-#### Objectifs pédagogiques avancés 
+#### Objectifs pédagogiques avancés
+
+**Note aux 1ere année** : _C'est délicat de développer un jeu visitant chacun des objectifs offert par ce sujet, même si le temps qui vous ai fourni pour le projet T3 semble long ! Nous vous conseillons vivement de vous concentrer sur quelques objectifs qui vous inspirent et s'emboitennt bien ensemble !_
+
 - Appréhender les multiples défis auxquels le directeur de l'IUT est confronté en matière de gestion budgétaire.
+- Comprendre comment le directeur aligne sa stratégie de développement de l'IUT en accord avec ses équipes sur le campus, le conseil d’institut qui le nomme et le ministère de l'éducation qui le supervise.
+- Comprendre l'étroit lien entre les IUT et les laboratoires de recherche.
+  - leur relation
+  - le recrutement d'enseignant-chercheur
+- Comprendre l'importance des partenariats négociés par le directeur
+  - avec les médias, pour la communication
+  - avec les entreprises, pour les stages et apprentissages et le financement
+  - avec les instituts privées ou public (tel les mairies), pour le financement
+- Définir clairement toutes les missions du directeur d'IUT
+  - Administration et gestion
+  - Planification stratégique
+  - Gestion du personnel présent
+  - Développements académiques
+  - Relation publique, communication et partenariat
+  - Accréditation, conformité, réglementation
+  - Promouvoir la recherche et l’innovation
+- Mettre en lumière l'équipe du directeur : malgré son status hiérarchique haut, il ne travaille pas seul
+- Voir pourquoi et comment le directeur doit mettre en garde les futurs étudiants (sur le passage du DUT au BUT, le niveau attendu, ...) et inciter ceux susceptibles de réussir de choisir son établissement
+- Examiner la façon dont le directeur établit de nouveaux programmes de formation, qu'ils concernent des départements déjà existants ou nouveaux.
+- Dans le domaine spécifique de l'informatique à l'IUT, étudier comment le directeur promeut l'apprentissage de l'intelligence artificielle tout en soulignant les précautions nécessaires quant à son utilisation à travers l'IUT.
 
 #### Références
 
 - https://savoirs.unistra.fr/campus/les-locaux-du-departement-genie-civil-construction-durable-de-liut-robert-schuman-inaugures
 - https://numero182.lactu.unistra.fr/communaute/un-nouveau-directeur-pour-liut-robert-schuman.html
 - https://www.grandest.fr/actualites/de-nouveaux-locaux-pour-liut-robert-schuman/
-  
-  
+
 ### Description des fonctionnalités
 
 #### Simulation
@@ -45,16 +71,16 @@ Les objectifs pédagogiques sont de permettre au joueur de comprendre :
 Le pas de la simulation est de un mois. Une carte vaut donc un mois en terme de temps.
 
 - Tous les batiments se degradent d'un mois ensemble.
-- Chaque mois, l'état des batiment empire ou s'ameliore. 
+- Chaque mois, l'état des batiment empire ou s'ameliore.
 
 Le batiments à rénové sont : le batiment informatique, le batiment de Chimie et le batiment centrale.
 
 - Chaque batiments à ses caractéristiques à renover : bardage, portes, fenêtres, ascenseur, chauffage, sanitaire, mur interieur.
-- Chaque caractéristique à un pourcentage qui correspond à l'etat. 
-    - Entre 0% et 15%, la couleur est noir, la caractèristique est considérer comme insalubre et impossible à renové. 
-    - Entre 15% et 43%, la couleur est rouge, la caractéristique est dans une situation critique mais encore rénovable, il faut se pencher sérieusement dessus. 
-    - Entre 43% et 71%, la couleur est orange, l'état est encore bon mais il faut surveiller. 
-    - Entre 71% et 100%, la couleur est vert, l'état est excellent.
+- Chaque caractéristique à un pourcentage qui correspond à l'etat.
+  - Entre 0% et 15%, la couleur est noir, la caractèristique est considérer comme insalubre et impossible à renové.
+  - Entre 15% et 43%, la couleur est rouge, la caractéristique est dans une situation critique mais encore rénovable, il faut se pencher sérieusement dessus.
+  - Entre 43% et 71%, la couleur est orange, l'état est encore bon mais il faut surveiller.
+  - Entre 71% et 100%, la couleur est vert, l'état est excellent.
 - A partir de x caractéristique dans le noir, le batiment devient de couleur noir et est donc insalubre.
 - A partir de x caractéristique dans le rouge, le batiment devient de couleur rouge et est donc dans un état critique.
 - A partir de x caractéristique dans l'orange, le batiment devient de couleur orange et est donc dans un bon état.
@@ -92,19 +118,19 @@ Les actions du joueur sont les suivantes :
 #### Scénarios
 
 Scénarios de victoire
+
 - Avoir tout les batiments en vert. La renovation est terminé, l'objectif principale est remplis.
 
 Scénario de défaite
+
 - Avoir un batiment en noir, le batiment devient insalubre. Vous êtes viré.
 - Au bout de 5 ans (60 mois donc 60 carte), le quinquennat est terminé et vous n'avez pas tout rénové.
 - La relation avec les étudiants et le personnel est catastrophique. Vous avez une révolution. Vous êtes viré.
-- La centrale ne vous considèrent pas comme un bon directeur, la relation la centrale et vous est catastrophique. Vous êtes viré. 
+- La centrale ne vous considèrent pas comme un bon directeur, la relation la centrale et vous est catastrophique. Vous êtes viré.
 - Vous n'avez plus de budget. Vous êtes viré.
 
 ### Contraintes de développement
 
 #### Modularité
 
-
 ### Fonctionnalités et scénarios avancés
-
