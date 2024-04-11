@@ -78,7 +78,7 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 
 
-# Grille d'évaluation T4
+# Grille d'évaluation T4 (à remplir par les A1)
 
 ## GIT 
 - Organisation
@@ -90,18 +90,9 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [ ] La granularité des commits n'est pas pertinente ou les commits ne sont pas clairement et systématiquement renseignés.
   - [x] La granularité des commits n'est pas pertinente et les commits ne sont pas clairement et systématiquement renseignés.
 - Droits d'accès
-  - [ ] Julien Gossa a le rôle avec le plus de droits sur le dépôt GIT et ce dépôt est accessible à tous.
-  - [ ] Julien Gossa a le rôle avec le plus de droits sur le dépôt GIT.
-  - [x] Julien Gossa n'a pas le rôle avec le plus de droits sur le dépôt GIT.
-- README.md
-  - [ ] Le README est complet, avec : une présentation du projet, la procédure d'installation et d'exécution, et des captures d'écran du jeu.
-  - [ ] Le README n'est pas complet.
-  - [x] Il n'y a pas de README.
-- CDC.md
-  - [ ] Le CDC est conforme au document partagé de travail, et les deux sont liés depuis le README.
-  - [ ] Le CDC est conforme au document partagé de travail, ou les deux sont liés depuis le README.
-  - [x] Le CDC n'est pas conforme au document partagé de travail, et les deux ne sont pas liés depuis le README.
-
+  - [ ] Julien Gossa est owner du dépôt GIT et ce dépôt est accessible à tous.
+  - [ ] Julien Gossa est owner du dépôt GIT.
+  - [x] Julien Gossa n'est pas owner du dépôt GIT.
 
 Justifications :
 
@@ -123,83 +114,70 @@ Justifications :
   - [ ] Les instructions de jeu sont sous forme d'un manuel ou d'un tutoriel à part.
   - [x] Les instructions de jeu ne sont pas données.
 - Transmission du concept
-  - [ ] Le prototype permet de parfaitement transmettre le concept-cible au joueur.
-  - [ ] Le prototype permet de transmettre le concept-cible au joueur.
-  - [x] Le prototype ne permet pas de transmettre le concept-cible au joueur.
+  - [ ] J'ai appris quelque chose en jouant.
+  - [ ] J'ai eu de l'intérêt en jouant, mais sans rien apprendre.
+  - [x] Je n'ai pas eu d'intérêt en jouant.
 
-Justifications :
- 
-## Cahier des charges
-- Modèle de document
-  - [ ] Le CdC respecte parfaitement le modèle de document.
-  - [ ] Le CdC respecte globalement le modèle de document.
-  - [x] Le CdC ne respecte pas le modèle de document.
-- Description de l'application
-  - [ ] La description permet de se faire une idée précise et exhaustive de l'application attendue.
-  - [ ] La description permet de se faire une idée de l'application attendue.
-  - [x] La description ne permet pas de se faire une idée de l'application attendue.
-- Modèle conceptuel
-  - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est exhaustif et détaillé.
-  - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est donné.
-  - [x] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
+Résumer en une phrase ce que vous avez éventuellement appris :
 
-Justifications : 
+Autres justifications :
 
-### Fonctionnalités
+## Présentation README.md
+
+- Présentation du projet
+  - [ ] Cette partie est informative et succincte (1 phrase).
+  - [ ] Cette partie est informative.
+  - [ ] Cette partie n'est pas informative.
+- Captures d'écran
+  - [ ] Des captures d'écran soignées sont données.
+  - [ ] Une capture d'écran est donnée.
+  - [ ] Aucune capture d'écran n'est donnée.
+- Procédures d'installation et d'exécution
+  - [ ] Cette partie est informative et succincte (1 phrase).
+  - [ ] Cette partie est informative.
+  - [ ] Cette partie n'est pas informative.
+
+## Cahier des charges 
+
+Pour un exemple de ce qui est attenu, voir https://gitlab.unistra.fr/T234/t4-exemple
+
+- Objectifs pédagogiques
+  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [ ] Cette partie est informative.
+  - [ ] Cette partie n'est pas informative.
+- Objectifs pédagogiques avancés 
+  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [ ] Cette partie est informative.
+  - [ ] Cette partie n'est pas informative.
+- Références
+  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [ ] Cette partie est informative.
+  - [ ] Cette partie n'est pas informative.
+- Description des fonctionnalités (hors interface et actions)
+  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [ ] Cette partie est informative.
+  - [ ] Cette partie n'est pas informative.
+- Interface
+  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [ ] Cette partie est informative.
+  - [ ] Cette partie n'est pas informative.
 - Actions du joueur
-  - [ ] La description des actions du joueur permet de connaitre parfaitement les interactions avec l'application.
-  - [ ] La description des actions du joueur permet de se faire une première idées des interactions avec l'utilisateur.
-  - [x] La description des actions du joueur ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
-- Infomations au joueur
-  - [ ] La description des informations au joueur permet de connaitre parfaitement les interactions avec l'application.
-  - [ ] La description des informations au joueur permet de se faire une première idées des interactions avec l'utilisateur.
-  - [x] La description des informations au joueur ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
-- Description du moteur interne
-  - [ ] La description du moteur interne permet de comprendre parfaitement le fonctionnement de l'application.
-  - [ ] La description du moteur interne permet de comprendre le fonctionnement de l'application.
-  - [x] La description du moteur interne ne permet pas de comprendre le fonctionnement de l'application.
-- Découpage modulaire 
-  - [ ] L'application est couverte par des modules pertinents et pleinement décrits.
-  - [ ] L'application est découpée en modules pertinents.
-  - [x] L'application n'est pas découpée en modules pertinents.
-- Granularité des fonctionnalités
-  - [ ] Les fonctionnalités sont très fines.
-  - [ ] Les fonctionnalités sont fines.
-  - [x] Les fonctionnalités sont grossières.
-- Exhaustivité des fonctionnalités
-  - [ ] Les fonctionnalités couvrent la totalité de l'application.
-  - [ ] Les fonctionnalités couvrent globalement l'application.
-  - [x] Les fonctionnalités ne couvrent pas l'application.
-- Description des fonctionnalités
-  - [ ] Les fonctionnalités sont précisément décrites.
-  - [ ] Les fonctionnalités sont décrites.
-  - [x] Les fonctionnalités ne sont pas bien décrites.
-- Priorisation des fonctionnalités
-  - [ ] Les fonctionnalités sont classées par priorités de façon pertinentes.
-  - [ ] Les fonctionnalités sont classées par priorités.
-  - [x] Les fonctionnalités ne sont pas classées par priorités.
-- Difficulté des fonctionnalités
-  - [ ] Les fonctionnalités sont annotées par une difficulté pertinente.
-  - [ ] Les fonctionnalités sont annotées par une difficulté.
-  - [x] Les fonctionnalités ne sont pas annotées par une difficulté.
+  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [ ] Cette partie est informative.
+  - [ ] Cette partie n'est pas informative.
+- Scénarios
+  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [ ] Cette partie est informative.
+  - [ ] Cette partie n'est pas informative.
+- Contraintes de développement
+  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [ ] Cette partie est informative.
+  - [ ] Cette partie n'est pas informative.
+- Fonctionnalités et scénarios avancés
+  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [ ] Cette partie est informative.
+  - [ ] Cette partie n'est pas informative.
 
-Justifications : 
-
-### Scénarios
-- Nombre
-  - [ ] Au moins un scénario est pleinement développé et propose au moins deux alternatives.
-  - [ ] Un scénario est pleinement développé.
-  - [x] Un scénario n'est pas pleinement développé.
-- Exhaustivité
-  - [ ] Le scénario développé s'appuie sur toutes les fonctionnalités.
-  - [ ] Le scénario développé s'appuie sur toutes les fonctionnalités principales
-  - [x] Le scénario développé ne s'appuie pas sur toutes les fonctionnalités principales.
-- Scénarios additionnels 
-  - [ ] Des scénarios additionnels sont proposés, en expliquant leur intérêt. 
-  - [ ] Des scénarios additionnels sont proposés. 
-  - [x] Des scénarios additionnels ne sont pas proposés.
-
-Justifications :
 
 ## Résultat T4
 - Total d'item « Excellent » (2 point) : 
