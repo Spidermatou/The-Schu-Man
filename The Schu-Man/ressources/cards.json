@@ -6,14 +6,14 @@
 			"effectLeft" : {
 				"budget" : 10,
 				"centralSatisfaction" : 50,
-				"studentSatisfaction" : 20,
-				"rebovation" : 10,
+				"internalSatisfaction" : 20,
+				"renovation" : 10,
 				"building" : "SSU"
 			},
 			"effectRight" : {
 				"budget" : 10,
 				"centralSatisfaction" : 0,
-				"studentSatisfaction" : 0,
+				"internalSatisfaction" : 0,
 				"renovation" : -10,
 				"building" : "SSU"
 			}
@@ -24,14 +24,14 @@
 			"effectLeft" : {
 				"budget" : 10,
 				"centralSatisfaction" : 50,
-				"studentSatisfaction" : 20,
+				"internalSatisfaction" : 20,
 				"renovation" : 0,
 				"building" : ""
 			},
 			"effectRight" : {
 				"budget" : 10,
 				"centralSatisfaction" : 0,
-				"studentSatisfaction" : 0,
+				"internalSatisfaction" : 0,
 				"renovation" : 0,
 				"building" : ""
 			}
