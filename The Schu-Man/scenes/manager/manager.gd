@@ -42,18 +42,6 @@ func nextCard(): # TODO
 		# set card
 		_card.setDialog(card["dialogue"])
 		_card.setImage(load(card["image"]))
-
-		var budgetRight = card["effectRight"]["budget"]
-		var centralRight = card["effectRight"]["centralSatisfaction"]
-		var internRight = card["effectRight"]["internalSatisfaction"]
-		var renovationRight = card["effectRight"]["renovation"]
-		var buildingRight = card["effectRight"]["building"]
-		
-		var budgetLeft = card["effectLeft"]["budget"]
-		var centralLeft = card["effectLeft"]["centralSatisfaction"]
-		var internLeft = card["effectLeft"]["internalSatisfaction"]
-		var renovationLeft = card["effectLeft"]["renovation"]
-		var buildingLeft = card["effectLeft"]["building"]
 		
 		# save 
 		actualCardIndex = randomInd
@@ -68,6 +56,9 @@ func resetUI():
 	# reset card
 	_card.setDialog("")
 	_card.setImage(null)
+	# renovations
+	_renovationEffectLeft.text =""
+	_renovationEffectRight.text =""
 
 func _ready():
 	# reset debug
@@ -109,6 +100,9 @@ func _on_gauge_intern_is_empty():
 
 
 func _on_card_peak_to_left():
+	# reset the other side
+	_renovationEffectRight.text = ""
+	
 	var card = cardsData[actualCardIndex]
 	_financeGauge.setVariation(card["effectLeft"]["budget"])
 	_internGauge.setVariation(card["effectLeft"]["internalSatisfaction"])
@@ -121,10 +115,13 @@ func _on_card_peak_to_left():
 	
 	# renovation
 	if ( str(card["effectLeft"]["building"]) != ""):
-		_renovationEffectRight.text = str(card["effectLeft"]["building"]) + " : " + str(card["effectLeft"]["renovation"])
+		_renovationEffectLeft.text = str(card["effectLeft"]["building"]) + " : " + str(card["effectLeft"]["renovation"])
 
 
 func _on_card_peak_to_right():
+	# reset the other side
+	_renovationEffectLeft.text = ""
+	
 	var card = cardsData[actualCardIndex]
 	_financeGauge.setVariation(card["effectRight"]["budget"])
 	_internGauge.setVariation(card["effectRight"]["internalSatisfaction"])
