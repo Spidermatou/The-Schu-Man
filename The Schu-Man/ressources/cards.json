@@ -1,40 +1,130 @@
 {
 	"cards" : [
 		{
-			"image" : "res://ressources/images/gauge_green.png",
+			"image" : "res://icon.svg",
 			"dialogue" : "Carotte",
 			"effectLeft" : {
 				"budget" : 10,
 				"centralSatisfaction" : 50,
 				"internalSatisfaction" : 20,
-				"renovation" : 10,
+				"healthVariation" : 10,
 				"building" : "CIVILENGINEERING"
 			},
 			"effectRight" : {
 				"budget" : 10,
 				"centralSatisfaction" : 0,
 				"internalSatisfaction" : 0,
-				"renovation" : -10,
+				"healthVariation" : -10,
 				"building" : "SSU"
-			}
+			},
 		},
 		{
-			"image" : "res://ressources/images/gauge_green.png",
-			"dialogue" : "Abricot",
+			"image" : "res://icon.svg",
+			"dialogue" : "Carotte",
 			"effectLeft" : {
 				"budget" : 10,
 				"centralSatisfaction" : 50,
 				"internalSatisfaction" : 20,
-				"renovation" : 0,
-				"building" : ""
+				"healthVariation" : 10,
+				"building" : "CIVILENGINEERING"
 			},
 			"effectRight" : {
 				"budget" : 10,
 				"centralSatisfaction" : 0,
 				"internalSatisfaction" : 0,
-				"renovation" : 0,
-				"building" : ""
-			}
+				"healthVariation" : -10,
+				"building" : "SSU"
+			},
 		},
+		{
+			"image" : "res://icon.svg",
+			"dialogue" : "Carotte",
+			"effectLeft" : {
+				"budget" : 10,
+				"centralSatisfaction" : 50,
+				"internalSatisfaction" : 20,
+				"healthVariation" : 10,
+				"building" : "CIVILENGINEERING"
+			},
+			"effectRight" : {
+				"budget" : 10,
+				"centralSatisfaction" : 0,
+				"internalSatisfaction" : 0,
+				"healthVariation" : -10,
+				"building" : "SSU"
+			},
+		},
+		{
+			"image" : "res://icon.svg",
+			"dialogue" : "Carotte",
+			"effectLeft" : {
+				"budget" : 10,
+				"centralSatisfaction" : 50,
+				"internalSatisfaction" : 20,
+				"healthVariation" : 10,
+				"building" : "CIVILENGINEERING"
+			},
+			"effectRight" : {
+				"budget" : 10,
+				"centralSatisfaction" : 0,
+				"internalSatisfaction" : 0,
+				"healthVariation" : -10,
+				"building" : "SSU"
+			},
+		},
+		{
+			"image" : "res://icon.svg",
+			"dialogue" : "Carotte",
+			"effectLeft" : {
+				"budget" : 10,
+				"centralSatisfaction" : 50,
+				"internalSatisfaction" : 20,
+				"healthVariation" : 10,
+				"building" : "CIVILENGINEERING"
+			},
+			"effectRight" : {
+				"budget" : 10,
+				"centralSatisfaction" : 0,
+				"internalSatisfaction" : 0,
+				"healthVariation" : -10,
+				"building" : "SSU"
+			},
+		},
+		{
+			"image" : "res://icon.svg",
+			"dialogue" : "Carotte",
+			"effectLeft" : {
+				"budget" : 10,
+				"centralSatisfaction" : 50,
+				"internalSatisfaction" : 20,
+				"healthVariation" : 10,
+				"building" : "CIVILENGINEERING"
+			},
+			"effectRight" : {
+				"budget" : 10,
+				"centralSatisfaction" : 0,
+				"internalSatisfaction" : 0,
+				"healthVariation" : -10,
+				"building" : "SSU"
+			},
+		},
+		{
+			"image" : "res://icon.svg",
+			"dialogue" : "Carotte",
+			"effectLeft" : {
+				"budget" : 10,
+				"centralSatisfaction" : 50,
+				"internalSatisfaction" : 20,
+				"healthVariation" : 10,
+				"building" : "CIVILENGINEERING"
+			},
+			"effectRight" : {
+				"budget" : 10,
+				"centralSatisfaction" : 0,
+				"internalSatisfaction" : 0,
+				"healthVariation" : -10,
+				"building" : "SSU"
+			},
+		}
 	]
 }
