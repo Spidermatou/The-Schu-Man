@@ -78,7 +78,7 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 
 
-# Grille d'évaluation T4
+# Grille d'évaluation T4 (à remplir par les A1)
 
 ## GIT 
 - Organisation
