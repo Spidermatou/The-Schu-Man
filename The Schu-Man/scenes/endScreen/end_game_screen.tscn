@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://2fjj6s5bv6ot"]
+
+[ext_resource type="Script" path="res://scenes/endScreen/end_game_screen.gd" id="1_7y7fl"]
+[ext_resource type="Texture2D" uid="uid://7onj0fpgsc4w" path="res://icon.svg" id="1_xyol0"]
+
+[node name="EndGameScreen" type="Node2D"]
+script = ExtResource("1_7y7fl")
+
+[node name="Background" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-1024, -576, 1016, -576, 1024, 592, -1016, 584)
+
+[node name="Image" type="Sprite2D" parent="."]
+position = Vector2(24, -248)
+scale = Vector2(4.5, 4.5)
+texture = ExtResource("1_xyol0")
+
+[node name="Explication" type="Label" parent="."]
+offset_left = -936.0
+offset_top = 128.0
+offset_right = 920.0
+offset_bottom = 512.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 65
+text = "Mon exemple de texte. Mon exemple de texte. Mon exemple de texte.Mon exemple de texte.Mon exemple de texte.Mon exemple de texte.Mon exemple de texte.Mon exemple de texte.Mon exemple de texte."
+autowrap_mode = 3
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Exit" type="Button" parent="."]
+offset_left = -912.0
+offset_top = -504.0
+offset_right = -872.0
+offset_bottom = -427.0
+theme_override_font_sizes/font_size = 200
+text = "X"
+
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

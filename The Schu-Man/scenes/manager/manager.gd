@@ -120,20 +120,20 @@ func peakInfos(isRightSide : bool):
 	_internGauge.showVariation()
 	_centralGauge.showVariation()
 	# apply renovation
-	var sign : String = ""
+	var calculSign : String = ""
 	if ( str(card[sideName]["building"]) != ""):
 		# get true building name
 		var buildingDisplayedName : String = ""
 		match("building"):
-			"SSU": buildingDisplayedName = "du service de Sante Universitaire"
+			"SSU": buildingDisplayedName = "du Service de Sante Universitaire"
 			"CENTRAL": buildingDisplayedName = "du batiment central"
 			"CHEMISTRY": buildingDisplayedName = "du batiment chimie"
 			"CIVILENGINEERING": buildingDisplayedName = "du batiment genie civil"
 			"LEO": buildingDisplayedName = "de l'amphi Leo"
 			_: buildingDisplayedName = "du batiment informatique"
 		# retrieve info
-		if (card[sideName]["healthVariation"] >= 0): sign = "+"
-		var renovationInfosText : String = "Niveau d'entretien " + buildingDisplayedName + " " + sign + str(card[sideName]["healthVariation"])
+		if (card[sideName]["healthVariation"] >= 0): calculSign = "+"
+		var renovationInfosText : String = "Niveau d'entretien " + buildingDisplayedName + " " + calculSign + str(card[sideName]["healthVariation"])
 		if (isRightSide): 
 			_renovationEffectRight.text = renovationInfosText
 		else:
@@ -172,3 +172,16 @@ func _on_card_card_chosen(value : bool):
 		_campus.addToHealth(enumValue, renovationValue)
 	resetUI()
 	nextCard()
+
+
+func _on_campus_ruined_building(building : int):
+	var buildingName : String = ""
+	match(building):
+		_campus.buildings.IT : buildingName = "le batiment informatique"
+		_campus.buildings.SSU : buildingName = "le batiment du Service de Sante Universitaire"
+		_campus.buildings.CENTRAL : buildingName = "le batiment central"
+		_campus.buildings.CHEMISTRY : buildingName = "le batiment chimie"
+		_campus.buildings.CIVILENGINEERING : buildingName = "le batiment genie civil"
+		_ : buildingName = "l'amphi Leo"
+	_endGameScreen.show()
+	_endGameScreen.setExplication("Oh non ! Apparement, " + buildingName + " vient de s'effondrer. L'universite a decide de vous virer pour negligence...")

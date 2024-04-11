@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dw6oybycb8o07"]
+[gd_scene load_steps=7 format=3 uid="uid://dw6oybycb8o07"]
 
 [ext_resource type="Script" path="res://scenes/manager/manager.gd" id="1_lje2p"]
 [ext_resource type="PackedScene" uid="uid://cj4682jtoww4b" path="res://scenes/campus/campus.tscn" id="2_wnkwo"]
 [ext_resource type="Texture2D" uid="uid://7onj0fpgsc4w" path="res://icon.svg" id="3_33dhc"]
 [ext_resource type="PackedScene" uid="uid://s077j7mu3htk" path="res://scenes/gauges/gauge.tscn" id="4_272cb"]
 [ext_resource type="PackedScene" uid="uid://blt583utyr0k" path="res://scenes/DecisionCard/DecisionCard.tscn" id="5_mfpgq"]
+[ext_resource type="PackedScene" uid="uid://2fjj6s5bv6ot" path="res://scenes/endScreen/end_game_screen.tscn" id="6_pvhaj"]
 
 [node name="Manager" type="Node"]
 script = ExtResource("1_lje2p")
@@ -17,12 +18,6 @@ polygon = PackedVector2Array(-618, -344, -122, -344, -122, 824, -618, 824)
 [node name="Campus" parent="." instance=ExtResource("2_wnkwo")]
 position = Vector2(-984, -552)
 scale = Vector2(1.7, 1.7)
-
-[node name="EndGameScreen" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(-7.99995, -2.99998)
-scale = Vector2(9.25, 5.04688)
-texture = ExtResource("3_33dhc")
 
 [node name="GaugeFinance" parent="." instance=ExtResource("4_272cb")]
 offset_left = -432.0
@@ -75,6 +70,10 @@ autowrap_mode = 3
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
+[node name="EndGameScreen" parent="." instance=ExtResource("6_pvhaj")]
+visible = false
+
+[connection signal="ruinedBuilding" from="Campus" to="." method="_on_campus_ruined_building"]
 [connection signal="isEmpty" from="GaugeFinance" to="." method="_on_gauge_finance_is_empty"]
 [connection signal="isEmpty" from="GaugeCentral" to="." method="_on_gauge_central_is_empty"]
 [connection signal="isEmpty" from="GaugeIntern" to="." method="_on_gauge_intern_is_empty"]
