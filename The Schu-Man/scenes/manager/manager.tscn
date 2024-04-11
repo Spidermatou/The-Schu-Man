@@ -9,14 +9,14 @@
 [node name="Manager" type="Node"]
 script = ExtResource("1_lje2p")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [node name="MapBackground" type="Polygon2D" parent="."]
+position = Vector2(-382, -216)
 color = Color(0.486275, 0.486275, 0.486275, 1)
-polygon = PackedVector2Array(-600, -344, -248, -344, -248, -320, -248, 328, -600, 328)
+polygon = PackedVector2Array(-618, -344, -122, -344, -122, 824, -618, 824)
 
 [node name="Campus" parent="." instance=ExtResource("2_wnkwo")]
-position = Vector2(-537, -326)
+position = Vector2(-984, -552)
+scale = Vector2(1.7, 1.7)
 
 [node name="EndGameScreen" type="Sprite2D" parent="."]
 visible = false
@@ -25,53 +25,58 @@ scale = Vector2(9.25, 5.04688)
 texture = ExtResource("3_33dhc")
 
 [node name="GaugeFinance" parent="." instance=ExtResource("4_272cb")]
-offset_left = -208.0
-offset_top = -305.0
-offset_right = -103.0
-offset_bottom = -289.0
-scale = Vector2(2, 2)
+offset_left = -449.0
+offset_top = -512.0
+offset_right = -344.0
+offset_bottom = -496.0
+scale = Vector2(4, 4)
 iconTexture = ExtResource("3_33dhc")
 
 [node name="GaugeCentral" parent="." instance=ExtResource("4_272cb")]
 offset_left = 64.0
-offset_top = -302.0
+offset_top = -512.0
 offset_right = 169.0
-offset_bottom = -286.0
-scale = Vector2(2, 2)
+offset_bottom = -496.0
+scale = Vector2(4, 4)
 iconTexture = ExtResource("3_33dhc")
 
 [node name="GaugeIntern" parent="." instance=ExtResource("4_272cb")]
-offset_left = 328.0
-offset_top = -302.0
-offset_right = 433.0
-offset_bottom = -286.0
-scale = Vector2(2, 2)
+offset_left = 552.0
+offset_top = -516.0
+offset_right = 657.0
+offset_bottom = -500.0
+scale = Vector2(4, 4)
 iconTexture = ExtResource("3_33dhc")
 
 [node name="Card" parent="." instance=ExtResource("5_mfpgq")]
 position = Vector2(144, 40)
+scale = Vector2(1.5, 1.5)
 
 [node name="RenovationEffectLeft" type="Label" parent="."]
-offset_left = -248.0
-offset_top = 128.0
-offset_right = -128.0
-offset_bottom = 248.0
-scale = Vector2(1.5217, 1.6)
+offset_left = -455.0
+offset_top = 159.0
+offset_right = -335.0
+offset_bottom = 279.0
+scale = Vector2(3, 3)
+theme_override_font_sizes/font_size = 0
 text = "Test"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="RenovationEffectRight" type="Label" parent="."]
-offset_left = 392.0
-offset_top = 128.0
-offset_right = 512.0
-offset_bottom = 248.0
-scale = Vector2(1.5217, 1.6)
+offset_left = 576.0
+offset_top = 159.0
+offset_right = 696.0
+offset_bottom = 279.0
+scale = Vector2(3, 3)
+theme_override_font_sizes/font_size = 0
 text = "Test"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
+
+[node name="Camera2D" type="Camera2D" parent="."]
 
 [connection signal="isEmpty" from="GaugeFinance" to="." method="_on_gauge_finance_is_empty"]
 [connection signal="isEmpty" from="GaugeCentral" to="." method="_on_gauge_central_is_empty"]

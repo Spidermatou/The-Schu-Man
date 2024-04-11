@@ -16,6 +16,7 @@ offset_bottom = 59.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
 text = "[center]IT[/center]"
+metadata/_edit_use_anchors_ = true
 
 [node name="SSU" type="Polygon2D" parent="."]
 polygon = PackedVector2Array(154, 56, 154, 16, 190, 16, 190, 56)
@@ -28,6 +29,7 @@ offset_bottom = 56.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
 text = "[center]SSU[/center]"
+metadata/_edit_use_anchors_ = true
 
 [node name="Central" type="Polygon2D" parent="."]
 polygon = PackedVector2Array(78, 92, 153, 92, 153, 169, 145, 169, 145, 203, 152, 203, 152, 306, 158, 306, 158, 336, 134, 336, 134, 311, 124, 311, 124, 306, 112, 306, 112, 212, 86, 212, 86, 227, 38, 227, 38, 202, 42, 202, 42, 195, 38, 195, 38, 170, 85, 170, 85, 160, 78, 160)
@@ -40,6 +42,7 @@ offset_bottom = 159.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
 text = "[center]Centrale[/center]"
+metadata/_edit_use_anchors_ = true
 
 [node name="Chemistry" type="Polygon2D" parent="."]
 polygon = PackedVector2Array(42, 312, 80, 312, 80, 397, 64, 397, 64, 408, 98, 408, 98, 444, 53, 444, 53, 407, 57, 407, 57, 396, 42, 396)
@@ -52,6 +55,7 @@ offset_bottom = 396.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
 text = "[center]Chimie[/center]"
+metadata/_edit_use_anchors_ = true
 
 [node name="CivilEngineering" type="Polygon2D" parent="."]
 polygon = PackedVector2Array(144, 379, 258, 379, 258, 419, 250, 419, 250, 441, 273, 441, 273, 540, 162, 540, 162, 439, 226, 439, 226, 417, 144, 417)
@@ -64,6 +68,7 @@ offset_bottom = 418.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
 text = "[center]Génie civil[/center]"
+metadata/_edit_use_anchors_ = true
 
 [node name="Leo" type="Polygon2D" parent="."]
 polygon = PackedVector2Array(51, 562, 107, 562, 107, 565, 117, 565, 117, 567, 121, 567, 121, 559, 144, 559, 144, 560, 143, 560, 143, 591, 139, 591, 139, 601, 142, 601, 145, 624, 138, 627, 129, 628, 120, 628, 120, 619, 116, 619, 116, 622, 105, 622, 105, 595, 107, 595, 107, 593, 51, 593)
@@ -76,3 +81,4 @@ offset_bottom = 593.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
 text = "[center]Léo[/center]"
+metadata/_edit_use_anchors_ = true

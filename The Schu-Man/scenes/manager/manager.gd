@@ -28,7 +28,7 @@ func loadData():
 	else:
 		print("JSON Parse Error: ", json.get_error_message(), " in ", loaded, " at line ", json.get_error_line())
 
-func nextCard(): # TODO	
+func nextCard(): 
 	# choose new card dataset	
 	var size : int = cardsData.size() 
 	var randomInd : int = -1
@@ -123,7 +123,11 @@ func peakInfos(isRightSide : bool):
 	var sign : String = ""
 	if ( str(card[sideName]["building"]) != ""):
 		if (card[sideName]["healthVariation"] >= 0): sign = "+"
-		_renovationEffectLeft.text = str(card[sideName]["building"]) + "'s maintenance level " +  sign + str(card[sideName]["healthVariation"])
+		var renovationInfosText : String = str(card[sideName]["building"]) + "'s maintenance level " +  sign + str(card[sideName]["healthVariation"])
+		if (isRightSide): 
+			_renovationEffectRight.text = renovationInfosText
+		else:
+			_renovationEffectLeft.text = renovationInfosText
 
 func _on_card_peak_to_left():
 	peakInfos(false)
