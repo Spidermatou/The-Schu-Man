@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://blt583utyr0k"]
+
+[ext_resource type="Texture2D" uid="uid://dsvpka5atdxeb" path="res://scenes/DecisionCard/Card.svg" id="1_ramq0"]
+[ext_resource type="Script" path="res://scenes/DecisionCard/DecisionCard.gd" id="2_jqjsp"]
+[ext_resource type="Script" path="res://scenes/DecisionCard/DecisionCardImage.gd" id="3_vpt4u"]
+
+[node name="DecisionCard" type="Node2D"]
+script = ExtResource("2_jqjsp")
+
+[node name="Card" type="Sprite2D" parent="."]
+position = Vector2(144, 231)
+texture = ExtResource("1_ramq0")
+
+[node name="DecisionCardImage" type="Sprite2D" parent="."]
+position = Vector2(25, 50)
+scale = Vector2(238, 238)
+script = ExtResource("3_vpt4u")
+
+[node name="DialogBox" type="RichTextLabel" parent="."]
+offset_left = 19.0
+offset_top = 299.0
+offset_right = 269.0
+offset_bottom = 417.0
+theme_override_font_sizes/normal_font_size = 20
+text = "Je test pour voir le dialogue si tout passe bien parfait j'aime bien"

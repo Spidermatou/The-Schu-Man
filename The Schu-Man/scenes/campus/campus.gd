@@ -50,6 +50,10 @@ func decreaseAllHealth(value: int):
 		
 #-------------------------------------------------------------------------------
 
+func setHealth(building: buildings ,value: int):
+		buildingsHealth[building] = value
+		checkBuildingsHealth()
+
 func setAllHealth(value: int):
 	for building in buildings.values():
 		buildingsHealth[building] = value
