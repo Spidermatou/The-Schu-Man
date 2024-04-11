@@ -16,6 +16,7 @@ grow_vertical = 2
 script = ExtResource("1_u0own")
 
 [node name="MainText" type="Label" parent="."]
+layout_mode = 0
 offset_left = 128.0
 offset_top = 7.0
 offset_right = 319.0
@@ -26,6 +27,7 @@ text = "afficher les infos"
 vertical_alignment = 1
 
 [node name="Or" type="Label" parent="."]
+layout_mode = 0
 offset_left = -34.0
 offset_top = 4.0
 offset_right = 157.0
