@@ -18,12 +18,13 @@ var buildingsHealth: Dictionary = {
 
 #-------------------------------------------------------------------------------
 
-enum colors {BLACK, YELLOW, ORANGE, GREEN}
+enum colors {BLACK, RED, ORANGE, YELLOW, GREEN}
 
 var colorsHex: Dictionary = {
 	colors.BLACK: "0b0100",
-	colors.YELLOW: "fffb09",
+	colors.RED: "e81c1c",
 	colors.ORANGE: "ff9117",
+	colors.YELLOW: "fffb09",
 	colors.GREEN: "06ff15",
 }
 
@@ -31,6 +32,10 @@ var colorsHex: Dictionary = {
 
 func increaseHealth(building: buildings, value: int):
 	buildingsHealth[building] += value
+	
+	if buildingsHealth[building] > 100:
+		buildingsHealth[building] = 100
+
 	checkBuildingsHealth()
 	
 func decreaseHealth(building: buildings, value: int):
@@ -39,13 +44,11 @@ func decreaseHealth(building: buildings, value: int):
 	
 func increaseAllHealth(value: int):
 	for building in buildings.values():
-		buildingsHealth[building] += value
-		checkBuildingsHealth()
+		increaseHealth(building, value)
 	
 func decreaseAllHealth(value: int):
 	for building in buildings.values():
-		buildingsHealth[building] -= value
-		checkBuildingsHealth()
+		decreaseHealth(building, value)
 
 #-------------------------------------------------------------------------------
 
@@ -54,16 +57,17 @@ func checkBuildingsHealth():
 		var health: int = buildingsHealth[building]
 		
 		if health <= 0:
+			updateBuildingColor(building, colors.BLACK)
 			ruinedBuilding.emit(building)
 
 		elif health > 0 && health <= 20:
-			updateBuildingColor(building, colors.BLACK)
+			updateBuildingColor(building, colors.RED)
 			
 		elif health > 20 && health <= 40:
-			updateBuildingColor(building, colors.YELLOW)
+			updateBuildingColor(building, colors.ORANGE)
 			
 		elif health > 40 && health <= 70:
-			updateBuildingColor(building, colors.ORANGE)
+			updateBuildingColor(building, colors.YELLOW)
 		
 		else:
 			updateBuildingColor(building, colors.GREEN)
