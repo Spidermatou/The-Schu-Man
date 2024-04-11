@@ -84,7 +84,9 @@ func _ready():
 	_campus.setHealth(_campus.buildings.CIVILENGINEERING, 100)
 	_campus.setHealth(_campus.buildings.LEO, 80)
 	
-	# test
+	# reset renovation effect
+	_renovationEffectLeft.text = ""
+	_renovationEffectRight.text = ""
 
 func _on_gauge_finance_is_empty():
 	_endGameScreen.show()
@@ -98,43 +100,36 @@ func _on_gauge_intern_is_empty():
 	_endGameScreen.show()
 	# _endGameScreen.texture = load("res://path/to/your/texture.png")
 
+func peakInfos(isRightSide : bool):
+	var sideName : String
+	if (isRightSide): 
+		sideName = "effectRight"
+		# reset the other side		
+		_renovationEffectLeft.text = ""
+	else:
+		sideName = "effectLeft"
+		# reset the other side
+		_renovationEffectRight.text = ""
+	# retrieve potential gauges's variations 
+	var card = cardsData[actualCardIndex]
+	_financeGauge.setVariation(card[sideName]["budget"])
+	_internGauge.setVariation(card[sideName]["internalSatisfaction"])
+	_centralGauge.setVariation(card[sideName]["internalSatisfaction"])
+	# show them on screen
+	_financeGauge.showVariation()
+	_internGauge.showVariation()
+	_centralGauge.showVariation()
+	# apply renovation
+	var sign : String = ""
+	if ( str(card[sideName]["building"]) != ""):
+		if (card[sideName]["healthVariation"] >= 0): sign = "+"
+		_renovationEffectLeft.text = str(card[sideName]["building"]) + "'s maintenance level " +  sign + str(card[sideName]["healthVariation"])
 
 func _on_card_peak_to_left():
-	# reset the other side
-	_renovationEffectRight.text = ""
-	
-	var card = cardsData[actualCardIndex]
-	_financeGauge.setVariation(card["effectLeft"]["budget"])
-	_internGauge.setVariation(card["effectLeft"]["internalSatisfaction"])
-	_centralGauge.setVariation(card["effectLeft"]["internalSatisfaction"])
-	
-	# show them
-	_financeGauge.showVariation()
-	_internGauge.showVariation()
-	_centralGauge.showVariation()
-	
-	# renovation
-	if ( str(card["effectLeft"]["building"]) != ""):
-		_renovationEffectLeft.text = str(card["effectLeft"]["building"]) + " : " + str(card["effectLeft"]["renovation"])
-
+	peakInfos(false)
 
 func _on_card_peak_to_right():
-	# reset the other side
-	_renovationEffectLeft.text = ""
-	
-	var card = cardsData[actualCardIndex]
-	_financeGauge.setVariation(card["effectRight"]["budget"])
-	_internGauge.setVariation(card["effectRight"]["internalSatisfaction"])
-	_centralGauge.setVariation(card["effectRight"]["internalSatisfaction"])
-
-	# show them
-	_financeGauge.showVariation()
-	_internGauge.showVariation()
-	_centralGauge.showVariation()
-	
-	# renovation
-	if ( str(card["effectRight"]["building"]) != ""):
-		_renovationEffectRight.text = str(card["effectRight"]["building"]) + " : " + str(card["effectRight"]["renovation"])
+	peakInfos(true)
 
 func _on_card_card_chosen(value : bool):
 	var card = cardsData[actualCardIndex]
@@ -144,5 +139,22 @@ func _on_card_card_chosen(value : bool):
 	_financeGauge.value += card[side]["budget"]
 	_internGauge.value += card[side]["budget"]
 	_centralGauge.value += card[side]["budget"]
+	
+	# bulding
+	var buildingName : String = card[side]["building"]
+	var enumValue : int = -1
+	if (buildingName != ""):
+		# see which building will be affected
+		match(buildingName):
+			"IT": enumValue = _campus.buildings.IT
+			"SSU": enumValue = _campus.buildings.SSU
+			"CENTRAL": enumValue = _campus.buildings.CENTRAL
+			"CHEMISTRY": enumValue = _campus.buildings.CHEMISTRY
+			"CIVILENGINEERING": enumValue = _campus.buildings.CIVILENGINEERING
+			"LEO": enumValue = _campus.buildings.LEO
+			_: enumValue = _campus.buildings.LEO
+		# affected the building
+		var renovationValue : int = card[side]["healthVariation"]
+		_campus.addToHealth(enumValue, renovationValue)
 	resetUI()
 	nextCard()

@@ -52,23 +52,26 @@ iconTexture = ExtResource("3_33dhc")
 position = Vector2(144, 40)
 
 [node name="RenovationEffectLeft" type="Label" parent="."]
-offset_left = -200.0
-offset_top = -192.0
-offset_right = -80.0
-offset_bottom = -72.0
+offset_left = -248.0
+offset_top = 128.0
+offset_right = -128.0
+offset_bottom = 248.0
 scale = Vector2(1.5217, 1.6)
+text = "Test"
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="RenovationEffectRight" type="Label" parent="."]
-offset_left = -200.0
-offset_top = -192.0
-offset_right = -160.0
-offset_bottom = -169.0
-scale = Vector2(3.32, 4.2)
-theme_override_font_sizes/font_size = 25
+offset_left = 392.0
+offset_top = 128.0
+offset_right = 512.0
+offset_bottom = 248.0
+scale = Vector2(1.5217, 1.6)
+text = "Test"
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 3
 
 [connection signal="isEmpty" from="GaugeFinance" to="." method="_on_gauge_finance_is_empty"]
 [connection signal="isEmpty" from="GaugeCentral" to="." method="_on_gauge_central_is_empty"]
