@@ -27,27 +27,19 @@ var colorsHex: Dictionary = {
 
 #-------------------------------------------------------------------------------
 
-func increaseHealth(building: buildings, value: int):
+func addToHealth(building: buildings, value: int):
 	buildingsHealth[building] += value
 	
 	if buildingsHealth[building] > 100:
 		buildingsHealth[building] = 100
+	
+	checkBuildingsHealth()
 
-	checkBuildingsHealth()
-	
-func decreaseHealth(building: buildings, value: int):
-	buildingsHealth[building] -= value
-	
-	checkBuildingsHealth()
-	
-func increaseAllHealth(value: int):
+
+func addToAllHealth(value: int):
 	for building in buildings.values():
-		increaseHealth(building, value)
-	
-func decreaseAllHealth(value: int):
-	for building in buildings.values():
-		decreaseHealth(building, value)
-		
+		addToHealth(building, value)
+
 #-------------------------------------------------------------------------------
 
 func setHealth(building: buildings ,value: int):
