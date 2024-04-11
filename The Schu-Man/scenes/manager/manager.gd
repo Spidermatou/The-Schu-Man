@@ -1,8 +1,9 @@
 extends Node
 
-@export var PATH_TO_JSON : String = "ressources/data.json" 
-var lastCards : Array = []
+@export var PATH_TO_JSON : String = "ressources/cards.json" 
+var lastCardsIndexes : Array = []
 var cardsData = {}
+var actualCardIndex : int = 0
 
 # children
 @onready var _endGameScreen = $EndGameScreen
@@ -18,30 +19,38 @@ func loadData():
 	if loaded:
 		var error = json.parse(text)
 		if error == OK:
-			cardsData = json.data
+			cardsData = json.data["cards"]
 		else:
 			print("Unexpected data")
 	else:
 		print("JSON Parse Error: ", json.get_error_message(), " in ", loaded, " at line ", json.get_error_line())
 
 func nextCard(): # TODO
-	if cardsData.size() > 0:
-		# Choisissez une clé aléatoire parmi les clés du dictionnaire
-		var keys = cardsData.keys()
-		var random_key = keys[randi_range(0, keys.size() - 1)]
-
-		# Récupérer les valeurs associées à cette clé
-		var card = cardsData[random_key]
-		var dialog = card["dialog"]
-		var effectRight = card["effectRight"]
-		var effectLeft = card["effectLeft"]
-		var financeRight =  card["effectRight"]["finance"]
-
-		# Afficher les valeurs récupérées
-		print("Dialog:", dialog)
-		print("Effect Right:", effectRight)
-		print("Effect Left:", effectLeft)
-		print("finance: ", financeRight)
+	var size : int = cardsData.size() 
+	if size > 0:
+		var randomInd : int = randi_range(0, size - 1)
+		
+		# choose a card
+		var card = cardsData[randomInd]
+		
+		# retrieve properties
+		var dialogue = card["dialogue"]
+		var imagePath = card["image"]
+		
+		var budgetRight = card["effectRight"]["budget"]
+		var centralRight = card["effectRight"]["centralSatisfaction"]
+		var internRight = card["effectRight"]["internalSatisfaction"]
+		var renovationRight = card["effectRight"]["renovation"]
+		var buildingRight = card["effectRight"]["building"]
+		
+		var budgetLeft = card["effectLeft"]["budget"]
+		var centralLeft = card["effectLeft"]["centralSatisfaction"]
+		var internLeft = card["effectLeft"]["internalSatisfaction"]
+		var renovationLeft = card["effectLeft"]["renovation"]
+		var buildingLeft = card["effectLeft"]["building"]
+		
+		# save 
+		actualCardIndex = randomInd
 
 func refuseCard():
 	nextCard()

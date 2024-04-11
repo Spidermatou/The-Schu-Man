@@ -6,7 +6,7 @@ signal cardChosen(value : bool)
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	setImage(load("res://icon.svg"))
-	setDialog("Je test pour voir le dialogue si tout passe bien parfait j'aime bien Et jen rajoute")
+	setDialog("Un texte")
 
 func setImage(newImage : Texture2D):
 	var image = get_node("DecisionCardImage")
@@ -22,6 +22,7 @@ func setDialog(dialog : String):
 var right_arrow_pressed = 0
 var left_arrow_pressed = 0
 var pos = get_position()
+
 func _input(event):
 	if event is InputEventKey:
 		
