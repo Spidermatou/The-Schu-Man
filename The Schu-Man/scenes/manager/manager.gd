@@ -119,8 +119,9 @@ func _on_card_peak_to_left():
 	_internGauge.showVariation()
 	_centralGauge.showVariation()
 	
-	var renovationLeft = card["effectLeft"]["renovation"]
-	var buildingLeft = card["effectLeft"]["building"]
+	# renovation
+	if ( str(card["effectLeft"]["building"]) != ""):
+		_renovationEffectRight.text = str(card["effectLeft"]["building"]) + " : " + str(card["effectLeft"]["renovation"])
 
 
 func _on_card_peak_to_right():

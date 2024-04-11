@@ -49,7 +49,7 @@ scale = Vector2(2, 2)
 iconTexture = ExtResource("3_33dhc")
 
 [node name="Card" parent="." instance=ExtResource("5_mfpgq")]
-position = Vector2(-24, -200)
+position = Vector2(144, 40)
 
 [node name="RenovationEffectLeft" type="Label" parent="."]
 offset_left = -200.0
