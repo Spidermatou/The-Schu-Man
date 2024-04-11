@@ -2,129 +2,112 @@
 	"cards" : [
 		{
 			"image" : "res://icon.svg",
-			"dialogue" : "Carotte",
+			"dialogue" : "Bonjour Monsieur le Directeur. Je souhaite vous voir car j'ai remarqué que mes étudiants n'ont pas suffisamment d'heures de TD en mathématiques et que leur niveau semble baisser. Pourrions-nous engager un chargé de TD supplémentaire ?",
 			"effectLeft" : {
-				"budget" : 10,
-				"centralSatisfaction" : 50,
-				"internalSatisfaction" : 20,
-				"healthVariation" : 10,
-				"building" : "CIVILENGINEERING"
+				"budget" : 0,
+				"centralSatisfaction" : 5,
+				"internalSatisfaction" : -10,
+				"healthVariation" : 0,
+				"building" : ""
 			},
 			"effectRight" : {
-				"budget" : 10,
-				"centralSatisfaction" : 0,
-				"internalSatisfaction" : 0,
-				"healthVariation" : -10,
-				"building" : "SSU"
+				"budget" : -5,
+				"centralSatisfaction" : -5,
+				"internalSatisfaction" : 10,
+				"healthVariation" : 0,
+				"building" : ""
 			},
 		},
 		{
 			"image" : "res://icon.svg",
-			"dialogue" : "Carotte",
+			"dialogue" : "Monsieur le Directeur, un étudiant a dévissé les pieds de table d'une salle du bâtiment. Vous devez envoyer un agent pour les réparer. Sinon, il ne pourra pas y avoir de cours dans cette salle.",
 			"effectLeft" : {
-				"budget" : 10,
-				"centralSatisfaction" : 50,
-				"internalSatisfaction" : 20,
-				"healthVariation" : 10,
-				"building" : "CIVILENGINEERING"
+				"budget" : 0,
+				"centralSatisfaction" : 0,
+				"internalSatisfaction" : -10,
+				"healthVariation" : -10,
+				"building" : "IT"
 			},
 			"effectRight" : {
-				"budget" : 10,
+				"budget" : -5,
 				"centralSatisfaction" : 0,
-				"internalSatisfaction" : 0,
-				"healthVariation" : -10,
-				"building" : "SSU"
+				"internalSatisfaction" : 5,
+				"healthVariation" : 0,
+				"building" : "IT"
 			},
 		},
 		{
 			"image" : "res://icon.svg",
-			"dialogue" : "Carotte",
+			"dialogue" : "Monsieur le Directeur, un étudiant a dévissé les pieds de table d'une salle du bâtiment. Vous devez envoyer un agent pour les réparer. Sinon, il ne pourra pas y avoir de cours dans cette salle.",
 			"effectLeft" : {
-				"budget" : 10,
-				"centralSatisfaction" : 50,
-				"internalSatisfaction" : 20,
-				"healthVariation" : 10,
-				"building" : "CIVILENGINEERING"
+				"budget" : 0,
+				"centralSatisfaction" : 0,
+				"internalSatisfaction" : -10,
+				"healthVariation" : -10,
+				"building" : "CENTRAL"
 			},
 			"effectRight" : {
-				"budget" : 10,
+				"budget" : -5,
 				"centralSatisfaction" : 0,
-				"internalSatisfaction" : 0,
-				"healthVariation" : -10,
-				"building" : "SSU"
+				"internalSatisfaction" : 5,
+				"healthVariation" : 0,
+				"building" : "CENTRAL"
 			},
 		},
 		{
 			"image" : "res://icon.svg",
-			"dialogue" : "Carotte",
+			"dialogue" : "Monsieur le Directeur, nous vous proposons de commencer les travaux de rénovation du bâtiment. Cette opération est prévue par le CPER et vous devriez avoir le budget suffisant, en théorie...",
 			"effectLeft" : {
-				"budget" : 10,
-				"centralSatisfaction" : 50,
-				"internalSatisfaction" : 20,
-				"healthVariation" : 10,
-				"building" : "CIVILENGINEERING"
-			},
-			"effectRight" : {
-				"budget" : 10,
+				"budget" : 0,
 				"centralSatisfaction" : 0,
 				"internalSatisfaction" : 0,
-				"healthVariation" : -10,
-				"building" : "SSU"
+				"healthVariation" : 0,
+				"building" : "IT"
+			},
+			"effectRight" : {
+				"budget" : -30,
+				"centralSatisfaction" : 0,
+				"internalSatisfaction" : 0,
+				"healthVariation" : 100,
+				"building" : "IT"
 			},
 		},
 		{
 			"image" : "res://icon.svg",
-			"dialogue" : "Carotte",
+			"dialogue" : "Monsieur le Directeur, nous vous proposons de commencer les travaux de rénovation du bâtiment. Cette opération est prévue par le CPER et vous devriez avoir le budget suffisant, en théorie...",
 			"effectLeft" : {
-				"budget" : 10,
-				"centralSatisfaction" : 50,
-				"internalSatisfaction" : 20,
-				"healthVariation" : 10,
-				"building" : "CIVILENGINEERING"
-			},
-			"effectRight" : {
-				"budget" : 10,
+				"budget" : 0,
 				"centralSatisfaction" : 0,
 				"internalSatisfaction" : 0,
-				"healthVariation" : -10,
-				"building" : "SSU"
+				"healthVariation" : 0,
+				"building" : "CHEMISTRY"
+			},
+			"effectRight" : {
+				"budget" : -30,
+				"centralSatisfaction" : 0,
+				"internalSatisfaction" : 0,
+				"healthVariation" : 100,
+				"building" : "CHEMISTRY"
 			},
 		},
 		{
 			"image" : "res://icon.svg",
-			"dialogue" : "Carotte",
+			"dialogue" : "Monsieur le Directeur, votre IUT fait partie de notre ville et nous souhaitons vous soutenir. Nous vous proposons un financement pour rénover vos bâtiments et embellir notre magnifique ville.",
 			"effectLeft" : {
-				"budget" : 10,
-				"centralSatisfaction" : 50,
-				"internalSatisfaction" : 20,
-				"healthVariation" : 10,
-				"building" : "CIVILENGINEERING"
+				"budget" : 0,
+				"centralSatisfaction" : 5,
+				"internalSatisfaction" : 0,
+				"healthVariation" : 0,
+				"building" : ""
 			},
 			"effectRight" : {
-				"budget" : 10,
-				"centralSatisfaction" : 0,
+				"budget" : 25,
+				"centralSatisfaction" : -25,
 				"internalSatisfaction" : 0,
-				"healthVariation" : -10,
-				"building" : "SSU"
+				"healthVariation" : 0,
+				"building" : ""
 			},
 		},
-		{
-			"image" : "res://icon.svg",
-			"dialogue" : "Carotte",
-			"effectLeft" : {
-				"budget" : 10,
-				"centralSatisfaction" : 50,
-				"internalSatisfaction" : 20,
-				"healthVariation" : 10,
-				"building" : "CIVILENGINEERING"
-			},
-			"effectRight" : {
-				"budget" : 10,
-				"centralSatisfaction" : 0,
-				"internalSatisfaction" : 0,
-				"healthVariation" : -10,
-				"building" : "SSU"
-			},
-		}
+		
 	]
 }
