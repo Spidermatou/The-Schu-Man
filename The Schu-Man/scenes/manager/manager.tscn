@@ -25,27 +25,27 @@ scale = Vector2(9.25, 5.04688)
 texture = ExtResource("3_33dhc")
 
 [node name="GaugeFinance" parent="." instance=ExtResource("4_272cb")]
-offset_left = -449.0
-offset_top = -512.0
-offset_right = -344.0
-offset_bottom = -496.0
-scale = Vector2(4, 4)
+offset_left = -432.0
+offset_top = -516.0
+offset_right = -327.0
+offset_bottom = -500.0
+scale = Vector2(3.8, 3.8)
 iconTexture = ExtResource("3_33dhc")
 
 [node name="GaugeCentral" parent="." instance=ExtResource("4_272cb")]
-offset_left = 64.0
-offset_top = -512.0
-offset_right = 169.0
-offset_bottom = -496.0
-scale = Vector2(4, 4)
+offset_left = 48.0
+offset_top = -514.0
+offset_right = 153.0
+offset_bottom = -498.0
+scale = Vector2(3.8, 3.8)
 iconTexture = ExtResource("3_33dhc")
 
 [node name="GaugeIntern" parent="." instance=ExtResource("4_272cb")]
-offset_left = 552.0
+offset_left = 528.0
 offset_top = -516.0
-offset_right = 657.0
+offset_right = 633.0
 offset_bottom = -500.0
-scale = Vector2(4, 4)
+scale = Vector2(3.8, 3.8)
 iconTexture = ExtResource("3_33dhc")
 
 [node name="Card" parent="." instance=ExtResource("5_mfpgq")]
