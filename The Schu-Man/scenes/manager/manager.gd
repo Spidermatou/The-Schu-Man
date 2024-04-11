@@ -108,7 +108,7 @@ func peakInfos(isRightSide : bool):
 	var card = cardsData[actualCardIndex]
 	_financeGauge.setVariation(card[sideName]["budget"])
 	_internGauge.setVariation(card[sideName]["internalSatisfaction"])
-	_centralGauge.setVariation(card[sideName]["internalSatisfaction"])
+	_centralGauge.setVariation(card[sideName]["centralSatisfaction"])
 	# show them on screen
 	_financeGauge.showVariation()
 	_internGauge.showVariation()
@@ -146,8 +146,8 @@ func _on_card_card_chosen(value : bool):
 	if (value == true): side = "effectRight"
 	else: side = "effectLeft"
 	_financeGauge.value += card[side]["budget"]
-	_internGauge.value += card[side]["budget"]
-	_centralGauge.value += card[side]["budget"]
+	_internGauge.value += card[side]["internalSatisfaction"]
+	_centralGauge.value += card[side]["centralSatisfaction"]
 	
 	# bulding
 	var buildingName : String = card[side]["building"]
