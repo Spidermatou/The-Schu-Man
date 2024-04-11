@@ -8,6 +8,7 @@ signal isEmpty
 
 @export var iconTexture : Texture2D
 @export var gaugeName : String = ""
+var signalEmitted : bool = false;
 
 func setVariation(value : int):
 	if value < 0:
@@ -28,4 +29,8 @@ func _ready():
 func _process(delta):
 	_icon.texture = iconTexture
 	_gaugeNameLabel.text = gaugeName
-
+	
+	if (self.value <= 5 && !signalEmitted):
+		emit_signal("isEmpty")
+		signalEmitted = true
+		print("emit empty")
