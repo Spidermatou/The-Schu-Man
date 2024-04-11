@@ -17,7 +17,6 @@ polygon = PackedVector2Array(-618, -344, -122, -344, -122, 824, -618, 824)
 
 [node name="Campus" parent="." instance=ExtResource("2_wnkwo")]
 position = Vector2(-984, -552)
-scale = Vector2(1.7, 1.7)
 
 [node name="GaugeFinance" parent="." instance=ExtResource("4_272cb")]
 offset_left = -432.0
