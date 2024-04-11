@@ -1,5 +1,8 @@
-[gd_scene format=3 uid="uid://dw6oybycb8o07"]
+[gd_scene load_steps=2 format=3 uid="uid://dw6oybycb8o07"]
+
+[ext_resource type="Script" path="res://scenes/manager.gd" id="1_lje2p"]
 
 [node name="Manager" type="Node"]
+script = ExtResource("1_lje2p")
 
 [node name="Camera2D" type="Camera2D" parent="."]

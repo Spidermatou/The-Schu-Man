@@ -1,0 +1,24 @@
+{
+	"1": {
+		"dialog": "Mon test",
+		"effectRight": {
+			"finance": 50,
+			"departmentEnum": 1
+		},
+		"effectLeft": {
+			"finance": -6,
+			"departmentEnum": 3
+		}
+	},	
+	"2": {
+		"dialog": "Mon test",
+		"effectRight": {
+			"finance": 50,
+			"departmentEnum": 1
+		},
+		"effectLeft": {
+			"finance": -6,
+			"departmentEnum": 3
+		}
+	}
+}
