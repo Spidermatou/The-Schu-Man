@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dw6oybycb8o07"]
+
+[ext_resource type="Script" path="res://scenes/manager/manager.gd" id="1_lje2p"]
+[ext_resource type="PackedScene" uid="uid://cj4682jtoww4b" path="res://scenes/campus/campus.tscn" id="2_wnkwo"]
+
+[node name="Manager" type="Node"]
+script = ExtResource("1_lje2p")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="MapBackground" type="Polygon2D" parent="."]
+color = Color(0.486275, 0.486275, 0.486275, 1)
+polygon = PackedVector2Array(-600, -320, -248, -320, -248, -320, -248, 328, -600, 328)
+
+[node name="Campus" parent="." instance=ExtResource("2_wnkwo")]
+position = Vector2(-537, -326)
