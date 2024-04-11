@@ -133,14 +133,14 @@
 		"budget": 0,
 		"centralSatisfaction": 0,
 		"internalSatisfaction": 0,
-		"healthVariation": 0,
-		"building": ""
+		"healthVariation": -10,
+		"building": "ALL"
 	  },
 	  "effectRight": {
 		"budget": -10,
 		"centralSatisfaction": 0,
 		"internalSatisfaction": -10,
-		"healthVariation": 15,
+		"healthVariation": 20,
 		"building": "ALL"
 	  }
 	},

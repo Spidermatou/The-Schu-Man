@@ -14,9 +14,7 @@ func setImage(newImage : Texture2D):
 	var image = $Card/DecisionCardImage
 	if newImage != null:
 		image.texture = newImage
-	else:
-		print("La texture fournie est nulle.")
-		
+
 func setDialog(dialog : String):
 	$Card/DialogBox.text = dialog
 
