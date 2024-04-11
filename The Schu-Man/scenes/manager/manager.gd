@@ -25,7 +25,7 @@ func _ready():
 	
 func initGame():
 	resetUI()
-	nextCard()
+	nextCard(false)
 	
 	# default values
 	_financeGauge.value = 50
@@ -60,7 +60,7 @@ func loadData():
 	else:
 		print("JSON Parse Error: ", json.get_error_message(), " in ", loaded, " at line ", json.get_error_line())
 
-func nextCard(): 
+func nextCard(buildingBecomeOlder : bool = true): 
 	# choose new card dataset	
 	var size : int = cardsData.size() 
 	var randomInd : int = -1
@@ -79,6 +79,9 @@ func nextCard():
 		actualCardIndex = randomInd
 		lastCardsIndexes.append(randomInd)
 		if (lastCardsIndexes.size() >= 5): lastCardsIndexes.remove_at(0)
+		
+	# all buildings become older
+	if (buildingBecomeOlder): agingBuildings() # not called for first card
 
 func resetUI():
 	# reset gauges indications
@@ -197,3 +200,6 @@ func _on_gauge_intern_is_empty():
 
 func _on_restart():
 	initGame()
+
+func agingBuildings():
+	_campus.addToAllHealth(-5)
