@@ -27,8 +27,16 @@ func _ready():
 	showVariation()
 	setVariation(0)
 
+func setIcone(icone : Texture2D):
+	_icon.texture = icone
+
 func _process(delta):
-	_icon.texture = iconTexture
+	if _gaugeNameLabel.text == "Budget":
+		_icon.texture = load("res://ressources/images/gauge_dollars.png")
+	if _gaugeNameLabel.text == "Relation avec le Central de l'université":
+		_icon.texture = load("res://ressources/images/gauge_central.png")
+	if _gaugeNameLabel.text == "Relation avec étudiants et profs":
+		_icon.texture = load("res://ressources/images/gauge_etu.jpg")
 	_gaugeNameLabel.text = gaugeName
 	
 	if (self.value <= 5 && !signalEmitted):
