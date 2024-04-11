@@ -8,34 +8,38 @@ script = ExtResource("1_wl83o")
 
 [node name="Polygons" type="Node2D" parent="."]
 
+[node name="Polygon2D" type="Polygon2D" parent="Polygons"]
+color = Color(0.498039, 0.498039, 0.498039, 1)
+polygon = PackedVector2Array(450, 0, 0, 0, 0, 1080, 450, 1080)
+
 [node name="IT" type="Polygon2D" parent="Polygons"]
-position = Vector2(-13.3, -11.2)
-scale = Vector2(1.7, 1.7)
+position = Vector2(1.5, 101)
+scale = Vector2(1.5, 1.5)
 polygon = PackedVector2Array(34, 33, 34, 21, 121, 21, 121, 59, 34, 59, 34, 43, 29, 43, 29, 33)
 
 [node name="SSU" type="Polygon2D" parent="Polygons"]
-position = Vector2(-13.3, -11.2)
-scale = Vector2(1.7, 1.7)
+position = Vector2(1.5, 101)
+scale = Vector2(1.5, 1.5)
 polygon = PackedVector2Array(154, 56, 154, 16, 190, 16, 190, 56)
 
 [node name="Central" type="Polygon2D" parent="Polygons"]
-position = Vector2(-13.3, -11.2)
-scale = Vector2(1.7, 1.7)
+position = Vector2(1.5, 101)
+scale = Vector2(1.5, 1.5)
 polygon = PackedVector2Array(78, 92, 153, 92, 153, 169, 145, 169, 145, 203, 152, 203, 152, 306, 158, 306, 158, 336, 134, 336, 134, 311, 124, 311, 124, 306, 112, 306, 112, 212, 86, 212, 86, 227, 38, 227, 38, 202, 42, 202, 42, 195, 38, 195, 38, 170, 85, 170, 85, 160, 78, 160)
 
 [node name="Chemistry" type="Polygon2D" parent="Polygons"]
-position = Vector2(-13.3, -11.2)
-scale = Vector2(1.7, 1.7)
+position = Vector2(1.5, 101)
+scale = Vector2(1.5, 1.5)
 polygon = PackedVector2Array(42, 312, 80, 312, 80, 397, 64, 397, 64, 408, 98, 408, 98, 444, 53, 444, 53, 407, 57, 407, 57, 396, 42, 396)
 
 [node name="CivilEngineering" type="Polygon2D" parent="Polygons"]
-position = Vector2(-13.3, -11.2)
-scale = Vector2(1.7, 1.7)
+position = Vector2(1.5, 101)
+scale = Vector2(1.5, 1.5)
 polygon = PackedVector2Array(144, 379, 258, 379, 258, 419, 250, 419, 250, 441, 273, 441, 273, 540, 162, 540, 162, 439, 226, 439, 226, 417, 144, 417)
 
 [node name="Leo" type="Polygon2D" parent="Polygons"]
-position = Vector2(-13.3, -11.2)
-scale = Vector2(1.7, 1.7)
+position = Vector2(1.5, 101)
+scale = Vector2(1.5, 1.5)
 polygon = PackedVector2Array(51, 562, 107, 562, 107, 565, 117, 565, 117, 567, 121, 567, 121, 559, 144, 559, 144, 560, 143, 560, 143, 591, 139, 591, 139, 601, 142, 601, 145, 624, 138, 627, 129, 628, 120, 628, 120, 619, 116, 619, 116, 622, 105, 622, 105, 595, 107, 595, 107, 593, 51, 593)
 
 [node name="Labels" type="Control" parent="."]
@@ -44,72 +48,86 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Labels"]
+[node name="Title" type="RichTextLabel" parent="Labels"]
 layout_mode = 0
-offset_left = 45.0
-offset_top = 33.0
-offset_right = 193.0
-offset_bottom = 90.0
+offset_right = 449.0
+offset_bottom = 58.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "[center]Etat des bâtiments[/center]"
+
+[node name="IT" type="RichTextLabel" parent="Labels"]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 141.0
+offset_right = 183.0
+offset_bottom = 190.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_1005g")
-theme_override_font_sizes/normal_font_size = 40
+theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
 text = "[center]Info[/center]"
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="Labels"]
-offset_left = 249.0
-offset_top = 38.0
-offset_right = 310.0
-offset_bottom = 84.0
+[node name="SSU" type="RichTextLabel" parent="Labels"]
+layout_mode = 0
+offset_left = 232.0
+offset_top = 142.0
+offset_right = 286.0
+offset_bottom = 185.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_1005g")
 theme_override_font_sizes/normal_font_size = 20
 bbcode_enabled = true
 text = "[center]SSU[/center]"
 
-[node name="RichTextLabel3" type="RichTextLabel" parent="Labels"]
-offset_left = 119.0
-offset_top = 144.0
-offset_right = 247.0
-offset_bottom = 261.0
+[node name="Central" type="RichTextLabel" parent="Labels"]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 273.0
+offset_right = 232.0
+offset_bottom = 341.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_1005g")
-theme_override_font_sizes/normal_font_size = 40
+theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
 text = "[center]Central[/center]"
 
-[node name="RichTextLabel4" type="RichTextLabel" parent="Labels"]
-offset_left = 65.0
-offset_top = 659.0
-offset_right = 203.0
-offset_bottom = 709.0
+[node name="Chemistry" type="RichTextLabel" parent="Labels"]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 696.0
+offset_right = 202.0
+offset_bottom = 745.0
 rotation = -1.5708
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_1005g")
-theme_override_font_sizes/normal_font_size = 40
+theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
 text = "[center]Chimie[/center]"
 autowrap_mode = 0
 
-[node name="RichTextLabel5" type="RichTextLabel" parent="Labels"]
-offset_left = 230.0
-offset_top = 640.0
-offset_right = 424.0
-offset_bottom = 698.0
+[node name="CivilEngineering" type="RichTextLabel" parent="Labels"]
+layout_mode = 0
+offset_left = 217.0
+offset_top = 679.0
+offset_right = 389.0
+offset_bottom = 727.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_1005g")
-theme_override_font_sizes/normal_font_size = 40
+theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
 text = "[center]Génie civil[/center]"
 
-[node name="RichTextLabel6" type="RichTextLabel" parent="Labels"]
-offset_left = 74.0
-offset_top = 946.0
-offset_right = 168.0
-offset_bottom = 997.0
+[node name="Leo" type="RichTextLabel" parent="Labels"]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 949.0
+offset_right = 162.0
+offset_bottom = 990.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_1005g")
-theme_override_font_sizes/normal_font_size = 40
+theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
 text = "[center]Léo[/center]"
 scroll_active = false
