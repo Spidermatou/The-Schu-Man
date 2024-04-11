@@ -11,7 +11,7 @@
 script = ExtResource("1_lje2p")
 
 [node name="Campus" parent="." instance=ExtResource("2_wnkwo")]
-position = Vector2(-984, -552)
+position = Vector2(-960, -540)
 
 [node name="GaugeFinance" parent="." instance=ExtResource("4_272cb")]
 offset_left = -432.0
