@@ -24,7 +24,7 @@ func _input(event):
 	if event is InputEventKey:
 		if event.pressed:
 			
-			if event.keycode == KEY_RIGHT and !right_arrow_pressed:
+			if Input.is_action_pressed("ui_right") and !right_arrow_pressed:
 				card.position = Vector2(100, 40)
 				card.rotation_degrees = 12.5
 				
@@ -34,7 +34,7 @@ func _input(event):
 				peakToRight.emit()
 				return
 		
-			if event.keycode == KEY_LEFT and !left_arrow_pressed:
+			if Input.is_action_pressed("ui_left") and !left_arrow_pressed:
 				card.position = Vector2(-100, 40)
 				card.rotation_degrees = -12.5
 				
@@ -44,7 +44,7 @@ func _input(event):
 				peakToLeft.emit()
 				return
 		
-			if event.keycode == KEY_RIGHT and right_arrow_pressed:
+			if Input.is_action_pressed("ui_right") and right_arrow_pressed:
 				card.position = Vector2(0,0)
 				card.rotation_degrees = 0
 				
@@ -52,7 +52,7 @@ func _input(event):
 				cardChosen.emit(true)
 				return
 		
-			if event.keycode == KEY_LEFT and left_arrow_pressed:
+			if Input.is_action_pressed("ui_left") and left_arrow_pressed:
 				card.position = Vector2(0,0)
 				card.rotation_degrees = 0
 				
