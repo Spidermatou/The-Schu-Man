@@ -10,11 +10,6 @@
 [node name="Manager" type="Node"]
 script = ExtResource("1_lje2p")
 
-[node name="MapBackground" type="Polygon2D" parent="."]
-position = Vector2(-382, -216)
-color = Color(0.486275, 0.486275, 0.486275, 1)
-polygon = PackedVector2Array(-618, -344, -122, -344, -122, 824, -618, 824)
-
 [node name="Campus" parent="." instance=ExtResource("2_wnkwo")]
 position = Vector2(-984, -552)
 
