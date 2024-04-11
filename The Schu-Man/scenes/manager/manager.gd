@@ -88,14 +88,18 @@ func _ready():
 func _on_gauge_finance_is_empty():
 	_endGameScreen.show()
 	# _endGameScreen.texture = load("res://path/to/your/texture.png")
+	_endGameScreen.setExplication("Oh non ! Le campus est en faillite, les profs sont partis après que leur salaire n'a pas été payé à temps, et les élèves ont finis par suivre... Vous dirigez un campus fantôme.")
 
 func _on_gauge_central_is_empty():
 	_endGameScreen.show()
 	# _endGameScreen.texture = load("res://path/to/your/texture.png")
+	_endGameScreen.setExplication("Oh non ! Le central de l'universite vous déteste. Dès la fin de votre quinquennat, plus personne n'a voté pour vous. Vous êtes au chômage...")
+
 
 func _on_gauge_intern_is_empty():
 	_endGameScreen.show()
 	# _endGameScreen.texture = load("res://path/to/your/texture.png")
+	_endGameScreen.setExplication("Oh non ! Les équipes vous déteste, plus personne ne suit vos demandes ni ne veut travailler avec vous. Vous n'avez plus de directeur que le nom...")
 
 func peakInfos(isRightSide : bool):
 	var sideName : String
