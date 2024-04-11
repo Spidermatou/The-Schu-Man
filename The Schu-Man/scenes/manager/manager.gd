@@ -37,6 +37,9 @@ func nextCard(): # TODO
 		print("finance: ", financeRight)
 
 func _ready():
+	# reset debug
+	$MapBackground.color = Color(255,255,255)
 	# Initialisation
 	loadData()
 	nextCard()
+	
