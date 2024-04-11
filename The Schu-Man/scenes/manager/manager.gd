@@ -2,7 +2,10 @@ extends Node
 
 @export var PATH_TO_JSON : String = "ressources/data.json" 
 var lastCards : Array = []
-var cardsData 
+var cardsData = {}
+
+# Children
+@onready var _endGameScreen = $EndGameScreen
 
 func loadData():
 	var json = JSON.new()
@@ -36,10 +39,34 @@ func nextCard(): # TODO
 		print("Effect Left:", effectLeft)
 		print("finance: ", financeRight)
 
+func refuseCard():
+	nextCard()
+	
+func acceptCard():
+	# TODO
+	# set gauges
+	nextCard()
+
+# TODO rename
+func handleEndGame():
+	_endGameScreen.show()
+
+# TODO rename
+func handlePeakToLeft():
+	pass
+
+# TODO rename
+func handlePeakToRight():
+	pass
+
 func _ready():
 	# reset debug
 	$MapBackground.color = Color(255,255,255)
+	
 	# Initialisation
 	loadData()
 	nextCard()
+	
+	# hide endGameScreen
+	_endGameScreen.hide()
 	
