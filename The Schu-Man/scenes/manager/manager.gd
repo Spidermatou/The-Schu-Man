@@ -122,8 +122,18 @@ func peakInfos(isRightSide : bool):
 	# apply renovation
 	var sign : String = ""
 	if ( str(card[sideName]["building"]) != ""):
+		# get true building name
+		var buildingDisplayedName : String = ""
+		match("building"):
+			"SSU": buildingDisplayedName = "du service de Sante Universitaire"
+			"CENTRAL": buildingDisplayedName = "du batiment central"
+			"CHEMISTRY": buildingDisplayedName = "du batiment chimie"
+			"CIVILENGINEERING": buildingDisplayedName = "du batiment genie civil"
+			"LEO": buildingDisplayedName = "de l'amphi Leo"
+			_: buildingDisplayedName = "du batiment informatique"
+		# retrieve info
 		if (card[sideName]["healthVariation"] >= 0): sign = "+"
-		var renovationInfosText : String = str(card[sideName]["building"]) + "'s maintenance level " +  sign + str(card[sideName]["healthVariation"])
+		var renovationInfosText : String = "Niveau d'entretien " + buildingDisplayedName + " " + sign + str(card[sideName]["healthVariation"])
 		if (isRightSide): 
 			_renovationEffectRight.text = renovationInfosText
 		else:
