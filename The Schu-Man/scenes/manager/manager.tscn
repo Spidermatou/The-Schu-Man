@@ -47,10 +47,10 @@ horizontal_alignment = 2
 autowrap_mode = 3
 
 [node name="Tuto" parent="." instance=ExtResource("5_rswg7")]
-offset_left = 227.0
-offset_top = 486.0
-offset_right = 227.0
-offset_bottom = 486.0
+offset_left = 78.0
+offset_top = 480.0
+offset_right = -1520.0
+offset_bottom = -545.0
 
 [node name="GaugeFinance" parent="." instance=ExtResource("4_272cb")]
 offset_left = -445.0

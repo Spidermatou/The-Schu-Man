@@ -1,20 +1,48 @@
-[gd_scene load_steps=2 format=3 uid="uid://dv4e4em3u4ttt"]
+[gd_scene load_steps=4 format=3 uid="uid://dv4e4em3u4ttt"]
 
 [ext_resource type="FontFile" uid="uid://bnk4b84m3spqq" path="res://ressources/fonts/Roboto/Roboto-Regular.ttf" id="1_j2ghn"]
+[ext_resource type="Script" path="res://scenes/tuto/tuto.gd" id="1_u0own"]
+[ext_resource type="Texture2D" uid="uid://c2c8xnsqmtilp" path="res://ressources/images/arrow_keyboard.png" id="3_wh2y3"]
 
 [node name="Tuto" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = -1512.0
+offset_bottom = -958.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_u0own")
 
-[node name="text" type="Label" parent="."]
-offset_right = 191.0
-offset_bottom = 31.0
+[node name="MainText" type="Label" parent="."]
+offset_left = 128.0
+offset_top = 7.0
+offset_right = 319.0
+offset_bottom = 38.0
 theme_override_fonts/font = ExtResource("1_j2ghn")
 theme_override_font_sizes/font_size = 25
-text = "afficher des infos"
-horizontal_alignment = 2
+text = "afficher les infos"
 vertical_alignment = 1
+
+[node name="Or" type="Label" parent="."]
+offset_left = -34.0
+offset_top = 4.0
+offset_right = 157.0
+offset_bottom = 35.0
+theme_override_fonts/font = ExtResource("1_j2ghn")
+theme_override_font_sizes/font_size = 25
+text = "ou"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ArrowKeyboardLeft" type="Sprite2D" parent="."]
+position = Vector2(23, 23)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("3_wh2y3")
+
+[node name="ArrowKeyboardRight" type="Sprite2D" parent="."]
+position = Vector2(105, 20)
+rotation = 3.14142
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("3_wh2y3")

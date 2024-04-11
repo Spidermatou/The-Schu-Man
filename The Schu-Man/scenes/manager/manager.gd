@@ -142,7 +142,7 @@ func peakInfos(isRightSide : bool):
 			_buildingEffectRight.text = renovationInfosText
 		else:
 			_buildingEffectLeft.text = renovationInfosText
-	_tuto.text = "confirmer"
+	_tuto.toConfirm()
 
 func _on_card_peak_to_left():
 	peakInfos(false)
