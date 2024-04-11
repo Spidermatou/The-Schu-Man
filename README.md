@@ -34,7 +34,7 @@ Les objectifs pédagogiques sont de permettre au joueur de comprendre :
 
 #### Objectifs pédagogiques avancés
 
-**Note aux 1ere année** : _C'est délicat de développer un jeu visitant chacun des objectifs offert par ce sujet, même si le temps qui vous ai fourni pour le projet T3 semble long ! Nous vous conseillons vivement de vous concentrer sur quelques objectifs qui vous inspirent et s'emboitennt bien ensemble !_
+**Note aux 1ere année** : _C'est délicat de développer un jeu visitant chacun des objectifs offert par ce sujet, même si le temps qui vous ai fourni pour le projet T3 semble long ! Nous vous conseillons vivement de vous concentrer sur quelques objectifs qui vous inspirent et s'emboitent bien ensemble !_
 
 - Appréhender les multiples défis auxquels le directeur de l'IUT est confronté en matière de gestion budgétaire.
 - Comprendre comment le directeur aligne sa stratégie de développement de l'IUT en accord avec ses équipes sur le campus, le conseil d’institut qui le nomme et le ministère de l'éducation qui le supervise.
@@ -63,6 +63,9 @@ Les objectifs pédagogiques sont de permettre au joueur de comprendre :
 - https://savoirs.unistra.fr/campus/les-locaux-du-departement-genie-civil-construction-durable-de-liut-robert-schuman-inaugures
 - https://numero182.lactu.unistra.fr/communaute/un-nouveau-directeur-pour-liut-robert-schuman.html
 - https://www.grandest.fr/actualites/de-nouveaux-locaux-pour-liut-robert-schuman/
+- https://iutrs.unistra.fr/partenariats/partenaires
+- https://iutrs.unistra.fr/iut/equipe/direction#:~:text=Sa%20mission%20est%20d'assurer,suivi%20des%20activit%C3%A9s%20des%20services.
+- https://m.facebook.com/iut.robertschuman/videos/question-6-aujourdhui-monsieur-mos%C3%A9-nous-parle-du-r%C3%B4le-qua-la-rse-pour-luiinterv/924941238257274/
 
 ### Description des fonctionnalités
 
@@ -104,7 +107,7 @@ L'interface est constituée des élements suivants :
 
 - Carte du campus avec les couleurs de l'etat des batiment
 - Trois barre sur les differents indicateurs (relation étudiants/personnel, relation central, budget)
-- Carte représentant l'action
+- Carte représentant l'action (une image et un dialogue)
 
 #### Actions du joueur
 
@@ -117,7 +120,7 @@ Les actions du joueur sont les suivantes :
 
 #### Scénarios
 
-Scénarios de victoire
+Scénario de victoire
 
 - Avoir tout les batiments en vert. La renovation est terminé, l'objectif principale est remplis.
 
@@ -133,4 +136,34 @@ Scénario de défaite
 
 #### Modularité
 
+Le projet est séparer en dossier contenant chacun une fonction
+
+- Dossier campus : scène de la carte du campus et son fichier gdscript
+- Dossier decisionCard : scène de la carte qui contient l'action à décider, son fichier gdscript et le fichier svg de la carte
+- Dossier endScreen : scène de l'écran de fin qui contient le message de fin de partie et son fichier gdscript 
+- Dossier gauges : scène des gauges et son fichier gdscript
+- Dossier manager : scène principale qui fait le lien avec tout les fonctionnalités, c'est l'écran de jeu. Son fichier gdscript ainsi qu'un fichier exitButton pour quitter l'application
+- Dossier tuto : scène du tutoriel pour comprend comment jouer au jeu et son fichier gdscript
+
+Le projet contient également un dossier ressources contenant des dossiers avec les ressources que le jeu a besoin
+- Dossier cardImage : toutes les images qui seront présentent sur les cartes
+- Dossier Font : les fonts utilisés, içi roboto et ses déclinaisons.
+- Dossier image : images liées au fonctionnalité en générale (icon gauges, fleche pour le tuto etc...)
+
 ### Fonctionnalités et scénarios avancés
+
+#### Fonctionnalités pris en charge par l'application actuellement
+
+- 
+- 
+- 
+- 
+
+#### Fonctionnalités non pris en charge
+
+-
+- 
+- 
+-
+
+
