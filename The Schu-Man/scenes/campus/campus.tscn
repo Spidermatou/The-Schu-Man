@@ -1,84 +1,116 @@
-[gd_scene load_steps=2 format=3 uid="uid://cj4682jtoww4b"]
+[gd_scene load_steps=3 format=3 uid="uid://cj4682jtoww4b"]
 
 [ext_resource type="Script" path="res://scenes/campus/campus.gd" id="1_wl83o"]
+[ext_resource type="FontFile" uid="uid://bnk4b84m3spqq" path="res://ressources/Roboto/Roboto-Regular.ttf" id="2_1005g"]
 
 [node name="Campus" type="Node2D"]
 script = ExtResource("1_wl83o")
 
-[node name="IT" type="Polygon2D" parent="."]
+[node name="Polygons" type="Node2D" parent="."]
+
+[node name="IT" type="Polygon2D" parent="Polygons"]
+position = Vector2(-13.3, -11.2)
+scale = Vector2(1.7, 1.7)
 polygon = PackedVector2Array(34, 33, 34, 21, 121, 21, 121, 59, 34, 59, 34, 43, 29, 43, 29, 33)
 
-[node name="BuildingLabel" type="RichTextLabel" parent="IT"]
-offset_left = 34.0
-offset_top = 21.0
-offset_right = 121.0
-offset_bottom = 59.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-bbcode_enabled = true
-text = "[center]IT[/center]"
-metadata/_edit_use_anchors_ = true
-
-[node name="SSU" type="Polygon2D" parent="."]
+[node name="SSU" type="Polygon2D" parent="Polygons"]
+position = Vector2(-13.3, -11.2)
+scale = Vector2(1.7, 1.7)
 polygon = PackedVector2Array(154, 56, 154, 16, 190, 16, 190, 56)
 
-[node name="BuildingLabel" type="RichTextLabel" parent="SSU"]
-offset_left = 155.0
-offset_top = 15.0
-offset_right = 190.0
-offset_bottom = 56.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-bbcode_enabled = true
-text = "[center]SSU[/center]"
-metadata/_edit_use_anchors_ = true
-
-[node name="Central" type="Polygon2D" parent="."]
+[node name="Central" type="Polygon2D" parent="Polygons"]
+position = Vector2(-13.3, -11.2)
+scale = Vector2(1.7, 1.7)
 polygon = PackedVector2Array(78, 92, 153, 92, 153, 169, 145, 169, 145, 203, 152, 203, 152, 306, 158, 306, 158, 336, 134, 336, 134, 311, 124, 311, 124, 306, 112, 306, 112, 212, 86, 212, 86, 227, 38, 227, 38, 202, 42, 202, 42, 195, 38, 195, 38, 170, 85, 170, 85, 160, 78, 160)
 
-[node name="BuildingLabel" type="RichTextLabel" parent="Central"]
-offset_left = 78.0
-offset_top = 92.0
-offset_right = 153.0
-offset_bottom = 159.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-bbcode_enabled = true
-text = "[center]Centrale[/center]"
-metadata/_edit_use_anchors_ = true
-
-[node name="Chemistry" type="Polygon2D" parent="."]
+[node name="Chemistry" type="Polygon2D" parent="Polygons"]
+position = Vector2(-13.3, -11.2)
+scale = Vector2(1.7, 1.7)
 polygon = PackedVector2Array(42, 312, 80, 312, 80, 397, 64, 397, 64, 408, 98, 408, 98, 444, 53, 444, 53, 407, 57, 407, 57, 396, 42, 396)
 
-[node name="BuildingLabel" type="RichTextLabel" parent="Chemistry"]
-offset_left = 43.0
-offset_top = 311.0
-offset_right = 80.0
-offset_bottom = 396.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-bbcode_enabled = true
-text = "[center]Chimie[/center]"
-metadata/_edit_use_anchors_ = true
-
-[node name="CivilEngineering" type="Polygon2D" parent="."]
+[node name="CivilEngineering" type="Polygon2D" parent="Polygons"]
+position = Vector2(-13.3, -11.2)
+scale = Vector2(1.7, 1.7)
 polygon = PackedVector2Array(144, 379, 258, 379, 258, 419, 250, 419, 250, 441, 273, 441, 273, 540, 162, 540, 162, 439, 226, 439, 226, 417, 144, 417)
 
-[node name="BuildingLabel" type="RichTextLabel" parent="CivilEngineering"]
-offset_left = 144.0
-offset_top = 379.0
-offset_right = 259.0
-offset_bottom = 418.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-bbcode_enabled = true
-text = "[center]Génie civil[/center]"
-metadata/_edit_use_anchors_ = true
-
-[node name="Leo" type="Polygon2D" parent="."]
+[node name="Leo" type="Polygon2D" parent="Polygons"]
+position = Vector2(-13.3, -11.2)
+scale = Vector2(1.7, 1.7)
 polygon = PackedVector2Array(51, 562, 107, 562, 107, 565, 117, 565, 117, 567, 121, 567, 121, 559, 144, 559, 144, 560, 143, 560, 143, 591, 139, 591, 139, 601, 142, 601, 145, 624, 138, 627, 129, 628, 120, 628, 120, 619, 116, 619, 116, 622, 105, 622, 105, 595, 107, 595, 107, 593, 51, 593)
 
-[node name="BuildingLabel" type="RichTextLabel" parent="Leo"]
-offset_left = 52.0
-offset_top = 562.0
-offset_right = 141.0
-offset_bottom = 593.0
+[node name="Labels" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Labels"]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 33.0
+offset_right = 193.0
+offset_bottom = 90.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_1005g")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "[center]Info[/center]"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Labels"]
+offset_left = 249.0
+offset_top = 38.0
+offset_right = 310.0
+offset_bottom = 84.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_1005g")
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[center]SSU[/center]"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="Labels"]
+offset_left = 119.0
+offset_top = 144.0
+offset_right = 247.0
+offset_bottom = 261.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_1005g")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "[center]Central[/center]"
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="Labels"]
+offset_left = 65.0
+offset_top = 659.0
+offset_right = 203.0
+offset_bottom = 709.0
+rotation = -1.5708
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_1005g")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "[center]Chimie[/center]"
+autowrap_mode = 0
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="Labels"]
+offset_left = 230.0
+offset_top = 640.0
+offset_right = 424.0
+offset_bottom = 698.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_1005g")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "[center]Génie civil[/center]"
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="Labels"]
+offset_left = 74.0
+offset_top = 946.0
+offset_right = 168.0
+offset_bottom = 997.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_1005g")
+theme_override_font_sizes/normal_font_size = 40
 bbcode_enabled = true
 text = "[center]Léo[/center]"
-metadata/_edit_use_anchors_ = true
+scroll_active = false
+autowrap_mode = 0

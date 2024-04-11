@@ -77,14 +77,14 @@ func checkBuildingsHealth():
 func updateBuildingColor(building: buildings, color: colors):
 	match building:
 		buildings.IT:
-			$IT.color = Color(colorsHex[color])
+			$Polygons/IT.color = Color(colorsHex[color])
 		buildings.SSU:
-			$SSU.color = Color(colorsHex[color])
+			$Polygons/SSU.color = Color(colorsHex[color])
 		buildings.CENTRAL:
-			$Central.color = Color(colorsHex[color])
+			$Polygons/Central.color = Color(colorsHex[color])
 		buildings.CHEMISTRY:
-			$Chemistry.color = Color(colorsHex[color])
+			$Polygons/Chemistry.color = Color(colorsHex[color])
 		buildings.CIVILENGINEERING:
-			$CivilEngineering.color = Color(colorsHex[color])
+			$Polygons/CivilEngineering.color = Color(colorsHex[color])
 		buildings.LEO:
-			$Leo.color = Color(colorsHex[color])	
+			$Polygons/Leo.color = Color(colorsHex[color])	
