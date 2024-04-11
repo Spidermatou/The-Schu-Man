@@ -1,6 +1,6 @@
 extends Node
 
-@export var PATH_TO_JSON : String = "ressources/cards.json" 
+@export var PATH_TO_JSON : String = "res://ressources/cards.json" 
 var lastCardsIndexes : Array = []
 var cardsData = {}
 var actualCardIndex : int = 0
