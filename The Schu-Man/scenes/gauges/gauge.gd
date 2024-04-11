@@ -6,7 +6,7 @@ signal isEmpty
 @onready var _icon : Sprite2D = $Icon
 @export var iconTexture : Texture2D
 
-func setValue(value : int):
+func setVariation(value : int):
 	if value < 0:
 		_variation.text = str(value)
 	else:
@@ -20,7 +20,7 @@ func hideVariation():
 
 func _ready():
 	showVariation()
-	setValue(0)
+	setVariation(0)
 
 func _process(delta):
 	_icon.texture = iconTexture
