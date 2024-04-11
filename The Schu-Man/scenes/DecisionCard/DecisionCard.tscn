@@ -5,6 +5,7 @@
 [ext_resource type="Script" path="res://scenes/DecisionCard/DecisionCardImage.gd" id="3_vpt4u"]
 
 [node name="DecisionCard" type="Node2D"]
+position = Vector2(420, 91)
 script = ExtResource("2_jqjsp")
 
 [node name="Card" type="Sprite2D" parent="."]

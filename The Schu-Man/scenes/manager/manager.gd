@@ -4,8 +4,12 @@ extends Node
 var lastCards : Array = []
 var cardsData = {}
 
-# Children
+# children
 @onready var _endGameScreen = $EndGameScreen
+@onready var _campus = $Campus
+@onready var _financeGauge = $GaugeFinance
+@onready var _centralGauge = $GaugeCentral
+@onready var _internGauge = $GaugeIntern
 
 func loadData():
 	var json = JSON.new()
@@ -48,10 +52,6 @@ func acceptCard():
 	nextCard()
 
 # TODO rename
-func handleEndGame():
-	_endGameScreen.show()
-
-# TODO rename
 func handlePeakToLeft():
 	pass
 
@@ -63,10 +63,36 @@ func _ready():
 	# reset debug
 	$MapBackground.color = Color(255,255,255)
 	
-	# Initialisation
+	# initialisation
 	loadData()
 	nextCard()
 	
-	# hide endGameScreen
-	_endGameScreen.hide()
+	# default values
+	_financeGauge.value = 50
+	_internGauge.value = 50
+	_centralGauge.value = 50
+	_campus.setAllHealth(50)
 	
+	# hide useless
+	_endGameScreen.hide()
+	_financeGauge.hideVariation()
+	_internGauge.hideVariation()
+	_centralGauge.hideVariation()
+	
+	# according to scenario
+	_campus.setHealth(_campus.buildings.CIVILENGINEERING, 100)
+	_campus.setHealth(_campus.buildings.LEO, 80)
+	
+	# test
+
+func _on_gauge_finance_is_empty():
+	_endGameScreen.show()
+	# _endGameScreen.texture = load("res://path/to/your/texture.png")
+
+func _on_gauge_central_is_empty():
+	_endGameScreen.show()
+	# _endGameScreen.texture = load("res://path/to/your/texture.png")
+
+func _on_gauge_intern_is_empty():
+	_endGameScreen.show()
+	# _endGameScreen.texture = load("res://path/to/your/texture.png")
