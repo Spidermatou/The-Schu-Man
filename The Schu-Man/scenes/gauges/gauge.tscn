@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://s077j7mu3htk"]
+[gd_scene load_steps=6 format=3 uid="uid://s077j7mu3htk"]
 
 [ext_resource type="Texture2D" uid="uid://dpir0lig2k11n" path="res://ressources/images/gauge_empty.png" id="1_25d7p"]
 [ext_resource type="Script" path="res://scenes/gauges/gauge.gd" id="1_nmx42"]
 [ext_resource type="Texture2D" uid="uid://bj3ol4d3n1v8g" path="res://ressources/images/gauge_blue.png" id="2_mb1vp"]
 [ext_resource type="Texture2D" uid="uid://7onj0fpgsc4w" path="res://icon.svg" id="4_gedtc"]
+[ext_resource type="FontFile" uid="uid://bnk4b84m3spqq" path="res://ressources/Roboto/Roboto-Regular.ttf" id="5_b028u"]
 
 [node name="Gauge" type="TextureProgressBar"]
 offset_left = 16.0
@@ -28,3 +29,15 @@ text = "0"
 position = Vector2(-8, 8)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("4_gedtc")
+
+[node name="Nom" type="Label" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = -3.0
+offset_right = 180.0
+offset_bottom = 20.0
+scale = Vector2(0.3, 0.3)
+theme_override_fonts/font = ExtResource("5_b028u")
+theme_override_font_sizes/font_size = 0
+text = "Un exemple de nom de jauge"
+vertical_alignment = 1
