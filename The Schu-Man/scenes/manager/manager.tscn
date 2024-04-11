@@ -51,6 +51,26 @@ iconTexture = ExtResource("3_33dhc")
 [node name="Card" parent="." instance=ExtResource("5_mfpgq")]
 position = Vector2(-24, -200)
 
+[node name="RenovationEffectLeft" type="Label" parent="."]
+offset_left = -200.0
+offset_top = -192.0
+offset_right = -160.0
+offset_bottom = -169.0
+scale = Vector2(3.32, 4.2)
+theme_override_font_sizes/font_size = 25
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RenovationEffectRight" type="Label" parent="."]
+offset_left = -200.0
+offset_top = -192.0
+offset_right = -160.0
+offset_bottom = -169.0
+scale = Vector2(3.32, 4.2)
+theme_override_font_sizes/font_size = 25
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="isEmpty" from="GaugeFinance" to="." method="_on_gauge_finance_is_empty"]
 [connection signal="isEmpty" from="GaugeCentral" to="." method="_on_gauge_central_is_empty"]
 [connection signal="isEmpty" from="GaugeIntern" to="." method="_on_gauge_intern_is_empty"]

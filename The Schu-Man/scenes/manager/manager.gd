@@ -12,6 +12,8 @@ var actualCardIndex : int = 0
 @onready var _centralGauge = $GaugeCentral
 @onready var _internGauge = $GaugeIntern
 @onready var _card = $Card
+@onready var _renovationEffectLeft = $RenovationEffectLeft
+@onready var _renovationEffectRight = $RenovationEffectRight
 
 func loadData():
 	var json = JSON.new()
@@ -29,8 +31,10 @@ func loadData():
 func nextCard(): # TODO	
 	# choose new card dataset	
 	var size : int = cardsData.size() 
+	var randomInd : int = -1
 	if size > 0:
-		var randomInd : int = randi_range(0, size - 1)
+		while (lastCardsIndexes.has(randomInd)):
+			randomInd = randi_range(0, size - 1)
 		
 		# choose a card
 		var card = cardsData[randomInd]
@@ -53,6 +57,8 @@ func nextCard(): # TODO
 		
 		# save 
 		actualCardIndex = randomInd
+		lastCardsIndexes.append(randomInd)
+		if (lastCardsIndexes.size() >= 5): lastCardsIndexes.remove_at(0)
 
 func resetUI():
 	# reset gauges indications
@@ -127,10 +133,10 @@ func _on_card_peak_to_right():
 	_financeGauge.showVariation()
 	_internGauge.showVariation()
 	_centralGauge.showVariation()
-
-	var renovationLeft = card["effectRight"]["renovation"]
-	var buildingLeft = card["effectRight"]["building"]
-
+	
+	# renovation
+	if ( str(card["effectRight"]["building"]) != ""):
+		_renovationEffectRight.text = str(card["effectRight"]["building"]) + " : " + str(card["effectRight"]["renovation"])
 
 func _on_card_card_chosen(value : bool):
 	var card = cardsData[actualCardIndex]
@@ -141,3 +147,4 @@ func _on_card_card_chosen(value : bool):
 	_internGauge.value += card[side]["budget"]
 	_centralGauge.value += card[side]["budget"]
 	resetUI()
+	nextCard()
