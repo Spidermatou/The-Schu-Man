@@ -26,7 +26,8 @@ func loadData():
 	else:
 		print("JSON Parse Error: ", json.get_error_message(), " in ", loaded, " at line ", json.get_error_line())
 
-func nextCard(): # TODO
+func nextCard(): # TODO	
+	# choose new card dataset	
 	var size : int = cardsData.size() 
 	if size > 0:
 		var randomInd : int = randi_range(0, size - 1)
@@ -53,21 +54,14 @@ func nextCard(): # TODO
 		# save 
 		actualCardIndex = randomInd
 
-func refuseCard():
-	nextCard()
-	
-func acceptCard():
-	# TODO
-	# set gauges
-	nextCard()
-
-# TODO rename
-func handlePeakToLeft():
-	pass
-
-# TODO rename
-func handlePeakToRight():
-	pass
+func resetUI():
+	# reset gauges indications
+	_financeGauge.hideVariation()
+	_internGauge.hideVariation()
+	_centralGauge.hideVariation()
+	# reset card
+	_card.setDialog("")
+	_card.setImage(null)
 
 func _ready():
 	# reset debug
@@ -106,3 +100,44 @@ func _on_gauge_central_is_empty():
 func _on_gauge_intern_is_empty():
 	_endGameScreen.show()
 	# _endGameScreen.texture = load("res://path/to/your/texture.png")
+
+
+func _on_card_peak_to_left():
+	var card = cardsData[actualCardIndex]
+	_financeGauge.setVariation(card["effectLeft"]["budget"])
+	_internGauge.setVariation(card["effectLeft"]["internalSatisfaction"])
+	_centralGauge.setVariation(card["effectLeft"]["internalSatisfaction"])
+	
+	# show them
+	_financeGauge.showVariation()
+	_internGauge.showVariation()
+	_centralGauge.showVariation()
+	
+	var renovationLeft = card["effectLeft"]["renovation"]
+	var buildingLeft = card["effectLeft"]["building"]
+
+
+func _on_card_peak_to_right():
+	var card = cardsData[actualCardIndex]
+	_financeGauge.setVariation(card["effectRight"]["budget"])
+	_internGauge.setVariation(card["effectRight"]["internalSatisfaction"])
+	_centralGauge.setVariation(card["effectRight"]["internalSatisfaction"])
+
+	# show them
+	_financeGauge.showVariation()
+	_internGauge.showVariation()
+	_centralGauge.showVariation()
+
+	var renovationLeft = card["effectRight"]["renovation"]
+	var buildingLeft = card["effectRight"]["building"]
+
+
+func _on_card_card_chosen(value : bool):
+	var card = cardsData[actualCardIndex]
+	var side : String 
+	if (value == true): side = "effectRight"
+	else: side = "effectLeft"
+	_financeGauge.value += card[side]["budget"]
+	_internGauge.value += card[side]["budget"]
+	_centralGauge.value += card[side]["budget"]
+	resetUI()
