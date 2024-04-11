@@ -61,9 +61,6 @@ func resetUI():
 	_renovationEffectRight.text =""
 
 func _ready():
-	# reset debug
-	$MapBackground.color = Color(255,255,255)
-	
 	# initialisation
 	loadData()
 	nextCard()

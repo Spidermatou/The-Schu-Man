@@ -5,6 +5,7 @@ signal peakToLeft
 signal cardChosen(value : bool)
 
 @onready var card : Sprite2D = $Card
+@onready var cardIllustration : Sprite2D = $Card/DecisionCardImage
 
 var right_arrow_pressed : bool = false
 var left_arrow_pressed : bool = false
@@ -59,3 +60,6 @@ func _input(event):
 				
 				cardChosen.emit(false)
 				return
+
+func _process(delta):
+	cardIllustration.scale = Vector2(190, 190) / cardIllustration.texture.get_size()
