@@ -1,14 +1,16 @@
-[gd_scene load_steps=10 format=3 uid="uid://dw6oybycb8o07"]
+[gd_scene load_steps=12 format=3 uid="uid://dw6oybycb8o07"]
 
 [ext_resource type="Script" path="res://scenes/manager/manager.gd" id="1_lje2p"]
 [ext_resource type="PackedScene" uid="uid://cj4682jtoww4b" path="res://scenes/campus/campus.tscn" id="2_wnkwo"]
 [ext_resource type="Texture2D" uid="uid://7onj0fpgsc4w" path="res://icon.svg" id="3_33dhc"]
 [ext_resource type="PackedScene" uid="uid://s077j7mu3htk" path="res://scenes/gauges/gauge.tscn" id="4_272cb"]
 [ext_resource type="Texture2D" uid="uid://kgwj5cyremcv" path="res://ressources/images/gauge_gold.png" id="4_w623f"]
-[ext_resource type="PackedScene" uid="uid://blt583utyr0k" path="res://scenes/DecisionCard/DecisionCard.tscn" id="5_mfpgq"]
+[ext_resource type="PackedScene" uid="uid://blt583utyr0k" path="res://scenes/decisionCard/decisionCard.tscn" id="5_mfpgq"]
 [ext_resource type="PackedScene" uid="uid://2fjj6s5bv6ot" path="res://scenes/endScreen/end_game_screen.tscn" id="6_pvhaj"]
 [ext_resource type="Texture2D" uid="uid://cmqf0wyoiaf3m" path="res://ressources/images/gauge_green.png" id="6_uea3b"]
 [ext_resource type="FontFile" uid="uid://bnk4b84m3spqq" path="res://ressources/fonts/Roboto/Roboto-Regular.ttf" id="7_oc8dn"]
+[ext_resource type="Texture2D" uid="uid://b0ice05ic5400" path="res://ressources/images/cross.png" id="9_qddja"]
+[ext_resource type="Script" path="res://scenes/manager/exitButton.gd" id="10_1vrm5"]
 
 [node name="Manager" type="Node"]
 script = ExtResource("1_lje2p")
@@ -16,83 +18,70 @@ script = ExtResource("1_lje2p")
 [node name="Campus" parent="." instance=ExtResource("2_wnkwo")]
 position = Vector2(-960, -540)
 
+[node name="Card" parent="." instance=ExtResource("5_mfpgq")]
+position = Vector2(240, 64)
+scale = Vector2(1.5, 1.5)
+
+[node name="BuildingEffectLeft" type="Label" parent="."]
+offset_left = -486.0
+offset_top = 159.0
+offset_right = 274.0
+offset_bottom = 895.0
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("7_oc8dn")
+theme_override_font_sizes/font_size = 100
+text = "Test"
+autowrap_mode = 3
+
+[node name="BuildingEffectRight" type="Label" parent="."]
+offset_left = 576.0
+offset_top = 159.0
+offset_right = 1298.0
+offset_bottom = 891.0
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("7_oc8dn")
+theme_override_font_sizes/font_size = 100
+text = "Test"
+horizontal_alignment = 2
+autowrap_mode = 3
+
 [node name="GaugeFinance" parent="." instance=ExtResource("4_272cb")]
-offset_left = -432.0
-offset_top = -516.0
-offset_right = -327.0
-offset_bottom = -500.0
+offset_left = -445.0
+offset_top = -520.0
+offset_right = -340.0
+offset_bottom = -504.0
 scale = Vector2(3.8, 3.8)
 texture_progress = ExtResource("4_w623f")
 iconTexture = ExtResource("3_33dhc")
 gaugeName = "Budget"
 
 [node name="GaugeCentral" parent="." instance=ExtResource("4_272cb")]
-offset_left = 48.0
-offset_top = -514.0
-offset_right = 153.0
-offset_bottom = -498.0
+offset_left = 10.0
+offset_top = -520.0
+offset_right = 115.0
+offset_bottom = -504.0
 scale = Vector2(3.8, 3.8)
 iconTexture = ExtResource("3_33dhc")
 gaugeName = "Relation avec le Central de l'université"
 
 [node name="GaugeIntern" parent="." instance=ExtResource("4_272cb")]
-offset_left = 528.0
-offset_top = -516.0
-offset_right = 633.0
-offset_bottom = -500.0
+offset_left = 465.0
+offset_top = -520.0
+offset_right = 570.0
+offset_bottom = -504.0
 scale = Vector2(3.8, 3.8)
 texture_progress = ExtResource("6_uea3b")
 iconTexture = ExtResource("3_33dhc")
 gaugeName = "Relation avec étudiants et profs"
 
-[node name="Card" parent="." instance=ExtResource("5_mfpgq")]
-position = Vector2(240, 64)
-scale = Vector2(1.5, 1.5)
-
-[node name="RenovationEffectLeft" type="Label" parent="."]
-offset_left = -455.0
-offset_top = 159.0
-offset_right = -335.0
-offset_bottom = 279.0
-scale = Vector2(3, 3)
-theme_override_font_sizes/font_size = 0
-text = "Test"
-autowrap_mode = 3
-
-[node name="RenovationEffectRight" type="Label" parent="."]
-offset_left = 576.0
-offset_top = 159.0
-offset_right = 696.0
-offset_bottom = 279.0
-scale = Vector2(3, 3)
-theme_override_font_sizes/font_size = 0
-text = "Test"
-horizontal_alignment = 2
-autowrap_mode = 3
-
-[node name="Refuser" type="Label" parent="."]
-offset_left = -376.0
-offset_top = -264.0
-offset_right = -153.0
-offset_bottom = -187.0
-theme_override_colors/font_color = Color(0.2, 0.2, 0.2, 1)
-theme_override_fonts/font = ExtResource("7_oc8dn")
-theme_override_font_sizes/font_size = 65
-text = "Refuser"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Accepter" type="Label" parent="."]
-offset_left = 588.0
-offset_top = -274.0
-offset_right = 845.0
-offset_bottom = -197.0
-theme_override_colors/font_color = Color(0.2, 0.2, 0.2, 1)
-theme_override_fonts/font = ExtResource("7_oc8dn")
-theme_override_font_sizes/font_size = 65
-text = "Accepter"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="ExitButton" type="Button" parent="."]
+offset_left = 890.0
+offset_top = -530.0
+offset_right = 1008.0
+offset_bottom = -412.0
+scale = Vector2(0.5, 0.5)
+icon = ExtResource("9_qddja")
+script = ExtResource("10_1vrm5")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -100,9 +89,10 @@ vertical_alignment = 1
 visible = false
 
 [connection signal="ruinedBuilding" from="Campus" to="." method="_on_campus_ruined_building"]
-[connection signal="isEmpty" from="GaugeFinance" to="." method="_on_gauge_finance_is_empty"]
-[connection signal="isEmpty" from="GaugeCentral" to="." method="_on_gauge_central_is_empty"]
-[connection signal="isEmpty" from="GaugeIntern" to="." method="_on_gauge_intern_is_empty"]
 [connection signal="cardChosen" from="Card" to="." method="_on_card_card_chosen"]
 [connection signal="peakToLeft" from="Card" to="." method="_on_card_peak_to_left"]
 [connection signal="peakToRight" from="Card" to="." method="_on_card_peak_to_right"]
+[connection signal="isEmpty" from="GaugeFinance" to="." method="_on_gauge_finance_is_empty"]
+[connection signal="isEmpty" from="GaugeCentral" to="." method="_on_gauge_central_is_empty"]
+[connection signal="isEmpty" from="GaugeIntern" to="." method="_on_gauge_intern_is_empty"]
+[connection signal="pressed" from="ExitButton" to="ExitButton" method="_on_pressed"]

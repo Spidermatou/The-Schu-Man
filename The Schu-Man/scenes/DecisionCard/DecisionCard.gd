@@ -4,14 +4,14 @@ signal peakToRight
 signal peakToLeft
 signal cardChosen(value : bool)
 
-@onready var card : Sprite2D = $Card
-@onready var cardIllustration : Sprite2D = $Card/DecisionCardImage
+@onready var card : Node2D = $Card
+@onready var cardIllustration : Sprite2D = $Card/Image
 
 var right_arrow_pressed : bool = false
 var left_arrow_pressed : bool = false
 
 func setImage(newImage : Texture2D):
-	var image = $Card/DecisionCardImage
+	var image = $Card/Image
 	if newImage != null:
 		image.texture = newImage
 

@@ -12,8 +12,33 @@ var actualCardIndex : int = 0
 @onready var _centralGauge = $GaugeCentral
 @onready var _internGauge = $GaugeIntern
 @onready var _card = $Card
-@onready var _renovationEffectLeft = $RenovationEffectLeft
-@onready var _renovationEffectRight = $RenovationEffectRight
+@onready var _buildingEffectLeft = $BuildingEffectLeft
+@onready var _buildingEffectRight = $BuildingEffectRight
+
+func _ready():
+	# initialisation
+	loadData()
+	nextCard()
+	
+	# default values
+	_financeGauge.value = 50
+	_internGauge.value = 50
+	_centralGauge.value = 50
+	_campus.setAllHealth(50)
+	
+	# hide useless
+	_endGameScreen.hide()
+	_financeGauge.hideVariation()
+	_internGauge.hideVariation()
+	_centralGauge.hideVariation()
+	
+	# according to scenario
+	_campus.setHealth(_campus.buildings.CIVILENGINEERING, 100)
+	_campus.setHealth(_campus.buildings.LEO, 80)
+	
+	# reset renovation effect
+	_buildingEffectLeft.text = ""
+	_buildingEffectRight.text = ""
 
 func loadData():
 	var json = JSON.new()
@@ -57,33 +82,8 @@ func resetUI():
 	_card.setDialog("")
 	_card.setImage(null)
 	# renovations
-	_renovationEffectLeft.text =""
-	_renovationEffectRight.text =""
-
-func _ready():
-	# initialisation
-	loadData()
-	nextCard()
-	
-	# default values
-	_financeGauge.value = 50
-	_internGauge.value = 50
-	_centralGauge.value = 50
-	_campus.setAllHealth(50)
-	
-	# hide useless
-	_endGameScreen.hide()
-	_financeGauge.hideVariation()
-	_internGauge.hideVariation()
-	_centralGauge.hideVariation()
-	
-	# according to scenario
-	_campus.setHealth(_campus.buildings.CIVILENGINEERING, 100)
-	_campus.setHealth(_campus.buildings.LEO, 80)
-	
-	# reset renovation effect
-	_renovationEffectLeft.text = ""
-	_renovationEffectRight.text = ""
+	_buildingEffectLeft.text =""
+	_buildingEffectRight.text =""
 
 func _on_gauge_finance_is_empty():
 	_endGameScreen.show()
@@ -106,11 +106,11 @@ func peakInfos(isRightSide : bool):
 	if (isRightSide): 
 		sideName = "effectRight"
 		# reset the other side		
-		_renovationEffectLeft.text = ""
+		_buildingEffectLeft.text = ""
 	else:
 		sideName = "effectLeft"
 		# reset the other side
-		_renovationEffectRight.text = ""
+		_buildingEffectRight.text = ""
 	# retrieve potential gauges's variations 
 	var card = cardsData[actualCardIndex]
 	_financeGauge.setVariation(card[sideName]["budget"])
@@ -136,9 +136,9 @@ func peakInfos(isRightSide : bool):
 		if (card[sideName]["healthVariation"] >= 0): calculSign = "+"
 		var renovationInfosText : String = "Niveau d'entretien " + buildingDisplayedName + " " + calculSign + str(card[sideName]["healthVariation"])
 		if (isRightSide): 
-			_renovationEffectRight.text = renovationInfosText
+			_buildingEffectRight.text = renovationInfosText
 		else:
-			_renovationEffectLeft.text = renovationInfosText
+			_buildingEffectLeft.text = renovationInfosText
 
 func _on_card_peak_to_left():
 	peakInfos(false)

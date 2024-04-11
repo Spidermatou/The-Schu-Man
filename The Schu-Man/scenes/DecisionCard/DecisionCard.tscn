@@ -1,31 +1,63 @@
-[gd_scene load_steps=4 format=3 uid="uid://blt583utyr0k"]
+[gd_scene load_steps=5 format=3 uid="uid://blt583utyr0k"]
 
-[ext_resource type="Texture2D" uid="uid://dsvpka5atdxeb" path="res://scenes/DecisionCard/Card.svg" id="1_ramq0"]
+[ext_resource type="Texture2D" uid="uid://dsvpka5atdxeb" path="res://scenes/decisionCard/card.svg" id="1_ramq0"]
 [ext_resource type="Texture2D" uid="uid://lvy57xmfoc0j" path="res://ressources/cardsImages/zimmerlan.png" id="3_6s1iw"]
-[ext_resource type="Script" path="res://scenes/DecisionCard/DecisionCard.gd" id="3_vpt4u"]
+[ext_resource type="Script" path="res://scenes/decisionCard/decisionCard.gd" id="3_vpt4u"]
+[ext_resource type="FontFile" uid="uid://bnk4b84m3spqq" path="res://ressources/fonts/Roboto/Roboto-Regular.ttf" id="4_a62l2"]
 
 [node name="DecisionCard" type="Node2D"]
 script = ExtResource("3_vpt4u")
 
-[node name="Card" type="Sprite2D" parent="."]
-texture = ExtResource("1_ramq0")
-
-[node name="DecisionCardImage" type="Sprite2D" parent="Card"]
-position = Vector2(0, -80)
-scale = Vector2(0.65, 0.65)
-texture = ExtResource("3_6s1iw")
-
-[node name="DialogBox" type="RichTextLabel" parent="Card"]
+[node name="Refuser" type="Label" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -260.0
-offset_top = -173.5
-offset_right = -10.0
-offset_bottom = -23.5
+offset_left = -372.0
+offset_top = -270.0
+offset_right = -28.0
+offset_bottom = -152.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/normal_font_size = 14
-text = "Je test pour voir le dialogue si tout passe bien parfait j'aime bien"
+scale = Vector2(0.5, 0.5)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_a62l2")
+theme_override_font_sizes/font_size = 100
+text = "Refuser"
+
+[node name="Accepter" type="Label" parent="."]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 200.0
+offset_top = -270.0
+offset_right = 598.0
+offset_bottom = -152.0
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("4_a62l2")
+theme_override_font_sizes/font_size = 100
+text = "Accepter"
+
+[node name="Card" type="Node2D" parent="."]
+
+[node name="BackGround" type="Sprite2D" parent="Card"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_ramq0")
+
+[node name="Image" type="Sprite2D" parent="Card"]
+position = Vector2(0, -87)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_6s1iw")
+
+[node name="DialogBox" type="RichTextLabel" parent="Card"]
+offset_left = -127.0
+offset_top = 25.0
+offset_right = 4953.0
+offset_bottom = 3465.0
+scale = Vector2(0.05, 0.05)
+theme_override_fonts/normal_font = ExtResource("4_a62l2")
+theme_override_font_sizes/normal_font_size = 400
+text = "This is a test dialog"
