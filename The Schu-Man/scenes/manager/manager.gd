@@ -83,6 +83,9 @@ func _ready():
 	_internGauge.hideVariation()
 	_centralGauge.hideVariation()
 	
+	# according to scenario
+	_campus.setHealth(_campus.buildings.CIVILENGINEERING, 100)
+	_campus.setHealth(_campus.buildings.LEO, 80)
 	
 	# test
 	var g = $GaugeFinance
