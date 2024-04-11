@@ -25,6 +25,7 @@ offset_right = -327.0
 offset_bottom = -500.0
 scale = Vector2(3.8, 3.8)
 iconTexture = ExtResource("3_33dhc")
+gaugeName = "Budget"
 
 [node name="GaugeCentral" parent="." instance=ExtResource("4_272cb")]
 offset_left = 48.0
@@ -33,6 +34,7 @@ offset_right = 153.0
 offset_bottom = -498.0
 scale = Vector2(3.8, 3.8)
 iconTexture = ExtResource("3_33dhc")
+gaugeName = "Relation avec le Central de l'université"
 
 [node name="GaugeIntern" parent="." instance=ExtResource("4_272cb")]
 offset_left = 528.0
@@ -41,6 +43,7 @@ offset_right = 633.0
 offset_bottom = -500.0
 scale = Vector2(3.8, 3.8)
 iconTexture = ExtResource("3_33dhc")
+gaugeName = "Relation avec étudiants et profs"
 
 [node name="Card" parent="." instance=ExtResource("5_mfpgq")]
 position = Vector2(240, 64)
