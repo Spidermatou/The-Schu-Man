@@ -159,18 +159,17 @@ func _on_card_card_chosen(value : bool):
 	var buildingName : String = card[side]["building"]
 	var enumValue : int = -1
 	if (buildingName != ""):
+		var healthVariation : int = card[side]["healthVariation"]
 		# see which building will be affected
 		match(buildingName):
-			"IT": enumValue = _campus.buildings.IT
-			"SSU": enumValue = _campus.buildings.SSU
-			"CENTRAL": enumValue = _campus.buildings.CENTRAL
-			"CHEMISTRY": enumValue = _campus.buildings.CHEMISTRY
-			"CIVILENGINEERING": enumValue = _campus.buildings.CIVILENGINEERING
-			"LEO": enumValue = _campus.buildings.LEO
-			_: enumValue = _campus.buildings.LEO
-		# affected the building
-		var renovationValue : int = card[side]["healthVariation"]
-		_campus.addToHealth(enumValue, renovationValue)
+			"IT": _campus.addToHealth(_campus.buildings.IT, healthVariation)
+			"SSU": _campus.addToHealth(_campus.buildings.SSU, healthVariation)
+			"CENTRAL": _campus.addToHealth(_campus.buildings.CENTRAL, healthVariation)
+			"CHEMISTRY": _campus.addToHealth(_campus.buildings.CHEMISTRY, healthVariation)
+			"CIVILENGINEERING": _campus.addToHealth(_campus.buildings.CIVILENGINEERING, healthVariation)
+			"LEO": _campus.addToHealth(_campus.buildings.LEO, healthVariation)
+			_: _campus.addToAllHealth(healthVariation)
+		
 	resetUI()
 	nextCard()
 
