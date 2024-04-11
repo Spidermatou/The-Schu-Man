@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://blt583utyr0k"]
+[gd_scene load_steps=4 format=3 uid="uid://blt583utyr0k"]
 
-[ext_resource type="Texture2D" uid="uid://dsvpka5atdxeb" path="res://scenes/decisionCard/card.svg" id="1_ramq0"]
-[ext_resource type="Texture2D" uid="uid://lvy57xmfoc0j" path="res://ressources/cardsImages/zimmerlan.png" id="3_6s1iw"]
+[ext_resource type="Texture2D" uid="uid://cjuoxbpllkkcp" path="res://scenes/decisionCard/card.svg" id="1_ramq0"]
 [ext_resource type="Script" path="res://scenes/decisionCard/decisionCard.gd" id="3_vpt4u"]
 [ext_resource type="FontFile" uid="uid://bnk4b84m3spqq" path="res://ressources/fonts/Roboto/Roboto-Regular.ttf" id="4_a62l2"]
 
@@ -47,10 +46,20 @@ text = "Accepter"
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_ramq0")
 
-[node name="Image" type="Sprite2D" parent="Card"]
-position = Vector2(0, -87)
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("3_6s1iw")
+[node name="Image" type="TextureRect" parent="Card"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -184.0
+offset_right = 100.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 4
+stretch_mode = 5
 
 [node name="DialogBox" type="RichTextLabel" parent="Card"]
 offset_left = -127.0
