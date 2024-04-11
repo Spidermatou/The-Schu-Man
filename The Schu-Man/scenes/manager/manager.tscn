@@ -48,7 +48,7 @@ offset_bottom = -286.0
 scale = Vector2(2, 2)
 iconTexture = ExtResource("3_33dhc")
 
-[node name="DecisionCard" parent="." instance=ExtResource("5_mfpgq")]
+[node name="Card" parent="." instance=ExtResource("5_mfpgq")]
 position = Vector2(-24, -200)
 
 [connection signal="isEmpty" from="GaugeFinance" to="." method="_on_gauge_finance_is_empty"]

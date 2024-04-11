@@ -1,8 +1,8 @@
 {
 	"cards" : [
 		{
-			"image" : "res://image.png",
-			"dialogue" : "A",
+			"image" : "res://ressources/images/gauge_green.png",
+			"dialogue" : "Carotte",
 			"effectLeft" : {
 				"budget" : 10,
 				"centralSatisfaction" : 50,
@@ -19,8 +19,8 @@
 			}
 		},
 		{
-			"image" : "res://image.png",
-			"dialogue" : "A",
+			"image" : "res://ressources/images/gauge_green.png",
+			"dialogue" : "Abricot",
 			"effectLeft" : {
 				"budget" : 10,
 				"centralSatisfaction" : 50,

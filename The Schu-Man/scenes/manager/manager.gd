@@ -11,6 +11,7 @@ var actualCardIndex : int = 0
 @onready var _financeGauge = $GaugeFinance
 @onready var _centralGauge = $GaugeCentral
 @onready var _internGauge = $GaugeIntern
+@onready var _card = $Card
 
 func loadData():
 	var json = JSON.new()
@@ -33,10 +34,10 @@ func nextCard(): # TODO
 		# choose a card
 		var card = cardsData[randomInd]
 		
-		# retrieve properties
-		var dialogue = card["dialogue"]
-		var imagePath = card["image"]
-		
+		# set card
+		_card.setDialog(card["dialogue"])
+		_card.setImage(load(card["image"]))
+
 		var budgetRight = card["effectRight"]["budget"]
 		var centralRight = card["effectRight"]["centralSatisfaction"]
 		var internRight = card["effectRight"]["internalSatisfaction"]

@@ -16,8 +16,7 @@ func setImage(newImage : Texture2D):
 		print("La texture fournie est nulle.")
 		
 func setDialog(dialog : String):
-	var dialogBox = get_node("DialogBox")
-	dialogBox.text + dialog
+	$DialogBox.text = dialog
 
 var right_arrow_pressed = 0
 var left_arrow_pressed = 0
