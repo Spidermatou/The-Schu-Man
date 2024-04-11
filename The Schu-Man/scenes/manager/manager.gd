@@ -127,11 +127,12 @@ func peakInfos(isRightSide : bool):
 			_: buildingDisplayedName = "du batiment informatique"
 		# retrieve info
 		if (card[sideName]["healthVariation"] >= 0): calculSign = "+"
-		var renovationInfosText : String = "Niveau d'entretien " + buildingDisplayedName + " " + calculSign + str(card[sideName]["healthVariation"])
-		if (isRightSide): 
-			_buildingEffectRight.text = renovationInfosText
-		else:
-			_buildingEffectLeft.text = renovationInfosText
+		if (card[sideName]["healthVariation"] != 0):
+			var renovationInfosText : String = "Niveau d'entretien " + buildingDisplayedName + " " + calculSign + str(card[sideName]["healthVariation"])
+			if (isRightSide): 
+				_buildingEffectRight.text = renovationInfosText
+			else:
+				_buildingEffectLeft.text = renovationInfosText
 	_tuto.toConfirm()
 
 func _on_card_peak_to_left():
