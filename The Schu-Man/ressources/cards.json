@@ -1,113 +1,166 @@
 {
-	"cards" : [
-		{
-			"image" : "res://icon.svg",
-			"dialogue" : "Bonjour Monsieur le Directeur. Je souhaite vous voir car j'ai remarqué que mes étudiants n'ont pas suffisamment d'heures de TD en mathématiques et que leur niveau semble baisser. Pourrions-nous engager un chargé de TD supplémentaire ?",
-			"effectLeft" : {
-				"budget" : 0,
-				"centralSatisfaction" : 5,
-				"internalSatisfaction" : -10,
-				"healthVariation" : 0,
-				"building" : ""
-			},
-			"effectRight" : {
-				"budget" : -5,
-				"centralSatisfaction" : -5,
-				"internalSatisfaction" : 10,
-				"healthVariation" : 0,
-				"building" : ""
-			},
-		},
-		{
-			"image" : "res://icon.svg",
-			"dialogue" : "Monsieur le Directeur, un étudiant a dévissé les pieds de table d'une salle du bâtiment. Vous devez envoyer un agent pour les réparer. Sinon, il ne pourra pas y avoir de cours dans cette salle.",
-			"effectLeft" : {
-				"budget" : 0,
-				"centralSatisfaction" : 0,
-				"internalSatisfaction" : -10,
-				"healthVariation" : -10,
-				"building" : "IT"
-			},
-			"effectRight" : {
-				"budget" : -5,
-				"centralSatisfaction" : 0,
-				"internalSatisfaction" : 5,
-				"healthVariation" : 0,
-				"building" : "IT"
-			},
-		},
-		{
-			"image" : "res://icon.svg",
-			"dialogue" : "Monsieur le Directeur, un étudiant a dévissé les pieds de table d'une salle du bâtiment. Vous devez envoyer un agent pour les réparer. Sinon, il ne pourra pas y avoir de cours dans cette salle.",
-			"effectLeft" : {
-				"budget" : 0,
-				"centralSatisfaction" : 0,
-				"internalSatisfaction" : -10,
-				"healthVariation" : -10,
-				"building" : "CENTRAL"
-			},
-			"effectRight" : {
-				"budget" : -5,
-				"centralSatisfaction" : 0,
-				"internalSatisfaction" : 5,
-				"healthVariation" : 0,
-				"building" : "CENTRAL"
-			},
-		},
-		{
-			"image" : "res://icon.svg",
-			"dialogue" : "Monsieur le Directeur, nous vous proposons de commencer les travaux de rénovation du bâtiment. Cette opération est prévue par le CPER et vous devriez avoir le budget suffisant, en théorie...",
-			"effectLeft" : {
-				"budget" : 0,
-				"centralSatisfaction" : 0,
-				"internalSatisfaction" : 0,
-				"healthVariation" : 0,
-				"building" : "IT"
-			},
-			"effectRight" : {
-				"budget" : -30,
-				"centralSatisfaction" : 0,
-				"internalSatisfaction" : 0,
-				"healthVariation" : 100,
-				"building" : "IT"
-			},
-		},
-		{
-			"image" : "res://icon.svg",
-			"dialogue" : "Monsieur le Directeur, nous vous proposons de commencer les travaux de rénovation du bâtiment. Cette opération est prévue par le CPER et vous devriez avoir le budget suffisant, en théorie...",
-			"effectLeft" : {
-				"budget" : 0,
-				"centralSatisfaction" : 0,
-				"internalSatisfaction" : 0,
-				"healthVariation" : 0,
-				"building" : "CHEMISTRY"
-			},
-			"effectRight" : {
-				"budget" : -30,
-				"centralSatisfaction" : 0,
-				"internalSatisfaction" : 0,
-				"healthVariation" : 100,
-				"building" : "CHEMISTRY"
-			},
-		},
-		{
-			"image" : "res://icon.svg",
-			"dialogue" : "Monsieur le Directeur, votre IUT fait partie de notre ville et nous souhaitons vous soutenir. Nous vous proposons un financement pour rénover vos bâtiments et embellir notre magnifique ville.",
-			"effectLeft" : {
-				"budget" : 0,
-				"centralSatisfaction" : 5,
-				"internalSatisfaction" : 0,
-				"healthVariation" : 0,
-				"building" : ""
-			},
-			"effectRight" : {
-				"budget" : 25,
-				"centralSatisfaction" : -25,
-				"internalSatisfaction" : 0,
-				"healthVariation" : 0,
-				"building" : ""
-			},
-		},
-		
-	]
+  "cards": [
+    {
+      "image": "res://ressources/cardsImages/zimmerlan.png",
+      "dialogue": "Les étudiants n'ont pas suffisament d'heures de mathématiques et leur niveau chute ! Engager un chargé de TD supplémentaire ?",
+      "effectLeft": {
+        "budget": 0,
+        "centralSatisfaction": 5,
+        "internalSatisfaction": -10,
+        "healthVariation": 0,
+        "building": ""
+      },
+      "effectRight": {
+        "budget": -5,
+        "centralSatisfaction": -5,
+        "internalSatisfaction": 10,
+        "healthVariation": 0,
+        "building": ""
+      }
+    },
+    {
+      "image": "res://icon.svg",
+      "dialogue": "Un étudiant a dévissé les pieds de table en salle IIN 103. Dur de faire cours avec ça... Envoyer un agent pour les réparer ?",
+      "effectLeft": {
+        "budget": 0,
+        "centralSatisfaction": 0,
+        "internalSatisfaction": -10,
+        "healthVariation": -10,
+        "building": "IT"
+      },
+      "effectRight": {
+        "budget": -5,
+        "centralSatisfaction": 0,
+        "internalSatisfaction": 5,
+        "healthVariation": 0,
+        "building": "IT"
+      }
+    },
+    {
+      "image": "res://icon.svg",
+      "dialogue": "Le Central de l'université vous propose de commencer les travaux de rénovation du bâtiment. Cette opération étant prévue par le CPER depuis 1 an, vous devriez encore avoir le budget suffisant, n'est-ce pas ?",
+      "effectLeft": {
+        "budget": 0,
+        "centralSatisfaction": 0,
+        "internalSatisfaction": 0,
+        "healthVariation": 0,
+        "building": "CHEMISTRY"
+      },
+      "effectRight": {
+        "budget": -30,
+        "centralSatisfaction": 0,
+        "internalSatisfaction": 0,
+        "healthVariation": 100,
+        "building": "CHEMISTRY"
+      }
+    },
+    {
+      "image": "res://icon.svg",
+      "dialogue": "Le maire d'Illkirch souhaite vous soutenir. Il vous propose un financement pour rénover vos bâtiments et embellir notre magnifique ville.",
+      "effectLeft": {
+        "budget": 0,
+        "centralSatisfaction": 5,
+        "internalSatisfaction": 0,
+        "healthVariation": 0,
+        "building": ""
+      },
+      "effectRight": {
+        "budget": 25,
+        "centralSatisfaction": -25,
+        "internalSatisfaction": 0,
+        "healthVariation": 0,
+        "building": ""
+      }
+    },
+    {
+      "image": "res://icon.svg",
+      "dialogue": "Le conflit en Ukraine s'intensifie, le prix du gaz a doublé ! Mais vous n'avez d'autre choix que de payer...",
+      "effectLeft": {
+        "budget": -20,
+        "centralSatisfaction": 0,
+        "internalSatisfaction": 0,
+        "healthVariation": 0,
+        "building": ""
+      },
+      "effectRight": {
+        "budget": -20,
+        "centralSatisfaction": 0,
+        "internalSatisfaction": 0,
+        "healthVariation": 0,
+        "building": ""
+      }
+    },
+    {
+      "image": "res://icon.svg",
+      "dialogue": "Gossa est en grève ! Il nous faut quelqu'un pour le remplacer !",
+      "effectLeft": {
+        "budget": -5,
+        "centralSatisfaction": 10,
+        "internalSatisfaction": -10,
+        "healthVariation": 0,
+        "building": ""
+      },
+      "effectRight": {
+        "budget": 0,
+        "centralSatisfaction": -20,
+        "internalSatisfaction": -5,
+        "healthVariation": 0,
+        "building": ""
+      }
+    },
+    {
+      "image": "res://icon.svg",
+      "dialogue": "Un ancien etudiant a créé sa propre entreprise, BlueBird, et souhaite devenir votre partenaire avec des stages et alternances à la clé ! Moyennant un petit chèque...",
+      "effectLeft": {
+        "budget": 0,
+        "centralSatisfaction": -5,
+        "internalSatisfaction": -5,
+        "healthVariation": 0,
+        "building": ""
+      },
+      "effectRight": {
+        "budget": 0,
+        "centralSatisfaction": 15,
+        "internalSatisfaction": 15,
+        "healthVariation": 0,
+        "building": ""
+      }
+    },
+    {
+      "image": "res://icon.svg",
+      "dialogue": "Les personnels techniques est là, les produits prêts, c'est l'heure d'entretenir l'ensemble du campus !",
+      "effectLeft": {
+        "budget": 0,
+        "centralSatisfaction": 0,
+        "internalSatisfaction": 0,
+        "healthVariation": 0,
+        "building": ""
+      },
+      "effectRight": {
+        "budget": -10,
+        "centralSatisfaction": 0,
+        "internalSatisfaction": -10,
+        "healthVariation": 15,
+        "building": "ALL"
+      }
+    },
+    {
+      "image": "res://icon.svg",
+      "dialogue": "Le chef du departement informatique vous transmet la demande de ses élèves : ils veulent organiser une fête dans leur département. C'est d'accord ?",
+      "effectLeft": {
+        "budget": 0,
+        "centralSatisfaction": 0,
+        "internalSatisfaction": -20,
+        "healthVariation": 0,
+        "building": ""
+      },
+      "effectRight": {
+        "budget": -5,
+        "centralSatisfaction": 0,
+        "internalSatisfaction": 20,
+        "healthVariation": -15,
+        "building": "IT"
+      }
+    }
+  ]
 }
