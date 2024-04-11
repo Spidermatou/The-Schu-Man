@@ -4,7 +4,7 @@ extends Node
 var lastCards : Array = []
 var cardsData = {}
 
-# Children
+# children
 @onready var _endGameScreen = $EndGameScreen
 @onready var _campus = $Campus
 @onready var _financeGauge = $GaugeFinance
@@ -52,10 +52,6 @@ func acceptCard():
 	nextCard()
 
 # TODO rename
-func handleEndGame():
-	_endGameScreen.show()
-
-# TODO rename
 func handlePeakToLeft():
 	pass
 
@@ -88,6 +84,15 @@ func _ready():
 	_campus.setHealth(_campus.buildings.LEO, 80)
 	
 	# test
-	var g = $GaugeFinance
-	g.value += 15
-	
+
+func _on_gauge_finance_is_empty():
+	_endGameScreen.show()
+	# _endGameScreen.texture = load("res://path/to/your/texture.png")
+
+func _on_gauge_central_is_empty():
+	_endGameScreen.show()
+	# _endGameScreen.texture = load("res://path/to/your/texture.png")
+
+func _on_gauge_intern_is_empty():
+	_endGameScreen.show()
+	# _endGameScreen.texture = load("res://path/to/your/texture.png")

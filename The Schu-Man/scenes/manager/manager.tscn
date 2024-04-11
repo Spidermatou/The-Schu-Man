@@ -12,7 +12,7 @@ script = ExtResource("1_lje2p")
 
 [node name="MapBackground" type="Polygon2D" parent="."]
 color = Color(0.486275, 0.486275, 0.486275, 1)
-polygon = PackedVector2Array(-600, -320, -248, -320, -248, -320, -248, 328, -600, 328)
+polygon = PackedVector2Array(-600, -344, -248, -344, -248, -320, -248, 328, -600, 328)
 
 [node name="Campus" parent="." instance=ExtResource("2_wnkwo")]
 position = Vector2(-537, -326)
@@ -29,6 +29,7 @@ offset_top = -305.0
 offset_right = -103.0
 offset_bottom = -289.0
 scale = Vector2(2, 2)
+iconTexture = ExtResource("3_33dhc")
 
 [node name="GaugeCentral" parent="." instance=ExtResource("4_272cb")]
 offset_left = 64.0
@@ -36,6 +37,7 @@ offset_top = -302.0
 offset_right = 169.0
 offset_bottom = -286.0
 scale = Vector2(2, 2)
+iconTexture = ExtResource("3_33dhc")
 
 [node name="GaugeIntern" parent="." instance=ExtResource("4_272cb")]
 offset_left = 328.0
@@ -43,3 +45,8 @@ offset_top = -302.0
 offset_right = 433.0
 offset_bottom = -286.0
 scale = Vector2(2, 2)
+iconTexture = ExtResource("3_33dhc")
+
+[connection signal="isEmpty" from="GaugeFinance" to="." method="_on_gauge_finance_is_empty"]
+[connection signal="isEmpty" from="GaugeCentral" to="." method="_on_gauge_central_is_empty"]
+[connection signal="isEmpty" from="GaugeIntern" to="." method="_on_gauge_intern_is_empty"]

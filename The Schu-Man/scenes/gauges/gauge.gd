@@ -1,5 +1,7 @@
 extends TextureProgressBar
 
+signal isEmpty
+
 @onready var _variation : Label = $Variation
 @onready var _icon : Sprite2D = $Icon
 @export var iconTexture : Texture2D
