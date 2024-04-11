@@ -9,13 +9,17 @@ signal isEmpty
 @export var iconTexture : Texture2D
 @export var gaugeName : String = ""
 
+const COLORS = {"Green":"06ff15", "Red": "e81c1c"}
+
 var signalEmitted : bool = false;
 
 func setVariation(variation : int):
-	if variation < 0:
-		_variation.text = str(variation)
+	if value < 0:
+		_variation.text = str(value)
+		_variation.set("theme_override_colors/font_color", Color(COLORS["Red"]))
 	else:
-		_variation.text = "+" + str(variation)
+		_variation.text = "+" + str(value)
+		_variation.set("theme_override_colors/font_color", Color(COLORS["Green"]))
 
 func showVariation():
 	_variation.show()
