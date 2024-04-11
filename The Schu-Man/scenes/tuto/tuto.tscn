@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://dv4e4em3u4ttt"]
+
+[ext_resource type="FontFile" uid="uid://bnk4b84m3spqq" path="res://ressources/fonts/Roboto/Roboto-Regular.ttf" id="1_j2ghn"]
+
+[node name="Tuto" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="text" type="Label" parent="."]
+offset_right = 191.0
+offset_bottom = 31.0
+theme_override_fonts/font = ExtResource("1_j2ghn")
+theme_override_font_sizes/font_size = 25
+text = "afficher des infos"
+horizontal_alignment = 2
+vertical_alignment = 1

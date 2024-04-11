@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dw6oybycb8o07"]
+[gd_scene load_steps=13 format=3 uid="uid://dw6oybycb8o07"]
 
 [ext_resource type="Script" path="res://scenes/manager/manager.gd" id="1_lje2p"]
 [ext_resource type="PackedScene" uid="uid://cj4682jtoww4b" path="res://scenes/campus/campus.tscn" id="2_wnkwo"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://s077j7mu3htk" path="res://scenes/gauges/gauge.tscn" id="4_272cb"]
 [ext_resource type="Texture2D" uid="uid://kgwj5cyremcv" path="res://ressources/images/gauge_gold.png" id="4_w623f"]
 [ext_resource type="PackedScene" uid="uid://blt583utyr0k" path="res://scenes/decisionCard/decisionCard.tscn" id="5_mfpgq"]
+[ext_resource type="PackedScene" uid="uid://dv4e4em3u4ttt" path="res://scenes/tuto/tuto.tscn" id="5_rswg7"]
 [ext_resource type="PackedScene" uid="uid://2fjj6s5bv6ot" path="res://scenes/endScreen/end_game_screen.tscn" id="6_pvhaj"]
 [ext_resource type="Texture2D" uid="uid://cmqf0wyoiaf3m" path="res://ressources/images/gauge_green.png" id="6_uea3b"]
 [ext_resource type="FontFile" uid="uid://bnk4b84m3spqq" path="res://ressources/fonts/Roboto/Roboto-Regular.ttf" id="7_oc8dn"]
@@ -44,6 +45,12 @@ theme_override_font_sizes/font_size = 100
 text = "Test"
 horizontal_alignment = 2
 autowrap_mode = 3
+
+[node name="Tuto" parent="." instance=ExtResource("5_rswg7")]
+offset_left = 227.0
+offset_top = 486.0
+offset_right = 227.0
+offset_bottom = 486.0
 
 [node name="GaugeFinance" parent="." instance=ExtResource("4_272cb")]
 offset_left = -445.0

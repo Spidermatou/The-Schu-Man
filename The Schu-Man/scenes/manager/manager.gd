@@ -14,6 +14,7 @@ var actualCardIndex : int = 0
 @onready var _card = $Card
 @onready var _buildingEffectLeft = $BuildingEffectLeft
 @onready var _buildingEffectRight = $BuildingEffectRight
+@onready var _tuto = $Tuto
 
 func _ready():
 	# initialisation
@@ -84,6 +85,8 @@ func resetUI():
 	# renovations
 	_buildingEffectLeft.text =""
 	_buildingEffectRight.text =""
+	# tuto
+	_tuto.toAffichage()
 
 func _on_gauge_finance_is_empty():
 	_endGameScreen.show()
@@ -139,6 +142,7 @@ func peakInfos(isRightSide : bool):
 			_buildingEffectRight.text = renovationInfosText
 		else:
 			_buildingEffectLeft.text = renovationInfosText
+	_tuto.text = "confirmer"
 
 func _on_card_peak_to_left():
 	peakInfos(false)
