@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bnk4b84m3spqq"
-path="res://.godot/imported/Roboto-Regular.ttf-e4a7844d7fc0971d3d41252b1611ec3a.fontdata"
+uid="uid://drvjj3llwnfoe"
+path="res://.godot/imported/Roboto-BlackItalic.ttf-244827fd943013921767b8b26f198886.fontdata"
 
 [deps]
 
-source_file="res://ressources/Roboto/Roboto-Regular.ttf"
-dest_files=["res://.godot/imported/Roboto-Regular.ttf-e4a7844d7fc0971d3d41252b1611ec3a.fontdata"]
+source_file="res://ressources/fonts/Roboto/Roboto-BlackItalic.ttf"
+dest_files=["res://.godot/imported/Roboto-BlackItalic.ttf-244827fd943013921767b8b26f198886.fontdata"]
 
 [params]
 
