@@ -8,17 +8,71 @@ script = ExtResource("1_wl83o")
 [node name="IT" type="Polygon2D" parent="."]
 polygon = PackedVector2Array(34, 33, 34, 21, 121, 21, 121, 59, 34, 59, 34, 43, 29, 43, 29, 33)
 
+[node name="BuildingLabel" type="RichTextLabel" parent="IT"]
+offset_left = 34.0
+offset_top = 21.0
+offset_right = 121.0
+offset_bottom = 59.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "[center]IT[/center]"
+
 [node name="SSU" type="Polygon2D" parent="."]
 polygon = PackedVector2Array(154, 56, 154, 16, 190, 16, 190, 56)
+
+[node name="BuildingLabel" type="RichTextLabel" parent="SSU"]
+offset_left = 155.0
+offset_top = 15.0
+offset_right = 190.0
+offset_bottom = 56.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "[center]SSU[/center]"
 
 [node name="Central" type="Polygon2D" parent="."]
 polygon = PackedVector2Array(78, 92, 153, 92, 153, 169, 145, 169, 145, 203, 152, 203, 152, 306, 158, 306, 158, 336, 134, 336, 134, 311, 124, 311, 124, 306, 112, 306, 112, 212, 86, 212, 86, 227, 38, 227, 38, 202, 42, 202, 42, 195, 38, 195, 38, 170, 85, 170, 85, 160, 78, 160)
 
+[node name="BuildingLabel" type="RichTextLabel" parent="Central"]
+offset_left = 78.0
+offset_top = 92.0
+offset_right = 153.0
+offset_bottom = 159.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "[center]Centrale[/center]"
+
 [node name="Chemistry" type="Polygon2D" parent="."]
 polygon = PackedVector2Array(42, 312, 80, 312, 80, 397, 64, 397, 64, 408, 98, 408, 98, 444, 53, 444, 53, 407, 57, 407, 57, 396, 42, 396)
+
+[node name="BuildingLabel" type="RichTextLabel" parent="Chemistry"]
+offset_left = 43.0
+offset_top = 311.0
+offset_right = 80.0
+offset_bottom = 396.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "[center]Chimie[/center]"
 
 [node name="CivilEngineering" type="Polygon2D" parent="."]
 polygon = PackedVector2Array(144, 379, 258, 379, 258, 419, 250, 419, 250, 441, 273, 441, 273, 540, 162, 540, 162, 439, 226, 439, 226, 417, 144, 417)
 
+[node name="BuildingLabel" type="RichTextLabel" parent="CivilEngineering"]
+offset_left = 144.0
+offset_top = 379.0
+offset_right = 259.0
+offset_bottom = 418.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "[center]Génie civil[/center]"
+
 [node name="Leo" type="Polygon2D" parent="."]
 polygon = PackedVector2Array(51, 562, 107, 562, 107, 565, 117, 565, 117, 567, 121, 567, 121, 559, 144, 559, 144, 560, 143, 560, 143, 591, 139, 591, 139, 601, 142, 601, 145, 624, 138, 627, 129, 628, 120, 628, 120, 619, 116, 619, 116, 622, 105, 622, 105, 595, 107, 595, 107, 593, 51, 593)
+
+[node name="BuildingLabel" type="RichTextLabel" parent="Leo"]
+offset_left = 52.0
+offset_top = 562.0
+offset_right = 141.0
+offset_bottom = 593.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "[center]Léo[/center]"
