@@ -13,7 +13,7 @@ enum Department {
 class DecisionCard {
     + peakToLeft : Signal
     + peakToRight : Signal
-    + cardChosen : Signal
+    + cardChosen : Signal(bool)
     + setImage(image : Texture2D)
     + setDialog(dialog : string)
 }
@@ -37,7 +37,7 @@ class Manager {
     - nextCard()
     - handleEndGame()
     - handlePeakToLeft()
-    - handleLeft()
+    - handlePeakToRight()
 }
 Manager *--> "1" DecisionCard : > modify and set up
 Manager *--> "3"Gauge

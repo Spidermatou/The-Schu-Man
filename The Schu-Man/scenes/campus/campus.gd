@@ -1,29 +1,27 @@
 extends Node2D
 
-func _ready():
-	checkBuildingsHealth()
-
 signal ruinedBuilding(building: buildings)
 
 enum buildings {IT, SSU, CENTRAL, CHEMISTRY, CIVILENGINEERING, LEO}
 
 var buildingsHealth: Dictionary = {
 	buildings.IT: 0,
-	buildings.SSU: 10,
-	buildings.CENTRAL: 30,
-	buildings.CHEMISTRY: 50,
-	buildings.CIVILENGINEERING: 80,
-	buildings.LEO: 80,
+	buildings.SSU: 0,
+	buildings.CENTRAL: 0,
+	buildings.CHEMISTRY: 0,
+	buildings.CIVILENGINEERING: 0,
+	buildings.LEO: 0,
 }
 
 #-------------------------------------------------------------------------------
 
-enum colors {BLACK, YELLOW, ORANGE, GREEN}
+enum colors {BLACK, RED, ORANGE, YELLOW, GREEN}
 
 var colorsHex: Dictionary = {
 	colors.BLACK: "0b0100",
-	colors.YELLOW: "fffb09",
+	colors.RED: "e81c1c",
 	colors.ORANGE: "ff9117",
+	colors.YELLOW: "fffb09",
 	colors.GREEN: "06ff15",
 }
 
@@ -31,20 +29,30 @@ var colorsHex: Dictionary = {
 
 func increaseHealth(building: buildings, value: int):
 	buildingsHealth[building] += value
+	
+	if buildingsHealth[building] > 100:
+		buildingsHealth[building] = 100
+
 	checkBuildingsHealth()
 	
 func decreaseHealth(building: buildings, value: int):
 	buildingsHealth[building] -= value
+	
 	checkBuildingsHealth()
 	
 func increaseAllHealth(value: int):
 	for building in buildings.values():
-		buildingsHealth[building] += value
-		checkBuildingsHealth()
+		increaseHealth(building, value)
 	
 func decreaseAllHealth(value: int):
 	for building in buildings.values():
-		buildingsHealth[building] -= value
+		decreaseHealth(building, value)
+		
+#-------------------------------------------------------------------------------
+
+func setAllHealth(value: int):
+	for building in buildings.values():
+		buildingsHealth[building] = value
 		checkBuildingsHealth()
 
 #-------------------------------------------------------------------------------
@@ -54,16 +62,17 @@ func checkBuildingsHealth():
 		var health: int = buildingsHealth[building]
 		
 		if health <= 0:
+			updateBuildingColor(building, colors.BLACK)
 			ruinedBuilding.emit(building)
 
 		elif health > 0 && health <= 20:
-			updateBuildingColor(building, colors.BLACK)
+			updateBuildingColor(building, colors.RED)
 			
 		elif health > 20 && health <= 40:
-			updateBuildingColor(building, colors.YELLOW)
+			updateBuildingColor(building, colors.ORANGE)
 			
 		elif health > 40 && health <= 70:
-			updateBuildingColor(building, colors.ORANGE)
+			updateBuildingColor(building, colors.YELLOW)
 		
 		else:
 			updateBuildingColor(building, colors.GREEN)
@@ -82,4 +91,4 @@ func updateBuildingColor(building: buildings, color: colors):
 		buildings.CIVILENGINEERING:
 			$CivilEngineering.color = Color(colorsHex[color])
 		buildings.LEO:
-			$Leo.color = Color(colorsHex[color])
+			$Leo.color = Color(colorsHex[color])	
