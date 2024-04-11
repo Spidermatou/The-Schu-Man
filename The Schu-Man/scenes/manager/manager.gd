@@ -6,6 +6,10 @@ var cardsData = {}
 
 # Children
 @onready var _endGameScreen = $EndGameScreen
+@onready var _campus = $Campus
+@onready var _financeGauge = $GaugeFinance
+@onready var _centralGauge = $GaugeCentral
+@onready var _internGauge = $GaugeIntern
 
 func loadData():
 	var json = JSON.new()
@@ -63,10 +67,24 @@ func _ready():
 	# reset debug
 	$MapBackground.color = Color(255,255,255)
 	
-	# Initialisation
+	# initialisation
 	loadData()
 	nextCard()
 	
-	# hide endGameScreen
+	# default values
+	_financeGauge.value = 50
+	_internGauge.value = 50
+	_centralGauge.value = 50
+	_campus.setAllHealth(50)
+	
+	# hide useless
 	_endGameScreen.hide()
+	_financeGauge.hideVariation()
+	_internGauge.hideVariation()
+	_centralGauge.hideVariation()
+	
+	
+	# test
+	var g = $GaugeFinance
+	g.value += 15
 	
