@@ -161,7 +161,7 @@ Le projet contient également un dossier ressources contenant des dossiers avec 
 
 #### Fonctionnalités non pris en charge
 
--
+- les cartes affectent un batiment au hasard  
 - 
 - 
 -
