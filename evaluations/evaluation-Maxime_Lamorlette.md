@@ -4,13 +4,16 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 1. 13h30
     1. Consulter le groupe qui vous est attribué dans le document des groupes.
-    1. Dupliquer ce fichier d’évaluation dans leur GIT, en suivant la règle de nommage `Evaluation-T4-Prénom_Nom.md` 
-      - Demander aux S4 de le faire si besoin, et vérifier que vous pouvez le modifier.
+    1. Dupliquer le contenu de ce fichier d’évaluation dans leur GIT, en suivant la règle de nommage `evaluation-Prénom_Nom.md` 
+      - Simplement cliquer sur "lien évaluation T4" (ou le copier dans un explorateur) devrait créer le fichier.
+      - Copier le corps du texte d'ici dans le fichier créé.
+      - Demander aux S4 de le faire si besoin, et vérifier que vous pouvez le modifier, en faisant un premier commit (bouton "source control" à gauche dans l'éditeur).
     1. Lire le cahier des charges, sans communiquer avec le groupe T4.
     1. Formuler des propositions d'amélioration du cahier des charges dans la section ci-dessous
-        - l'objectif principal ici est d'identifier tout ce qui n'est pas parfaitement clair.
+        - l'objectif principal ici est d'identifier tout ce qui n'est pas parfaitement clair pour préparer un développement en T3 l'an prochain.
 1. 14h30
     1. Rejoindre votre groupe T4
+        - Regarder leur localisation dans le document des groupes.
     1. Jouer au jeu, et proposer des améliorations dans la section ci-dessous.
     1. Remplir la grille d'évaluation T4 ci-dessous, et remplir le résultat T4.
         - Un soin particulier doit être apporté aux justifications.
