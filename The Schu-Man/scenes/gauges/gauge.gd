@@ -25,7 +25,7 @@ func showVariation():
 func hideVariation():
 	_variation.hide()
 	
-func setValue(number: int):
+func addToValue(number: int):
 	self.value += number
 	
 	if self.value <= 5:
@@ -37,13 +37,6 @@ func setIcone(icone : Texture2D):
 func _ready():
 	showVariation()
 	setVariation(0)
-	if _gaugeNameLabel.text == "Budget":
-		_icon.texture = load("res://ressources/images/gauge_dollars.png")
-	if _gaugeNameLabel.text == "Relation avec le Central de l'université":
-		_icon.texture = load("res://ressources/images/gauge_central.png")
-	if _gaugeNameLabel.text == "Relation avec étudiants et profs":
-		_icon.texture = load("res://ressources/images/gauge_etu.jpg")
+	
 	_gaugeNameLabel.text = gaugeName
-
-
-
+	setIcone(iconTexture)	

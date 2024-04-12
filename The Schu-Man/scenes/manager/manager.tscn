@@ -1,8 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://dw6oybycb8o07"]
+[gd_scene load_steps=16 format=3 uid="uid://dw6oybycb8o07"]
 
 [ext_resource type="Script" path="res://scenes/manager/manager.gd" id="1_lje2p"]
 [ext_resource type="PackedScene" uid="uid://cj4682jtoww4b" path="res://scenes/campus/campus.tscn" id="2_wnkwo"]
-[ext_resource type="Texture2D" uid="uid://7onj0fpgsc4w" path="res://icon.svg" id="3_33dhc"]
 [ext_resource type="PackedScene" uid="uid://s077j7mu3htk" path="res://scenes/gauges/gauge.tscn" id="4_272cb"]
 [ext_resource type="Texture2D" uid="uid://kgwj5cyremcv" path="res://ressources/images/gauge_gold.png" id="4_w623f"]
 [ext_resource type="PackedScene" uid="uid://blt583utyr0k" path="res://scenes/decisionCard/decisionCard.tscn" id="5_mfpgq"]
@@ -10,8 +9,11 @@
 [ext_resource type="PackedScene" uid="uid://2fjj6s5bv6ot" path="res://scenes/endScreen/end_game_screen.tscn" id="6_pvhaj"]
 [ext_resource type="Texture2D" uid="uid://cmqf0wyoiaf3m" path="res://ressources/images/gauge_green.png" id="6_uea3b"]
 [ext_resource type="FontFile" uid="uid://bnk4b84m3spqq" path="res://ressources/fonts/Roboto/Roboto-Regular.ttf" id="7_oc8dn"]
+[ext_resource type="Texture2D" uid="uid://4fwybjcx3t06" path="res://ressources/images/gauge_dollars.png" id="8_2j5r5"]
 [ext_resource type="Texture2D" uid="uid://b0ice05ic5400" path="res://ressources/images/cross.png" id="9_qddja"]
+[ext_resource type="Texture2D" uid="uid://djwhbwbwbnwhw" path="res://ressources/images/gauge_central.png" id="9_ql2ow"]
 [ext_resource type="Script" path="res://scenes/manager/exitButton.gd" id="10_1vrm5"]
+[ext_resource type="Texture2D" uid="uid://ck4g8tdqlhxfa" path="res://ressources/images/gauge_etu.jpg" id="11_2blyq"]
 [ext_resource type="PackedScene" uid="uid://cc1bo2u1ccp0f" path="res://scenes/contextualization.tscn" id="13_xiqnc"]
 
 [node name="Manager" type="Node"]
@@ -60,7 +62,7 @@ offset_right = -340.0
 offset_bottom = -504.0
 scale = Vector2(3.8, 3.8)
 texture_progress = ExtResource("4_w623f")
-iconTexture = ExtResource("3_33dhc")
+iconTexture = ExtResource("8_2j5r5")
 gaugeName = "Budget"
 
 [node name="GaugeCentral" parent="." instance=ExtResource("4_272cb")]
@@ -69,7 +71,7 @@ offset_top = -520.0
 offset_right = 115.0
 offset_bottom = -504.0
 scale = Vector2(3.8, 3.8)
-iconTexture = ExtResource("3_33dhc")
+iconTexture = ExtResource("9_ql2ow")
 gaugeName = "Relation avec le Central de l'université"
 
 [node name="GaugeIntern" parent="." instance=ExtResource("4_272cb")]
@@ -79,7 +81,7 @@ offset_right = 570.0
 offset_bottom = -504.0
 scale = Vector2(3.8, 3.8)
 texture_progress = ExtResource("6_uea3b")
-iconTexture = ExtResource("3_33dhc")
+iconTexture = ExtResource("11_2blyq")
 gaugeName = "Relation avec étudiants et profs"
 
 [node name="ExitButton" type="Button" parent="."]
@@ -99,6 +101,7 @@ script = ExtResource("10_1vrm5")
 visible = false
 
 [node name="Contextualization" parent="." instance=ExtResource("13_xiqnc")]
+visible = false
 offset_left = -945.0
 offset_top = -560.0
 offset_right = -945.0

@@ -145,9 +145,9 @@ func _on_card_card_chosen(value : bool):
 	var side : String 
 	if (value == true): side = "effectRight"
 	else: side = "effectLeft"
-	_financeGauge.value += card[side]["budget"]
-	_internGauge.value += card[side]["internalSatisfaction"]
-	_centralGauge.value += card[side]["centralSatisfaction"]
+	_financeGauge.addToValue(card[side]["budget"])
+	_internGauge.addToValue(card[side]["internalSatisfaction"])
+	_centralGauge.addToValue(card[side]["centralSatisfaction"])
 	
 	# bulding
 	var buildingName : String = _campus.get_building_name(targetedDepartment)
