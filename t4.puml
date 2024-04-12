@@ -1,71 +1,116 @@
 @startuml T4
-
 !theme reddress-darkgreen
 
-enum Department {
-    IT,
-    Civil_Engineering,
-    Communication,
-    Marketing_engineering
-    Chemistry
+class Manager {
+    - PATH_TO_JSON : String = "res://ressources/cards.json"
+    - lastCardsIndexes : Array
+    - cardsData : {}
+    - actualCardIndex : int = 0
+    - targetedDepartment : int = 0
+    - _endGameScreen : EndGameScreen
+    - _campus : Campus
+    - _financeGauge : Gauge
+    - _centralGauge : Gauge
+    - _internGauge : Gauge
+    - _card : DecisionCard
+    - _tuto : Tuto
+
+    + _ready()
+    + initGame()
+    + loadData()
+    + nextCard(buildingBecomeOlder : bool = true)
+    + resetUI()
+    + peakInfos(isRightSide : bool)
+    + _on_card_peak_to_left()
+    + _on_card_peak_to_right()
+    + _on_card_card_chosen(value : bool)
+    + _on_campus_ruined_building(building : int)
+    + _on_gauge_finance_is_empty()
+    + _on_gauge_central_is_empty()
+    + _on_gauge_intern_is_empty()
+    + _on_campus_renovated_building()
+    + _on_restart()
+    + agingBuildings()
 }
 
-class DecisionCard {
-    + peakToLeft : Signal
-    + peakToRight : Signal
-    + cardChosen : Signal(bool)
+class EndGameScreen {
+    + endGame()
+    + setExplication(text : String)
     + setImage(image : Texture2D)
-    + setDialog(dialog : string)
+    + _on_exit_pressed()
+    + _on_button_pressed()
+    + restart
 }
 
 class Campus {
-    + states : <Department, int>[*] /' dictionnary '/
-    + ruinedBuilding : Signal
-    + increaseHealth(department : Department, value : int)
-    + decreaseHealth(department : Department, value : int)
-    + increaseAllHealth(value : int)
-    + decreaseAllHealth(value : int)
+    + addToHealth(building: buildings, value: int)
+    + addToAllHealth(value: int)
+    + setHealth(building: buildings, value: int)
+    + setAllHealth(value: int)
+    + checkBuildingsHealth()
+    + checkBuildingsHealthForWin()
+    + updateBuildingColor(building: buildings, color: colors)
+    + get_building_name(buildingEnumId : int) -> String
+    + ruinedBuilding(building: buildings)
+    + RenovatedBuilding
 }
-Campus o--> Department
 
-class Manager {
-    - {readonly} PATH_TO_JSON : string
-    - actualCard : DecisionCard
-    - lastCards : DecisionCard[5] /' prevent the same card (situation) from being seen too many times in a row '/
-    - refuseCard()
-    - acceptCard()
-    - nextCard()
-    - handleEndGame()
-    - handlePeakToLeft()
-    - handlePeakToRight()
+enum buildings {
+    IT, SSU, CENTRAL, CHEMISTRY, CIVILENGINEERING, LEO, ALL
 }
-Manager *--> "1" DecisionCard : > modify and set up
-Manager *--> "3"Gauge
-Manager *--> GaugeName
-Manager *--> Campus
-
-note right
-    - nextCard choose a new random card
-    - handleEndGame receive signal "endgame" and react with End enum
-
-    For each card, we lost 5% of all buildings's health
-
-    Manager = UI (card zone, gauges, ...)
-
-    Gauges can send it, Campus
-end note
-
-enum GaugeName {
-    Finance,
-    RelationCentral,
-    RelationIntern
+enum colors {
+    BLACK, RED, ORANGE, YELLOW, GREEN
 }
+
+Campus o--> buildings
+Campus o--> colors
 
 class Gauge {
-    + setValue(value : int)
-    + setVariation(value : int)
+    - _variation : Label
+    - _gaugeNameLabel : Label
+    - _icon : Sprite2D
+    - iconTexture : Texture2D
+    - gaugeName : String
+    - COLORS : {"Green":"06ff15", "Red": "e81c1c"}
+
+    + setVariation(variation : int)
+    + showVariation()
+    + hideVariation()
+    + addToValue(number: int)
+    + setIcone(icone : Texture2D)
+    + _ready()
+    + isEmpty
 }
 
+class DecisionCard {
+    - right_arrow_pressed : bool = false
+    - left_arrow_pressed : bool = false
+
+    + setImage(newImage : Texture2D)
+    + setDialog(dialog : String)
+    + _input(event)
+    + peakToRight
+    + peakToLeft
+    + cardChosen(value : bool)
+}
+
+class Tuto {
+    - _text : String
+    + _ready()
+    + toAffichage()
+    + toConfirm()
+}
+
+class Contextualization {
+    + _ready()
+    + _on_close_pressed()
+}
+
+Manager "1"--|> EndGameScreen
+Manager "1"--|> Campus
+Manager "1"--|> Gauge
+Manager "1"--|> DecisionCard
+Manager "1"--|> Tuto
+Manager "1"--|> Contextualization
 
 @enduml
-
