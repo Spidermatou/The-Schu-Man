@@ -134,6 +134,10 @@ Scénario de défaite
 
 ### Contraintes de développement
 
+Pour permettre à un maximum de joueur d'avoir la possibilité de jouer, nous avons un jeu multiplateforme, il est disponible sur :
+  - Linux (toute distribution)
+  - Windows (10 et 11)
+
 #### Modularité
 
 Le projet est séparer en dossier contenant chacun une fonction
@@ -154,16 +158,16 @@ Le projet contient également un dossier ressources contenant des dossiers avec 
 
 #### Fonctionnalités pris en charge par l'application actuellement
 
-- 
-- 
-- 
-- 
+- Les cartes affectent un batiment au hasard : une carte de rénovation peut affecter un batîment choisis au hasard
+- Les cartes affectent un ou des batiments ciblé : une carte de rénovation totale
+- Les cartes affectent les jauges
+- Les cartes sont tirés au hasard
+- Un petit tutoriel permettent de comprendre comment jouer
 
 #### Fonctionnalités non pris en charge
 
-- les cartes affectent un batiment au hasard  
-- 
-- 
--
+- A partir d'un certains pourcentage de relation, certaines cartes se débloquent
+- Les batîments ont des caractéristiques avec un pourcentage propre a eux (portes, fenêtres, bardage ...)
+- Des cartes evenementielles (Pandémie, vague de froid, incendie)
 
 
