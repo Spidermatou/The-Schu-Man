@@ -3,6 +3,10 @@
 - Nom du groupe : Atomic Core
 - Membres du groupe : Samuel FERNANDES | Mattéo GILLIG | Guillaume BEHR
 - Liens vers les évaluations T4 :
+  ![Amine Benomar](./evaluations/evaluation-Amine_Benomar.md)
+  ![Maxime Lamorlette](./evaluations/evaluation-Maxime_Lamorlette.md)
+  ![Titouan Fagot](./evaluations/evaluation-Titouan_Fagot.md)
+.md
   - **TO-DO**
 
 ## Présentation du projet
