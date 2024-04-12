@@ -57,21 +57,21 @@ Avoir des carte avec plus de précision sur ce que donne spécifiquement chaque 
 ## Grille d'évaluation T2 (à remplir par les membres du groupe T4)
 
 - Procédure
-  - [ ] La procédure a été suivie à la lettre sans le moindre écart.
+  - [x] La procédure a été suivie à la lettre sans le moindre écart.
   - [ ] La procédure a été globalement suivie.
-  - [x] La procédure n'a pas été bien suivie.
+  - [ ] La procédure n'a pas été bien suivie.
 - Propositions d'amélioration du Cahier des charges
   - [ ] Au moins cinq propositions d'améliorations pertinente sont faites.
-  - [ ] Au moins cinq propositions d'améliorations sont faites.
-  - [x] Moins de cinq propositions d'améliorations sont faites.  
+  - [x] Au moins cinq propositions d'améliorations sont faites.
+  - [ ] Moins de cinq propositions d'améliorations sont faites.  
 - Propositions d'amélioration du jeu
-  - [ ] Au moins trois propositions d'améliorations pertinente sont faites.
+  - [x] Au moins trois propositions d'améliorations pertinente sont faites.
   - [ ] Au moins trois propositions d'améliorations sont faites.
-  - [x] Moins de trois propositions d'améliorations sont faites.
+  - [ ] Moins de trois propositions d'améliorations sont faites.
 - Implication
-  - [ ] L'implication T2 été vraiment été cruciale dans le processus du T4.
+  - [x] L'implication T2 été vraiment été cruciale dans le processus du T4.
   - [ ] L'implication T2 a permis d'améliorer le T4.
-  - [x] Il y a eu un défaut d'implication T2.
+  - [ ] Il y a eu un défaut d'implication T2.
 
 ## Grille d'évaluation T2 (à remplir par l'enseignant)
 
@@ -107,15 +107,15 @@ Avoir des carte avec plus de précision sur ce que donne spécifiquement chaque 
 - Organisation
   - [x] Les fichiers sources suivent une organisation et des règles de nommage clairement établie.
   - [ ] Les fichiers sources sont tous partagés et organisés.
-  - [] Certains fichiers sources ne sont pas partagés ou leur organisation laisse à désirer.
+  - [ ] Certains fichiers sources ne sont pas partagés ou leur organisation laisse à désirer.
 - Versioning
   - [x] La granularité des commits est pertinente et les commits sont clairement et systématique renseignés.
   - [ ] La granularité des commits n'est pas pertinente ou les commits ne sont pas clairement et systématiquement renseignés.
-  - [] La granularité des commits n'est pas pertinente et les commits ne sont pas clairement et systématiquement renseignés.
+  - [ ] La granularité des commits n'est pas pertinente et les commits ne sont pas clairement et systématiquement renseignés.
 - Droits d'accès
   - [x] Julien Gossa est owner du dépôt GIT et ce dépôt est accessible à tous.
   - [ ] Julien Gossa est owner du dépôt GIT.
-  - [] Julien Gossa n'est pas owner du dépôt GIT.
+  - [ ] Julien Gossa n'est pas owner du dépôt GIT.
 
 Justifications :
 
@@ -123,23 +123,23 @@ Justifications :
 - Installation
   - [x] Le prototype s'installe sans effort.
   - [ ] Le prototype s'installe en suivant une procédure.
-  - [] Le prototype ne s'installe pas.
+  - [ ] Le prototype ne s'installe pas.
 - Exécution
   - [X] Le prototype s'exécute en cliquant sur une icône.
   - [ ] Le prototype s'exécute en suivant une procédure.
-  - [] Le prototype ne s'exécute pas
+  - [ ] Le prototype ne s'exécute pas
 - Stabilité
   - [x] Le prototype est parfaitement stable
   - [ ] Le prototype est rarement instable
-  - [] Le prototype est instable
+  - [ ] Le prototype est instable
 - Affordabilité
   - [x] Toutes les instructions de jeu sont inclues dans le prototype au cours d'une partie normale.
   - [ ] Les instructions de jeu sont sous forme d'un manuel ou d'un tutoriel à part.
-  - [] Les instructions de jeu ne sont pas données.
+  - [ ] Les instructions de jeu ne sont pas données.
 - Transmission du concept
   - [x] J'ai appris quelque chose en jouant.
   - [ ] J'ai eu de l'intérêt en jouant, mais sans rien apprendre.
-  - [] Je n'ai pas eu d'intérêt en jouant.
+  - [ ] Je n'ai pas eu d'intérêt en jouant.
 
 Résumer en une phrase ce que vous avez éventuellement appris :
 
