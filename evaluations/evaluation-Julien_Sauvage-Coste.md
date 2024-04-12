@@ -43,21 +43,21 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 ## Grille d'évaluation T2 (à remplir par les membres du groupe T4)
 
 - Procédure
-  - [ ] La procédure a été suivie à la lettre sans le moindre écart.
+  - [x] La procédure a été suivie à la lettre sans le moindre écart.
   - [ ] La procédure a été globalement suivie.
-  - [x] La procédure n'a pas été bien suivie.
+  - [ ] La procédure n'a pas été bien suivie.
 - Propositions d'amélioration du Cahier des charges
   - [ ] Au moins cinq propositions d'améliorations pertinente sont faites.
-  - [ ] Au moins cinq propositions d'améliorations sont faites.
-  - [x] Moins de cinq propositions d'améliorations sont faites.  
+  - [x] Au moins cinq propositions d'améliorations sont faites.
+  - [ ] Moins de cinq propositions d'améliorations sont faites.  
 - Propositions d'amélioration du jeu
-  - [ ] Au moins trois propositions d'améliorations pertinente sont faites.
+  - [x] Au moins trois propositions d'améliorations pertinente sont faites.
   - [ ] Au moins trois propositions d'améliorations sont faites.
-  - [x] Moins de trois propositions d'améliorations sont faites.
+  - [ ] Moins de trois propositions d'améliorations sont faites.
 - Implication
-  - [ ] L'implication T2 été vraiment été cruciale dans le processus du T4.
+  - [x] L'implication T2 été vraiment été cruciale dans le processus du T4.
   - [ ] L'implication T2 a permis d'améliorer le T4.
-  - [x] Il y a eu un défaut d'implication T2.
+  - [ ] Il y a eu un défaut d'implication T2.
 
 ## Grille d'évaluation T2 (à remplir par l'enseignant)
 
