@@ -27,12 +27,32 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 # Propositions d'amélioration du cahier des charges
 
 - Proposition 1
+Niveaux de Difficulté Progressifs : Prévoyez différents niveaux de difficulté ou de complexité dans le jeu pour s'adapter aux différents niveaux de compétence des étudiants.
+
 - Proposition 2
+Durée de Jeu Appropriée : Définissez une durée de jeu raisonnable qui s'intègre facilement dans le cadre d'une séance d'apprentissage typique.
+
+- Proposition 3
+Plus de scénario pour avoir des choix divers et variés. 
+
+- Proposition 4
+Pouvoir choisir différents personnages par exemple du points de vu des étudiants ou des professeurs.
+
+- Proposition 5
+Avoir un temp de jeu plus long.
+
+-Proposition 6 
+Avoir des carte avec plus de précision sur ce que donne spécifiquement chaque carte. 
+
 
 # Propositions d'amélioration du jeu
 
 - Proposition 1
+    appuyer sur entrer pour pouvoir recommencer une partie.
 - Proposition 2
+    Être plus précis sur les somme gagner et perdu.
+- Proposition 3
+    Avoir plus de proposition avec des bonus et malus plus diverses 
 
 ## Grille d'évaluation T2 (à remplir par les membres du groupe T4)
 
@@ -85,17 +105,17 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 ## GIT 
 - Organisation
-  - [ ] Les fichiers sources suivent une organisation et des règles de nommage clairement établie.
+  - [x] Les fichiers sources suivent une organisation et des règles de nommage clairement établie.
   - [ ] Les fichiers sources sont tous partagés et organisés.
-  - [x] Certains fichiers sources ne sont pas partagés ou leur organisation laisse à désirer.
+  - [] Certains fichiers sources ne sont pas partagés ou leur organisation laisse à désirer.
 - Versioning
-  - [ ] La granularité des commits est pertinente et les commits sont clairement et systématique renseignés.
+  - [x] La granularité des commits est pertinente et les commits sont clairement et systématique renseignés.
   - [ ] La granularité des commits n'est pas pertinente ou les commits ne sont pas clairement et systématiquement renseignés.
-  - [x] La granularité des commits n'est pas pertinente et les commits ne sont pas clairement et systématiquement renseignés.
+  - [] La granularité des commits n'est pas pertinente et les commits ne sont pas clairement et systématiquement renseignés.
 - Droits d'accès
-  - [ ] Julien Gossa est owner du dépôt GIT et ce dépôt est accessible à tous.
+  - [x] Julien Gossa est owner du dépôt GIT et ce dépôt est accessible à tous.
   - [ ] Julien Gossa est owner du dépôt GIT.
-  - [x] Julien Gossa n'est pas owner du dépôt GIT.
+  - [] Julien Gossa n'est pas owner du dépôt GIT.
 
 Justifications :
 
@@ -128,15 +148,15 @@ Autres justifications :
 ## Présentation README.md
 
 - Présentation du projet
-  - [ ] Cette partie est informative et succincte (1 phrase).
+  - [x] Cette partie est informative et succincte (1 phrase).
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Captures d'écran
   - [ ] Des captures d'écran soignées sont données.
-  - [ ] Une capture d'écran est donnée.
+  - [x] Une capture d'écran est donnée.
   - [ ] Aucune capture d'écran n'est donnée.
 - Procédures d'installation et d'exécution
-  - [ ] Cette partie est informative et succincte (1 phrase).
+  - [x] Cette partie est informative et succincte (1 phrase).
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 
@@ -145,39 +165,39 @@ Autres justifications :
 Pour un exemple de ce qui est attenu, voir https://gitlab.unistra.fr/T234/t4-exemple
 
 - Objectifs pédagogiques
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Objectifs pédagogiques avancés 
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [X] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Références
   - [ ] Cette partie est informative et correspond au style de l'exemple.
-  - [ ] Cette partie est informative.
+  - [X] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Description des fonctionnalités (hors interface et actions)
   - [ ] Cette partie est informative et correspond au style de l'exemple.
-  - [ ] Cette partie est informative.
+  - [x] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Interface
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Actions du joueur
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Scénarios
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Contraintes de développement
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 - Fonctionnalités et scénarios avancés
-  - [ ] Cette partie est informative et correspond au style de l'exemple.
+  - [x] Cette partie est informative et correspond au style de l'exemple.
   - [ ] Cette partie est informative.
   - [ ] Cette partie n'est pas informative.
 
