@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://2fjj6s5bv6ot"]
 
-[ext_resource type="Script" path="res://scenes/endScreen/end_game_screen.gd" id="1_7y7fl"]
+[ext_resource type="Script" path="res://scenes/endGameScreen/end_game_screen.gd" id="1_7y7fl"]
 [ext_resource type="FontFile" uid="uid://bnk4b84m3spqq" path="res://ressources/fonts/Roboto/Roboto-Regular.ttf" id="2_yyulw"]
 
 [node name="EndGameScreen" type="Node2D"]
@@ -12,10 +12,19 @@ color = Color(1, 1, 1, 0.588235)
 polygon = PackedVector2Array(-1024, -576, 1016, -576, 1024, 592, -1016, 584)
 
 [node name="Image" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
 offset_left = -929.0
-offset_top = -437.0
+offset_top = -420.0
 offset_right = 929.0
-offset_bottom = 101.0
+offset_bottom = 109.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 2
+stretch_mode = 5
 
 [node name="Explication" type="Label" parent="."]
 offset_left = -936.0

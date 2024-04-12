@@ -17,6 +17,7 @@ color = Color(0, 0.0509804, 0.129412, 0.909804)
 polygon = PackedVector2Array(-120, -43, 2002, -40, 2013, 1190, -114, 1165)
 
 [node name="Text" type="Label" parent="."]
+layout_mode = 0
 offset_left = 25.0
 offset_top = 60.0
 offset_right = 3751.0
@@ -33,6 +34,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Close" type="Button" parent="."]
+process_mode = 2
 layout_mode = 0
 offset_left = 1640.0
 offset_top = 879.0

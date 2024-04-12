@@ -160,33 +160,31 @@ func _on_card_card_chosen(value : bool):
 func _on_campus_ruined_building(building : int):
 	var buildingName : String = _campus.get_building_name(building)
 	_endGameScreen.endGame()
+	_endGameScreen.setImage(load("res://ressources/images/campus_flames.png"))
 	_endGameScreen.setExplication("Oh non ! Apparement, " + buildingName + " vient de s'effondrer. L'universite a decide de vous virer pour negligence...")
 
 func _on_gauge_finance_is_empty():
 	_endGameScreen.endGame()
-	# _endGameScreen.texture = load("res://path/to/your/texture.png")
+	_endGameScreen.setImage(load("res://ressources/images/zimmer_evil.png"))
 	_endGameScreen.setExplication("Oh non ! Le campus est en faillite, les profs sont partis après que leur salaire n'a pas été payé à temps, et les élèves ont finis par suivre... Vous dirigez un campus fantôme.")
 
 func _on_gauge_central_is_empty():
 	_endGameScreen.endGame()
-	# _endGameScreen.texture = load("res://path/to/your/texture.png")
+	_endGameScreen.setImage(load("res://ressources/images/zimmer_evil.png"))
 	_endGameScreen.setExplication("Oh non ! Le central de l'universite vous déteste. Dès la fin de votre quinquennat, plus personne n'a voté pour vous. Vous êtes au chômage...")
 
 func _on_gauge_intern_is_empty():
 	_endGameScreen.endGame()
-	# _endGameScreen.texture = load("res://path/to/your/texture.png")
+	_endGameScreen.setImage(load("res://ressources/images/zimmer_evil.png"))
 	_endGameScreen.setExplication("Oh non ! Les équipes vous déteste, plus personne ne suit vos demandes ni ne veut travailler avec vous. Vous n'avez plus de directeur que le nom...")
 
-	
+func _on_campus_renovated_building():
+	_endGameScreen.endGame()
+	_endGameScreen.setImage(load("res://ressources/images/campus.png"))
+	_endGameScreen.setExplication("Bravo, vous avez réussi votre objectif principale de votre quinquennat, rénover tout les batîments")
+
 func _on_restart():
 	initGame()
 
 func agingBuildings():
 	_campus.addToAllHealth(-5)
-
-
-func _on_campus_renovated_building():
-	_endGameScreen.endGame()
-	# _endGameScreen.texture = load("res://path/to/your/texture.png")
-	_endGameScreen.setExplication("Bravo, vous avez réussi votre objectif principale de votre quinquennat, rénover tout les batîments")
-
