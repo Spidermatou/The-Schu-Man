@@ -26,13 +26,15 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 # Propositions d'amélioration du cahier des charges
 
--
+- 
 
 # Propositions d'amélioration du jeu
 
-- Indications plus claires pour le choix des cartes (préciser le fait qu'il faille faire deux fois la flêche dans une direction pour valider un choix)
+- Indications plus claires pour le choix des cartes (préciser le fait qu'il faille faire deux fois la flêche dans une direction pour valider un choix).
 - Rendre les textes plus lisibles.
-- Afficher des chiffres clairs en jeu pour les sommes d'argent, l'indice de satisfaction et l'état des bâtiments
+- Afficher des chiffres clairs en jeu pour les sommes d'argent, l'indice de satisfaction et l'état des bâtiments.
+- Ajouter une confirmation pour la fermeture du jeu lorsqu'on clique sur le boutton quitter.
+- Permettre la sélection du choix avec le curseur de la souris.
 
 ## Grille d'évaluation T2 (à remplir par les membres du groupe T4)
 
