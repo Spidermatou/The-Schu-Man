@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dpir0lig2k11n" path="res://ressources/images/gauge_empty.png" id="1_25d7p"]
 [ext_resource type="Script" path="res://scenes/gauges/gauge.gd" id="1_nmx42"]
 [ext_resource type="Texture2D" uid="uid://bj3ol4d3n1v8g" path="res://ressources/images/gauge_blue.png" id="2_mb1vp"]
-[ext_resource type="Texture2D" uid="uid://7onj0fpgsc4w" path="res://icon.svg" id="4_gedtc"]
+[ext_resource type="Texture2D" uid="uid://kck00xvty4qy" path="res://icon.svg" id="4_gedtc"]
 [ext_resource type="FontFile" uid="uid://bnk4b84m3spqq" path="res://ressources/fonts/Roboto/Roboto-Regular.ttf" id="5_b028u"]
 
 [node name="prog" type="TextureProgressBar"]
