@@ -2,7 +2,7 @@ extends Node2D
 
 signal ruinedBuilding(building: buildings)
 
-enum buildings {IT, SSU, CENTRAL, CHEMISTRY, CIVILENGINEERING, LEO}
+enum buildings {IT, SSU, CENTRAL, CHEMISTRY, CIVILENGINEERING, LEO, ALL}
 
 var buildingsHealth: Dictionary = {
 	buildings.IT: 0,
@@ -88,3 +88,17 @@ func updateBuildingColor(building: buildings, color: colors):
 			$Polygons/CivilEngineering.color = Color(colorsHex[color])
 		buildings.LEO:
 			$Polygons/Leo.color = Color(colorsHex[color])	
+
+
+func get_building_name(buildingEnumId : int) -> String:
+	var buildingName : String 
+	match(buildingEnumId):
+		self.buildings.IT : buildingName = "le batiment informatique"
+		self.buildings.SSU : buildingName = "le batiment du Service de Sante Universitaire"
+		self.buildings.CENTRAL : buildingName = "le batiment central"
+		self.buildings.CHEMISTRY : buildingName = "le batiment chimie"
+		self.buildings.CIVILENGINEERING : buildingName = "le batiment genie civil"
+		self.buildings.LEO  : buildingName = "l'amphi Leo" 
+		self.buildings.ALL :  buildingName = "tous les batiments" 
+		_ : buildingName = ""
+	return buildingName

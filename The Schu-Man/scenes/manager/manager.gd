@@ -4,6 +4,7 @@ extends Node
 var lastCardsIndexes : Array = []
 var cardsData = {}
 var actualCardIndex : int = 0
+var targetedDepartment : int = 0
 
 # children
 @onready var _endGameScreen = $EndGameScreen
@@ -21,9 +22,8 @@ func _ready():
 	$Contextualization.show()
 	loadData()
 	initGame()
-	
 	_endGameScreen.restart.connect(_on_restart)
-	
+
 func initGame():
 	resetUI()
 	nextCard(false)
@@ -81,6 +81,10 @@ func nextCard(buildingBecomeOlder : bool = true):
 		lastCardsIndexes.append(randomInd)
 		if (lastCardsIndexes.size() >= 5): lastCardsIndexes.remove_at(0)
 		
+		# choose the target
+		if (card["targetAll"] == 1): targetedDepartment = _campus.buildings.ALL
+		else: targetedDepartment = randi_range(0, _campus.buildings.size()-1)
+		
 	# all buildings become older
 	if (buildingBecomeOlder): agingBuildings() # not called for first card
 
@@ -119,24 +123,15 @@ func peakInfos(isRightSide : bool):
 	_centralGauge.showVariation()
 	# apply renovation
 	var calculSign : String = ""
-	if ( str(card[sideName]["building"]) != ""):
-		# get true building name
-		var buildingDisplayedName : String = ""
-		match("building"):
-			"SSU": buildingDisplayedName = "du Service de Sante Universitaire"
-			"CENTRAL": buildingDisplayedName = "du batiment central"
-			"CHEMISTRY": buildingDisplayedName = "du batiment chimie"
-			"CIVILENGINEERING": buildingDisplayedName = "du batiment genie civil"
-			"LEO": buildingDisplayedName = "de l'amphi Leo"
-			_: buildingDisplayedName = "du batiment informatique"
-		# retrieve info
-		if (card[sideName]["healthVariation"] >= 0): calculSign = "+"
-		if (card[sideName]["healthVariation"] != 0):
-			var renovationInfosText : String = "Niveau d'entretien " + buildingDisplayedName + " " + calculSign + str(card[sideName]["healthVariation"])
-			if (isRightSide): 
-				_buildingEffectRight.text = renovationInfosText
-			else:
-				_buildingEffectLeft.text = renovationInfosText
+	if (card[sideName]["healthVariation"] >= 0): calculSign = "+"
+	# retrieve info
+	var buildingDisplayedName : String = _campus.get_building_name(targetedDepartment)
+	if (card[sideName]["healthVariation"] != 0):
+		var renovationInfosText : String = "Niveau d'entretien pour " + buildingDisplayedName + " " + calculSign + str(card[sideName]["healthVariation"])
+		if (isRightSide): 
+			_buildingEffectRight.text = renovationInfosText
+		else:
+			_buildingEffectLeft.text = renovationInfosText
 	_tuto.toConfirm()
 
 func _on_card_peak_to_left():
@@ -155,32 +150,15 @@ func _on_card_card_chosen(value : bool):
 	_centralGauge.value += card[side]["centralSatisfaction"]
 	
 	# bulding
-	var buildingName : String = card[side]["building"]
-	if (buildingName != ""):
-		var healthVariation : int = card[side]["healthVariation"]
-		# see which building will be affected
-		match(buildingName):
-			"IT": _campus.addToHealth(_campus.buildings.IT, healthVariation)
-			"SSU": _campus.addToHealth(_campus.buildings.SSU, healthVariation)
-			"CENTRAL": _campus.addToHealth(_campus.buildings.CENTRAL, healthVariation)
-			"CHEMISTRY": _campus.addToHealth(_campus.buildings.CHEMISTRY, healthVariation)
-			"CIVILENGINEERING": _campus.addToHealth(_campus.buildings.CIVILENGINEERING, healthVariation)
-			"LEO": _campus.addToHealth(_campus.buildings.LEO, healthVariation)
-			_: _campus.addToAllHealth(healthVariation)
-		
+	var buildingName : String = _campus.get_building_name(targetedDepartment)
+	var healthVariation : int = card[side]["healthVariation"]
+	if (targetedDepartment == _campus.buildings.ALL): _campus.addToAllHealth(healthVariation)
+	else: _campus.addToHealth(targetedDepartment, healthVariation)
 	resetUI()
 	nextCard()
 
 func _on_campus_ruined_building(building : int):
-	var buildingName : String = ""
-	match(building):
-		_campus.buildings.IT : buildingName = "le batiment informatique"
-		_campus.buildings.SSU : buildingName = "le batiment du Service de Sante Universitaire"
-		_campus.buildings.CENTRAL : buildingName = "le batiment central"
-		_campus.buildings.CHEMISTRY : buildingName = "le batiment chimie"
-		_campus.buildings.CIVILENGINEERING : buildingName = "le batiment genie civil"
-		_ : buildingName = "l'amphi Leo"
-		
+	var buildingName : String = _campus.get_building_name(building)
 	_endGameScreen.endGame()
 	_endGameScreen.setExplication("Oh non ! Apparement, " + buildingName + " vient de s'effondrer. L'universite a decide de vous virer pour negligence...")
 

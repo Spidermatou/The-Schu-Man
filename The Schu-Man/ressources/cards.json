@@ -3,163 +3,155 @@
 	{
 	  "image": "res://ressources/cardsImages/zimmerlan.png",
 	  "dialogue": "Les étudiants n'ont pas suffisament d'heures de mathématiques et leur niveau chute ! Engager un chargé de TD supplémentaire ?",
+	  "targetAll": 0,
 	  "effectLeft": {
 		"budget": 0,
 		"centralSatisfaction": 5,
 		"internalSatisfaction": -10,
-		"healthVariation": 0,
-		"building": ""
+		"healthVariation": 0
 	  },
 	  "effectRight": {
 		"budget": -5,
 		"centralSatisfaction": -5,
 		"internalSatisfaction": 10,
-		"healthVariation": 0,
-		"building": ""
+		"healthVariation": 0
 	  }
 	},
 	{
 	  "image": "res://ressources/cardsImages/work.png",
 	  "dialogue": "Un étudiant a dévissé les pieds de table en salle IIN 103. Dur de faire cours avec ça... Envoyer un agent pour les réparer ?",
+	  "targetAll": 0,
 	  "effectLeft": {
 		"budget": 0,
 		"centralSatisfaction": 0,
 		"internalSatisfaction": -10,
 		"healthVariation": -10,
-		"building": "IT"
+		"targetAll": "IT"
 	  },
 	  "effectRight": {
 		"budget": -5,
 		"centralSatisfaction": 0,
 		"internalSatisfaction": 5,
-		"healthVariation": 0,
-		"building": "IT"
+		"healthVariation": 0
 	  }
 	},
 	{
 	  "image": "res://ressources/cardsImages/unistra.png",
 	  "dialogue": "Le Central de l'université vous propose de commencer les travaux de rénovation du bâtiment.Vous avez le budget, n'est-ce pas ?",
+	  "targetAll": 0,
 	  "effectLeft": {
 		"budget": 0,
 		"centralSatisfaction": 0,
 		"internalSatisfaction": 0,
-		"healthVariation": 0,
-		"building": "CHEMISTRY"
+		"healthVariation": 0
 	  },
 	  "effectRight": {
 		"budget": -30,
 		"centralSatisfaction": 0,
 		"internalSatisfaction": 0,
-		"healthVariation": 30,
-		"building": "CHEMISTRY"
+		"healthVariation": 30
 	  }
 	},
 	{
 	  "image": "res://ressources/cardsImages/zimmerlan.png",
 	  "dialogue": "Le maire d'Illkirch souhaite vous soutenir. Il vous propose un financement pour rénover vos bâtiments et embellir notre magnifique ville.",
+	  "targetAll": 0,
 	  "effectLeft": {
 		"budget": 0,
 		"centralSatisfaction": 5,
 		"internalSatisfaction": 0,
-		"healthVariation": 0,
-		"building": ""
+		"healthVariation": 0
 	  },
 	  "effectRight": {
 		"budget": 25,
 		"centralSatisfaction": -25,
 		"internalSatisfaction": 0,
-		"healthVariation": 0,
-		"building": ""
+		"healthVariation": 0
 	  }
 	},
 	{
 	  "image": "res://ressources/cardsImages/work.png",
 	  "dialogue": "Le conflit en Ukraine s'intensifie, le prix du gaz a doublé ! Mais vous n'avez d'autre choix que de payer...",
+	  "targetAll": 0,
 	  "effectLeft": {
 		"budget": -20,
 		"centralSatisfaction": 0,
 		"internalSatisfaction": 0,
-		"healthVariation": 0,
-		"building": ""
+		"healthVariation": 0
 	  },
 	  "effectRight": {
 		"budget": -20,
 		"centralSatisfaction": 0,
 		"internalSatisfaction": 0,
-		"healthVariation": 0,
-		"building": ""
+		"healthVariation": 0
 	  }
 	},
 	{
 	  "image": "res://ressources/cardsImages/zimmerlan.png",
 	  "dialogue": "Gossa est en grève ! Il nous faut quelqu'un pour le remplacer !",
+	  "targetAll": 0,
 	  "effectLeft": {
 		"budget": -5,
 		"centralSatisfaction": 10,
 		"internalSatisfaction": -10,
-		"healthVariation": 0,
-		"building": ""
+		"healthVariation": 0
 	  },
 	  "effectRight": {
 		"budget": 0,
 		"centralSatisfaction": -20,
 		"internalSatisfaction": -5,
-		"healthVariation": 0,
-		"building": ""
+		"healthVariation": 0
 	  }
 	},
 	{
 	  "image": "res://ressources/cardsImages/unistra.png",
 	  "dialogue": "Un ancien etudiant a créé sa propre entreprise, BlueBird, et souhaite devenir votre partenaire avec des stages et alternances à la clé ! Moyennant un petit chèque...",
+	  "targetAll": 0,
 	  "effectLeft": {
 		"budget": 0,
 		"centralSatisfaction": -5,
 		"internalSatisfaction": -5,
-		"healthVariation": 0,
-		"building": ""
+		"healthVariation": 0
 	  },
 	  "effectRight": {
 		"budget": 0,
 		"centralSatisfaction": 15,
 		"internalSatisfaction": 15,
-		"healthVariation": 0,
-		"building": ""
+		"healthVariation": 0
 	  }
 	},
 	{
 	  "image": "res://ressources/cardsImages/work.png",
 	  "dialogue": "Les personnels techniques est là, les produits prêts, c'est l'heure d'entretenir l'ensemble du campus !",
+	  "targetAll": 1,
 	  "effectLeft": {
 		"budget": 0,
 		"centralSatisfaction": 0,
 		"internalSatisfaction": 0,
-		"healthVariation": -10,
-		"building": "ALL"
+		"healthVariation": -10
 	  },
 	  "effectRight": {
 		"budget": -10,
 		"centralSatisfaction": 0,
 		"internalSatisfaction": -10,
-		"healthVariation": 20,
-		"building": "ALL"
+		"healthVariation": 20
 	  }
 	},
 	{
 	  "image": "res://ressources/cardsImages/zimmerlan.png",
 	  "dialogue": "Le chef du departement informatique vous transmet la demande de ses élèves : ils veulent organiser une fête dans leur département. C'est d'accord ?",
+	  "targetAll": 0,
 	  "effectLeft": {
 		"budget": 0,
 		"centralSatisfaction": 0,
 		"internalSatisfaction": -20,
-		"healthVariation": 0,
-		"building": ""
+		"healthVariation": 0
 	  },
 	  "effectRight": {
 		"budget": -5,
 		"centralSatisfaction": 0,
 		"internalSatisfaction": 20,
-		"healthVariation": -15,
-		"building": "IT"
+		"healthVariation": -15
 	  }
 	}
   ]
