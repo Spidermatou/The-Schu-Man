@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://cc1bo2u1ccp0f"]
+
+[ext_resource type="FontFile" uid="uid://bnk4b84m3spqq" path="res://ressources/fonts/Roboto/Roboto-Regular.ttf" id="1_npepi"]
+[ext_resource type="Script" path="res://scenes/contextualization.gd" id="1_rhpje"]
+
+[node name="Contextualization" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rhpje")
+
+[node name="Background" type="Polygon2D" parent="."]
+color = Color(0, 0.0509804, 0.129412, 0.909804)
+polygon = PackedVector2Array(-120, -43, 2002, -40, 2013, 1190, -114, 1165)
+
+[node name="Text" type="Label" parent="."]
+offset_left = 25.0
+offset_top = 60.0
+offset_right = 3751.0
+offset_bottom = 1634.0
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("1_npepi")
+theme_override_font_sizes/font_size = 125
+text = "En tant que directeur de l'IUT, votre rôle est de mener à bien le plan de rénovation du campus.
+
+Mais ce ne sera pas si facile, car vos tâches habituelles ralentiront votre projet !
+
+Attention : les bâtiments vieillissent avec le temps, pensez à bien les entretenir sinon ils deviendront insalubres. Pas sûr que l'université l'apprécie..."
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Close" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1640.0
+offset_top = 879.0
+offset_right = 1877.0
+offset_bottom = 1049.0
+theme_override_fonts/font = ExtResource("1_npepi")
+theme_override_font_sizes/font_size = 100
+text = "OK!"
+
+[connection signal="pressed" from="Close" to="." method="_on_close_pressed"]
