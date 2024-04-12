@@ -159,6 +159,8 @@ Le projet est séparé en dossiers contenant chacun une fonction
 - Dossier manager : scène principale qui fait le lien avec toutes les fonctionnalités, c'est l'écran de jeu. Son fichier gdscript ainsi qu'un fichier exitButton pour quitter l'application
 - Dossier tuto : scène du tutoriel pour comprendre comment jouer au jeu et son fichier gdscript
 
+![Diagramme UML](./images_readme/uml.svg)
+
 Le projet contient également un dossier ressources contenant des dossiers avec les ressources que le jeu a besoin
 
 - Dossier cardImage : toutes les images qui seront présentes sur les cartes
