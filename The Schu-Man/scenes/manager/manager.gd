@@ -18,6 +18,7 @@ var actualCardIndex : int = 0
 
 func _ready():
 	# initialisation
+	$Contextualization.show()
 	loadData()
 	initGame()
 	
