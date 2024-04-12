@@ -2,6 +2,8 @@ extends Node2D
 
 signal ruinedBuilding(building: buildings)
 
+signal RenovatedBuilding
+
 enum buildings {IT, SSU, CENTRAL, CHEMISTRY, CIVILENGINEERING, LEO}
 
 var buildingsHealth: Dictionary = {
@@ -34,6 +36,7 @@ func addToHealth(building: buildings, value: int):
 		buildingsHealth[building] = 100
 	
 	checkBuildingsHealth()
+	checkBuildingsHealthForWin()
 
 
 func addToAllHealth(value: int):
@@ -45,11 +48,13 @@ func addToAllHealth(value: int):
 func setHealth(building: buildings ,value: int):
 		buildingsHealth[building] = value
 		checkBuildingsHealth()
+		checkBuildingsHealthForWin()
 
 func setAllHealth(value: int):
 	for building in buildings.values():
 		buildingsHealth[building] = value
 	checkBuildingsHealth()
+	checkBuildingsHealthForWin()
 
 #-------------------------------------------------------------------------------
 
@@ -72,6 +77,17 @@ func checkBuildingsHealth():
 		
 		else:
 			updateBuildingColor(building, colors.GREEN)
+			
+func checkBuildingsHealthForWin():
+	var count = 0
+	for building in buildings.values():
+		var health: int = buildingsHealth[building]
+		
+		if health >= 71:
+			count += 1
+		
+	if count >= 6:
+			RenovatedBuilding.emit()
 
 
 func updateBuildingColor(building: buildings, color: colors):
