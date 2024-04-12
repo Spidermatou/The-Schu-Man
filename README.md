@@ -6,6 +6,7 @@
   - [Amine Benomar](./evaluations/evaluation-Amine_Benomar.md)
   - [Maxime Lamorlette](./evaluations/evaluation-Maxime_Lamorlette.md)
   - [Titouan Fagot](./evaluations/evaluation-Titouan_Fagot.md)
+  - [Julien Sauvage-Coste](./evaluations/evaluation-Julien_Sauvage-Coste.md)
 
 
 ## Présentation du projet
