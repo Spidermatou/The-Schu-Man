@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://kgwj5cyremcv" path="res://ressources/images/gauge_gold.png" id="4_w623f"]
 [ext_resource type="PackedScene" uid="uid://blt583utyr0k" path="res://scenes/decisionCard/decisionCard.tscn" id="5_mfpgq"]
 [ext_resource type="PackedScene" uid="uid://dv4e4em3u4ttt" path="res://scenes/tuto/tuto.tscn" id="5_rswg7"]
-[ext_resource type="PackedScene" uid="uid://2fjj6s5bv6ot" path="res://scenes/endScreen/end_game_screen.tscn" id="6_pvhaj"]
+[ext_resource type="PackedScene" uid="uid://2fjj6s5bv6ot" path="res://scenes/endGameScreen/end_game_screen.tscn" id="6_pvhaj"]
 [ext_resource type="Texture2D" uid="uid://cmqf0wyoiaf3m" path="res://ressources/images/gauge_green.png" id="6_uea3b"]
 [ext_resource type="FontFile" uid="uid://bnk4b84m3spqq" path="res://ressources/fonts/Roboto/Roboto-Regular.ttf" id="7_oc8dn"]
 [ext_resource type="Texture2D" uid="uid://4fwybjcx3t06" path="res://ressources/images/gauge_dollars.png" id="8_2j5r5"]
@@ -84,6 +84,17 @@ texture_progress = ExtResource("6_uea3b")
 iconTexture = ExtResource("11_2blyq")
 gaugeName = "Relation avec étudiants et profs"
 
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="EndGameScreen" parent="." instance=ExtResource("6_pvhaj")]
+visible = false
+
+[node name="Contextualization" parent="." instance=ExtResource("13_xiqnc")]
+offset_left = -945.0
+offset_top = -560.0
+offset_right = -945.0
+offset_bottom = -560.0
+
 [node name="ExitButton" type="Button" parent="."]
 process_mode = 3
 z_index = 1
@@ -94,18 +105,6 @@ offset_bottom = -412.0
 scale = Vector2(0.5, 0.5)
 icon = ExtResource("9_qddja")
 script = ExtResource("10_1vrm5")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-
-[node name="EndGameScreen" parent="." instance=ExtResource("6_pvhaj")]
-visible = false
-
-[node name="Contextualization" parent="." instance=ExtResource("13_xiqnc")]
-visible = false
-offset_left = -945.0
-offset_top = -560.0
-offset_right = -945.0
-offset_bottom = -560.0
 
 [connection signal="RenovatedBuilding" from="Campus" to="." method="_on_campus_renovated_building"]
 [connection signal="ruinedBuilding" from="Campus" to="." method="_on_campus_ruined_building"]
