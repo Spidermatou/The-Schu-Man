@@ -26,7 +26,11 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 # Propositions d'amélioration du cahier des charges
 
-- 
+- Rajouter plus de chiffres dans le cahier des charges
+- Plus de scénario
+- Baser le scénario sur des chiffres et évenements réels
+- Rendre le cahier des charges plus simple (reduire la quantité de texte)
+- Ajouter des contraintes sur la documentation
 
 # Propositions d'amélioration du jeu
 
