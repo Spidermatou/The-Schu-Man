@@ -3,15 +3,13 @@ extends TextureProgressBar
 signal isEmpty
 
 @onready var _variation : Label = $Variation
-@onready var _icon : Sprite2D = $Icon
 @onready var _gaugeNameLabel : Label = $Nom
+@onready var _icon : Sprite2D = $Icon
 
 @export var iconTexture : Texture2D
 @export var gaugeName : String = ""
 
 const COLORS = {"Green":"06ff15", "Red": "e81c1c"}
-
-var signalEmitted : bool = false;
 
 func setVariation(variation : int):
 	if variation < 0:
@@ -26,15 +24,19 @@ func showVariation():
 
 func hideVariation():
 	_variation.hide()
+	
+func setValue(number: int):
+	self.value += number
+	
+	if self.value <= 5:
+		isEmpty.emit()
+		
+func setIcone(icone : Texture2D):
+	_icon.texture = icone
 
 func _ready():
 	showVariation()
 	setVariation(0)
-
-func setIcone(icone : Texture2D):
-	_icon.texture = icone
-
-func _process(delta):
 	if _gaugeNameLabel.text == "Budget":
 		_icon.texture = load("res://ressources/images/gauge_dollars.png")
 	if _gaugeNameLabel.text == "Relation avec le Central de l'université":
@@ -42,7 +44,6 @@ func _process(delta):
 	if _gaugeNameLabel.text == "Relation avec étudiants et profs":
 		_icon.texture = load("res://ressources/images/gauge_etu.jpg")
 	_gaugeNameLabel.text = gaugeName
-	
-	if (self.value <= 5 && !signalEmitted):
-		isEmpty.emit()
-		signalEmitted = true
+
+
+

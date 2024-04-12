@@ -177,8 +177,16 @@ func _on_gauge_intern_is_empty():
 	# _endGameScreen.texture = load("res://path/to/your/texture.png")
 	_endGameScreen.setExplication("Oh non ! Les équipes vous déteste, plus personne ne suit vos demandes ni ne veut travailler avec vous. Vous n'avez plus de directeur que le nom...")
 
+	
 func _on_restart():
 	initGame()
 
 func agingBuildings():
 	_campus.addToAllHealth(-5)
+
+
+func _on_campus_renovated_building():
+	_endGameScreen.endGame()
+	# _endGameScreen.texture = load("res://path/to/your/texture.png")
+	_endGameScreen.setExplication("Bravo, vous avez réussi votre objectif principale de votre quinquennat, rénover tout les batîments")
+

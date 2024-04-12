@@ -83,6 +83,8 @@ iconTexture = ExtResource("3_33dhc")
 gaugeName = "Relation avec étudiants et profs"
 
 [node name="ExitButton" type="Button" parent="."]
+process_mode = 3
+z_index = 1
 offset_left = 890.0
 offset_top = -530.0
 offset_right = 1008.0
@@ -102,6 +104,7 @@ offset_top = -560.0
 offset_right = -945.0
 offset_bottom = -560.0
 
+[connection signal="RenovatedBuilding" from="Campus" to="." method="_on_campus_renovated_building"]
 [connection signal="ruinedBuilding" from="Campus" to="." method="_on_campus_ruined_building"]
 [connection signal="cardChosen" from="Card" to="." method="_on_card_card_chosen"]
 [connection signal="peakToLeft" from="Card" to="." method="_on_card_peak_to_left"]
