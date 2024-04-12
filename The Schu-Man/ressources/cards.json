@@ -90,15 +90,15 @@
 	  "dialogue": "Des profs sont en grève ! Il nous faut quelqu'un pour les remplacer !",
 	  "targetAll": 0,
 	  "effectLeft": {
-		"budget": -5,
+		"budget": 0,
 		"centralSatisfaction": 10,
 		"internalSatisfaction": -10,
 		"healthVariation": 0
 	  },
 	  "effectRight": {
-		"budget": 0,
+		"budget": -5,
 		"centralSatisfaction": -20,
-		"internalSatisfaction": -5,
+		"internalSatisfaction": 5,
 		"healthVariation": 0
 	  }
 	},
@@ -113,7 +113,7 @@
 		"healthVariation": 0
 	  },
 	  "effectRight": {
-		"budget": 0,
+		"budget": 5,
 		"centralSatisfaction": 15,
 		"internalSatisfaction": 15,
 		"healthVariation": 0

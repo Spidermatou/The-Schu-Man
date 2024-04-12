@@ -25,6 +25,12 @@ Dans notre jeu, nous allons présenter l'une des missions du directeur de l'IUT 
 
 Sur le git, <https://git.unistra.fr/atomic-core/mor-24-t-4-a>, dans le dossier Executables, télécharger le fichier adapté à votre OS (Linux, Window). Trouvez où a été téléchargé le fichier et éxecutez le.
 
+Liens de téléchargement :
+
+- [Linux](https://gitlab.unistra.fr/atomic-core/mor-24-t-4-a/-/raw/master/The%20Schu-Man/executables/The%20Schu-Man.x86_64?ref_type=heads&inline=false)
+
+- [Windows](https://gitlab.unistra.fr/atomic-core/mor-24-t-4-a/-/raw/master/The%20Schu-Man/executables/The%20Schu-Man.exe?ref_type=heads&inline=false)
+
 ## Cahier des charges
 
 ### Objectifs pédagogiques
