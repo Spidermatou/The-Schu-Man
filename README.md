@@ -27,7 +27,7 @@ Sur le git, <https://git.unistra.fr/atomic-core/mor-24-t-4-a>, dans le dossier E
 
 Liens de téléchargement :
 
-- [Linux](https://gitlab.unistra.fr/atomic-core/mor-24-t-4-a/-/raw/master/The%20Schu-Man/executables/The%20Schu-Man.x86_64?ref_type=heads&inline=false)
+- [Linux](https://gitlab.unistra.fr/atomic-core/mor-24-t-4-a/-/raw/master/The%20Schu-Man/executables/The%20Schu-Man.x86_64?ref_type=heads&inline=false) ( Une fois le jeu installé, attribuez vous les droits de l'executé via la commande : chmod 777 The\ Schu-Man.x86_64 )
 
 - [Windows](https://gitlab.unistra.fr/atomic-core/mor-24-t-4-a/-/raw/master/The%20Schu-Man/executables/The%20Schu-Man.exe?ref_type=heads&inline=false)
 
