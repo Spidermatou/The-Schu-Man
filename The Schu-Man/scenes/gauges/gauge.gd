@@ -24,6 +24,15 @@ func showVariation():
 
 func hideVariation():
 	_variation.hide()
+	
+func setValue(number: int):
+	self.value += number
+	
+	if self.value <= 5:
+		isEmpty.emit()
+		
+func setIcone(icone : Texture2D):
+	_icon.texture = icone
 
 func _ready():
 	showVariation()
@@ -36,9 +45,5 @@ func _ready():
 		_icon.texture = load("res://ressources/images/gauge_etu.jpg")
 	_gaugeNameLabel.text = gaugeName
 
-func setIcone(icone : Texture2D):
-	_icon.texture = icone
 
-func _process(delta):
-	if self.value <= 5:
-		isEmpty.emit()
+
