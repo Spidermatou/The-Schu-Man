@@ -83,7 +83,7 @@ iconTexture = ExtResource("3_33dhc")
 gaugeName = "Relation avec étudiants et profs"
 
 [node name="ExitButton" type="Button" parent="."]
-process_mode = 2
+process_mode = 3
 z_index = 1
 offset_left = 890.0
 offset_top = -530.0
