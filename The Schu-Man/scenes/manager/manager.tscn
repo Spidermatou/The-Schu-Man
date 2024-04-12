@@ -12,7 +12,7 @@
 [ext_resource type="FontFile" uid="uid://bnk4b84m3spqq" path="res://ressources/fonts/Roboto/Roboto-Regular.ttf" id="7_oc8dn"]
 [ext_resource type="Texture2D" uid="uid://b0ice05ic5400" path="res://ressources/images/cross.png" id="9_qddja"]
 [ext_resource type="Script" path="res://scenes/manager/exitButton.gd" id="10_1vrm5"]
-[ext_resource type="PackedScene" uid="uid://cc1bo2u1ccp0f" path="res://scenes/contextualization.tscn" id="13_xiqnc"]
+[ext_resource type="PackedScene" path="res://scenes/contextualization.tscn" id="13_xiqnc"]
 
 [node name="Manager" type="Node"]
 script = ExtResource("1_lje2p")
@@ -83,6 +83,8 @@ iconTexture = ExtResource("3_33dhc")
 gaugeName = "Relation avec étudiants et profs"
 
 [node name="ExitButton" type="Button" parent="."]
+process_mode = 2
+z_index = 1
 offset_left = 890.0
 offset_top = -530.0
 offset_right = 1008.0
@@ -97,6 +99,7 @@ script = ExtResource("10_1vrm5")
 visible = false
 
 [node name="Contextualization" parent="." instance=ExtResource("13_xiqnc")]
+visible = false
 offset_left = -945.0
 offset_top = -560.0
 offset_right = -945.0
