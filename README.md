@@ -3,11 +3,10 @@
 - Nom du groupe : Atomic Core
 - Membres du groupe : Samuel FERNANDES | Mattéo GILLIG | Guillaume BEHR
 - Liens vers les évaluations T4 :
-  ![Amine Benomar](./evaluations/evaluation-Amine_Benomar.md)
-  ![Maxime Lamorlette](./evaluations/evaluation-Maxime_Lamorlette.md)
-  ![Titouan Fagot](./evaluations/evaluation-Titouan_Fagot.md)
-.md
-  - **TO-DO**
+  - [Amine Benomar](./evaluations/evaluation-Amine_Benomar.md)
+  - [Maxime Lamorlette](./evaluations/evaluation-Maxime_Lamorlette.md)
+  - [Titouan Fagot](./evaluations/evaluation-Titouan_Fagot.md)
+
 
 ## Présentation du projet
 
@@ -164,14 +163,17 @@ Le projet contient également un dossier ressources contenant des dossiers avec 
 
 - Les cartes affectent un batiment au hasard : une carte de rénovation peut affecter un batîment choisis au hasard
 - Les cartes affectent un ou des batiments ciblé : une carte de rénovation totale
-- Les cartes affectent les jauges
+- Les cartes affectent les jauges : Proposition de la mairie pour subventionner l'IUT
 - Les cartes sont tirés au hasard
 - Un petit tutoriel permettent de comprendre comment jouer
+- Diverses fins possibles
 
 #### Fonctionnalités non pris en charge
 
 - A partir d'un certains pourcentage de relation, certaines cartes se débloquent
 - Les batîments ont des caractéristiques avec un pourcentage propre a eux (portes, fenêtres, bardage ...)
 - Des cartes evenementielles (Pandémie, vague de froid, incendie)
+- Gestion des relations avec les entreprises et média
+- Gestion des apprentis pour gagner de l'argent constamment
 
 
