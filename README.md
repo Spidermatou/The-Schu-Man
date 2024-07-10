@@ -21,7 +21,7 @@ Dans notre jeu, nous allons présenter l'une des missions du directeur de l'IUT 
 
 ### Procédures d'installation et d'exécution
 
-Sur le git, <https://git.unistra.fr/atomic-core/mor-24-t-4-a>, dans le dossier Executables, téléchargez le fichier adapté à votre OS (Linux, Windows). Trouvez où a été téléchargé le fichier et exécutez-le.
+Sur le git, <https://github.com/Spidermatou/The-Schu-Man>, dans le dossier Executables, téléchargez le fichier adapté à votre OS (Linux, Windows). Trouvez où a été téléchargé le fichier et exécutez-le.
 
 Liens de téléchargement :
 
